@@ -25,6 +25,12 @@
 	  <artifactId>${project.parent.artifactId}-technical</artifactId>
 	</dependency>
 	
+	<!--  EXT -->
+	<dependency>
+    	<groupId>javax.inject</groupId>
+        <artifactId>javax.inject</artifactId>
+    </dependency>
+	
 	<!--  TESTS -->
     <dependency>
       <groupId>junit</groupId>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="
+            http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd">
+            
+    <bean id="abstractDao" class="org.escalade.consumer.impl.dao.AbstractDaoImpl">
+		<property name="dataSource" ref="dataSourceEscalade" />
+	</bean> 
+            
+	<bean id="commentaireDao" class="org.escalade.consumer.impl.dao.CommentaireDaoImpl">
+		<property name="dataSource" ref="dataSourceEscalade" />
+	</bean>  
+	<bean id="cotationDao" class="org.escalade.consumer.impl.dao.CotationDaoImpl">
+		<property name="dataSource" ref="dataSourceEscalade" /> 
+	</bean>
+	<bean id="lieuDao" class="org.escalade.consumer.impl.dao.LieuDaoImpl">
+		<property name="dataSource" ref="dataSourceEscalade" /> 
+	</bean>
+	<bean id="reservationDao" class="org.escalade.consumer.impl.dao.ReservationDaoImpl">
+		<property name="dataSource" ref="dataSourceEscalade" /> 
+	</bean>
+	<bean id="siteDao" class="org.escalade.consumer.impl.dao.SiteDaoImpl">
+		<property name="dataSource" ref="dataSourceEscalade" /> 
+	</bean>
+	<bean id="topoDao" class="org.escalade.consumer.impl.dao.TopoDaoImpl">
+		<property name="dataSource" ref="dataSourceEscalade" /> 
+	</bean>
+	<bean id="userDao" class="org.escalade.consumer.impl.dao.UserDaoImpl">
+		<property name="dataSource" ref="dataSourceEscalade" /> 
+	</bean>
+	
+	<bean id="daoFactory" class="org.escalade.consumer.impl.dao.DaoFactoryImpl">
+		<property name="commentaireDao" ref="commentaireDao" />
+		<property name="cotationDao" ref="cotationDao" />
+		<property name="lieuDao" ref="lieuDao" />
+		<property name="reservationDao" ref="reservationDao" />
+		<property name="siteDao" ref="siteDao" />
+		<property name="topoDao" ref="topoDao" />
+		<property name="userDao" ref="userDao" />
+	</bean> 
+</beans>     
