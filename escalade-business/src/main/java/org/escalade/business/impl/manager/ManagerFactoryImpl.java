@@ -1,6 +1,8 @@
 package org.escalade.business.impl.manager;
 
 import org.escalade.business.contract.manager.CommentaireManager;
+import org.escalade.business.contract.manager.CotationManager;
+import org.escalade.business.contract.manager.LieuManager;
 import org.escalade.business.contract.manager.ManagerFactory;
 import org.escalade.business.contract.manager.ReservationManager;
 import org.escalade.business.contract.manager.SiteManager;
@@ -9,6 +11,8 @@ import org.escalade.business.contract.manager.UserManager;
 
 public class ManagerFactoryImpl implements ManagerFactory {
 	private CommentaireManager commentaireManager;
+	private CotationManager cotationManager;
+	private LieuManager lieuManager;
 	private ReservationManager reservationManager;
 	private SiteManager siteManager;
 	private TopoManager topoManager;
@@ -22,6 +26,26 @@ public class ManagerFactoryImpl implements ManagerFactory {
 	@Override
 	public void setCommentaireManager(CommentaireManager pCommentaireManager) {
 		this.commentaireManager = pCommentaireManager;		
+	}
+	
+	@Override
+	public CotationManager getCotationManager() {
+		return this.cotationManager;
+	}
+
+	@Override
+	public void setCotationManager(CotationManager pCotationManager) {
+		this.cotationManager = pCotationManager;		
+	}
+	
+	@Override
+	public LieuManager getLieuManager() {
+		return this.lieuManager;
+	}
+
+	@Override
+	public void setLieuManager(LieuManager pLieuManager) {
+		this.lieuManager = pLieuManager;		
 	}
 
 	@Override
