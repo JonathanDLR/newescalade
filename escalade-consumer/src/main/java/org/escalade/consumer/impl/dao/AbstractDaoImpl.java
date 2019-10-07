@@ -1,19 +1,14 @@
 package org.escalade.consumer.impl.dao;
 
-import javax.inject.Inject;
-import javax.inject.Named;
-import javax.sql.DataSource;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class AbstractDaoImpl {
-	@Inject
-	@Named("dataSourceEscalade")
-	private DataSource dataSource;
+	@Autowired
+	SessionFactory sessionFactory;
 	
-	public void setDataSource(DataSource dataSource) {
-		this.dataSource = dataSource;
-	}
-
-	protected DataSource getDataSource() {
-		return dataSource;
+	protected Session getCurrentSession(){
+		return sessionFactory.getCurrentSession();
 	}
 }

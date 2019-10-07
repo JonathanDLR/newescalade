@@ -1,0 +1,37 @@
+package org.escalade.model.beans;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "role")
+public class Role {
+	private int id;
+	private String name;
+	
+	// GETTERS SETTERS //
+	
+	@Id
+	@Column(name = "id")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	public int getId() {
+		return id;
+	}
+	public void setId(int pId) {
+		this.id = pId;
+	}
+	
+	@Column(name = "name")
+	public String getName() {
+		return name;
+	}
+	public void setName(String pName) {
+		this.name = pName;
+	}
+	
+	
+}
