@@ -1,5 +1,7 @@
 package org.escalade.consumer.contract.dao;
 
-public interface UserDao {
+import org.escalade.model.beans.User;
 
+public interface UserDao {
+	void createUser(User pUser);
 }

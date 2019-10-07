@@ -1,5 +1,7 @@
 package org.escalade.business.contract.manager;
 
-public interface UserManager {
+import org.escalade.model.beans.User;
 
+public interface UserManager {
+	void createUser(User pUser);
 }
