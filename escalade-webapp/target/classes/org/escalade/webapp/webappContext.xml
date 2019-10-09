@@ -5,24 +5,6 @@
             http://www.springframework.org/schema/beans
             http://www.springframework.org/schema/beans/spring-beans.xsd">
 	
-	<bean id="commentaireManager" class="org.eescalade.business.impl.manager.CommentaireManagerImpl" />
-	<bean id="cotationManager" class="org.escalade.business.impl.manager.CotationManagerImpl" />
-	<bean id="lieuManager" class="org.escalade.business.impl.manager.LieuManagerImpl" />
-	<bean id="reservationManager" class="org.escalade.business.impl.manager.ReservationManagerImpl" />
-	<bean id="siteManager" class="org.escalade.business.impl.manager.SiteManagerImpl" />
-	<bean id="topoManager" class="org.escalade.business.impl.manager.TopoManagerImpl" />
-	<bean id="userManager" class="org.escalade.business.impl.manager.UserManagerImpl" />
-	
-	<bean id="managerFactory" class="org.escalade.business.impl.manager.ManagerFactoryImpl">
-		<property name="commentaireManager" ref="commentaireManager" />
-		<property name="cotationManager" ref="cotationManager" />
-		<property name="lieuManager" ref="lieuManager" />
-		<property name="reservationManager" ref="reservationManager" />
-		<property name="siteManager" ref="siteManager" />
-		<property name="topoManager" ref="topoManager" />
-		<property name="userManager" ref="userManager" />
-	</bean>
-	
 	<bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
 		<property name="targetClass" value="org.escalade.webapp.rest.resource.AbstractResource" />
 		<property name="targetMethod" value="setManagerFactory" />

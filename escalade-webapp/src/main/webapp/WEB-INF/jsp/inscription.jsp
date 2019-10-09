@@ -1,16 +1,19 @@
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ include file="../common/head.jsp" %>	
 <body>
 	<%@ include file="../common/menu.jsp" %>
 	<h1>Inscription</h1>
 	
-	<form method="post" action="inscription">
+	<form:form method="post" modelAttribute="userForm" action="inscription">
+		<form:hidden path="id" />
 		<label for="login">Enter your login</label>
-        <input id="login" name="login" type="text" />
+        <form:input path="login" type="text" />
         <label for="pswd">Enter your password</label>
-        <input id="pswd" name="pswd" type="password" />	
+        <form:input path="pswd" type="password" />	
         
         <input id="sendInscription" type="submit" value="Inscription" />
-	</form>
+	</form:form>
 	
 	<%@ include file="../common/footer.jsp" %>	
 </body>

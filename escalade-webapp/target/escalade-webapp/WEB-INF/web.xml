@@ -33,6 +33,15 @@
 	      <include-prelude>/WEB-INF/common/taglibs.jsp</include-prelude>
 	    </jsp-property-group>
 	  </jsp-config>
+	  
+	<!--  SPRING LISTENER -->
+	<listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath:/bootstrapContext.xml</param-value>
+    </context-param>
 	 
 	 <!--  SERVLETS --> 
 	<servlet>    
