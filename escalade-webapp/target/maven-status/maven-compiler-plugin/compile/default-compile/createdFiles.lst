@@ -1,3 +1,4 @@
 org/escalade/webapp/resources/AbstractResource.class
 org/escalade/webapp/bootstrap/SpringConfiguration.class
 org/escalade/webapp/servlets/AccueilServlet.class
+org/escalade/webapp/servlets/InscriptionServlet.class
