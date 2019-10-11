@@ -8,13 +8,13 @@
     <bean id="abstractManager" abstract="true">
     	<property name="daoFactory" ref="daoFactory" />
     </bean>
-	<bean id="commentaireManager" class="org.eescalade.business.impl.manager.CommentaireManagerImpl" parent="abastractManager" />
-	<bean id="cotationManager" class="org.escalade.business.impl.manager.CotationManagerImpl" parent="abastractManager" />
+	<bean id="commentaireManager" class="org.escalade.business.impl.manager.CommentaireManagerImpl" parent="abstractManager" />
+	<bean id="cotationManager" class="org.escalade.business.impl.manager.CotationManagerImpl" parent="abstractManager" />
 	<bean id="lieuManager" class="org.escalade.business.impl.manager.LieuManagerImpl" />
-	<bean id="reservationManager" class="org.escalade.business.impl.manager.ReservationManagerImpl" parent="abastractManager" />
-	<bean id="siteManager" class="org.escalade.business.impl.manager.SiteManagerImpl" parent="abastractManager" />
-	<bean id="topoManager" class="org.escalade.business.impl.manager.TopoManagerImpl" parent="abastractManager" />
-	<bean id="userManager" class="org.escalade.business.impl.manager.UserManagerImpl" parent="abastractManager" />
+	<bean id="reservationManager" class="org.escalade.business.impl.manager.ReservationManagerImpl" parent="abstractManager" />
+	<bean id="siteManager" class="org.escalade.business.impl.manager.SiteManagerImpl" parent="abstractManager" />
+	<bean id="topoManager" class="org.escalade.business.impl.manager.TopoManagerImpl" parent="abstractManager" />
+	<bean id="userManager" class="org.escalade.business.impl.manager.UserManagerImpl" parent="abstractManager" />
 	
 	<bean id="managerFactory" class="org.escalade.business.impl.manager.ManagerFactoryImpl">
 		<property name="commentaireManager" ref="commentaireManager" />
@@ -26,13 +26,6 @@
 		<property name="userManager" ref="userManager" />
 	</bean>
 		
-	<bean id="txManagerTicket" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-		<property name="dataSource" ref="dataSourceTicket" />
-	</bean>
-	<bean id="txManagerProjet" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-		<property name="dataSource" ref="dataSourceTicket" />
-	</bean>
-	
 	<bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
 		<property name="targetClass" value="org.escalade.business.impl.manager.AbstractManager" />
 		<property name="targetMethod" value="setDaoFactory" />

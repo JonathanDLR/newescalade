@@ -6,7 +6,7 @@
             http://www.springframework.org/schema/beans/spring-beans.xsd">
 	
 	<bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
-		<property name="targetClass" value="org.escalade.webapp.rest.resource.AbstractResource" />
+		<property name="targetClass" value="org.escalade.webapp.resources.AbstractResource" />
 		<property name="targetMethod" value="setManagerFactory" />
 		<property name="arguments" ref="managerFactory" />
 	</bean>
