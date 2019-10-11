@@ -5,21 +5,32 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "Commentaire")
+@Table(name = "commentaire")
 public class Commentaire {
+	@Id
+	@Column(name = "id")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
+	
+	@Column(name = "comm")
 	private String comm;
+	
+	@ManyToOne
+	@JoinColumn(name = "user_auteur")
 	private User userAuteur;
+	
+	@ManyToOne
+	@JoinColumn(name = "site")
 	private Site site;
 	
 	// GETTERS SETTERS //
 	
-	@Id
-	@Column(name = "id")
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	
 	public int getId() {
 		return id;
 	}
@@ -27,7 +38,6 @@ public class Commentaire {
 		this.id = pId;
 	}
 	
-	@Column(name = "comm")
 	public String getComm() {
 		return comm;
 	}
@@ -35,15 +45,13 @@ public class Commentaire {
 		this.comm = pComm;
 	}
 	
-	@Column(name ="user_auteur")
 	public User getUserAuteur() {
 		return userAuteur;
 	}
 	public void setUserAuteur(User pUser_auteur) {
 		this.userAuteur = pUser_auteur;
 	}
-	
-	@Column(name = "site")
+
 	public Site getSite() {
 		return site;
 	}

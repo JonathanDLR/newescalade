@@ -5,20 +5,28 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "reservation")
 public class Reservation {
+	@Id
+	@Column(name = "id")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
+	
+	@ManyToOne
+	@JoinColumn(name = "topo")
 	private Topo topo;
+	
+	@ManyToOne
+	@JoinColumn(name = "user")
 	private User userDemandeur;
 	
 	// GETTERS SETTERS //
 	
-	@Id
-	@Column(name = "id")
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	public int getId() {
 		return id;
 	}
@@ -26,7 +34,6 @@ public class Reservation {
 		this.id = pId;
 	}
 	
-	@Column(name = "topo")
 	public Topo getTopo() {
 		return topo;
 	}
@@ -34,13 +41,10 @@ public class Reservation {
 		this.topo = pTopo;
 	}
 	
-	@Column(name = "user_demandeur")
 	public User getUserDemandeur() {
 		return userDemandeur;
 	}
 	public void setUserDemandeur(User pUserDemandeur) {
 		this.userDemandeur = pUserDemandeur;
-	}
-	
-	
+	}	
 }

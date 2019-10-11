@@ -10,22 +10,23 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "role")
 public class Role {
+	@Id
+	@Column(name = "id")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
+	
+	@Column(name = "name")
 	private String name;
 	
 	// GETTERS SETTERS //
 	
-	@Id
-	@Column(name = "id")
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	public int getId() {
 		return id;
 	}
 	public void setId(int pId) {
 		this.id = pId;
 	}
-	
-	@Column(name = "name")
+
 	public String getName() {
 		return name;
 	}

@@ -1,27 +1,47 @@
 package org.escalade.model.beans;
 
+import java.util.Set;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "site")
 public class Site {
+	@Id
+	@Column(name = "id")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
+	
+	@Column(name  = "nom")
 	private String nom;
-	private Lieu lieu;
+	
+	@OneToMany
+	private Set<Lieu> lieus;
+	
+	@ManyToMany
+	private Set<Topo> topos;
+	
+	@ManyToOne
+	@JoinColumn(name = "cotation")
 	private Cotation cotation;
+	
+	@Column(name = "nbre_secteur")
 	private int nbreSecteur;
+	
+	@Column(name = "officiel")
 	private boolean officiel;
 	
 	// GETTERS SETTERS //
 	
-	@Id
-	@Column(name = "id")
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	public int getId() {
 		return id;
 	}
@@ -29,23 +49,20 @@ public class Site {
 		this.id = pId;
 	}
 	
-	@Column(name  = "nom")
 	public String getNom() {
 		return nom;
 	}
 	public void setNom(String pNom) {
 		this.nom = pNom;
 	}
-	
-	@Column(name = " lieu")
-	public Lieu getLieu() {
-		return lieu;
+		
+	public Set<Lieu> getLieus() {
+		return lieus;
 	}
-	public void setLieu(Lieu pLieu) {
-		this.lieu = pLieu;
+	public void setLieus(Set<Lieu> lieus) {
+		this.lieus = lieus;
 	}
 	
-	@Column(name = "cotation")
 	public Cotation getCotation() {
 		return cotation;
 	}
@@ -53,7 +70,6 @@ public class Site {
 		this.cotation = pCotation;
 	}
 	
-	@Column(name = "nbre_secteur")
 	public int getNbreSecteur() {
 		return nbreSecteur;
 	}
@@ -61,7 +77,6 @@ public class Site {
 		this.nbreSecteur = pNbreSecteur;
 	}
 	
-	@Column(name = "officiel")
 	public boolean isOfficiel() {
 		return officiel;
 	}

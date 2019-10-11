@@ -10,14 +10,16 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "cotation")
 public class Cotation {
+	@Id
+	@Column(name = "id")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
+	
+	@Column(name = "cot")
 	private String cot;
 	
 	// GETTERS SETTERS //
 	
-	@Id
-	@Column(name = "id")
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	public int getId() {
 		return id;
 	}
@@ -25,7 +27,6 @@ public class Cotation {
 		this.id = pId;
 	}
 	
-	@Column(name = "cot")
 	public String getCot() {
 		return cot;
 	}
