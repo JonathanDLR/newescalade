@@ -1,30 +1,32 @@
 package org.escalade.consumer.impl.dao;
 
-import org.escalade.consumer.contract.dao.UserDao;
-import org.escalade.model.beans.User;
+import org.escalade.consumer.contract.dao.RoleDao;
+import org.escalade.model.beans.Role;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-public class UserDaoImpl extends AbstractDaoImpl implements UserDao {
+public class RoleDaoImpl extends AbstractDaoImpl implements RoleDao {
+
 	@Override
-	public void createUser(User pUser) {
+	public Role getRoleById(int pId) {
 		Session session = null;
 		Transaction tx = null;
-		
+		Role role = null;
 		try {
 			session = getSessionFactory().openSession();
 			tx = session.beginTransaction();
-			session.save(pUser);
+			role = session.byId(Role.class).getReference(pId);
 			tx.commit();
 		} catch (Exception e) {
 			if (tx != null) {
 				tx.rollback();
-			}		
+			}
 		} finally {
 			if (session != null) {
 				session.close();
-			}			
+			}
 		}	
+		
+		return role;
 	}
-
 }

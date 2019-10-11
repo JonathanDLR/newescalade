@@ -5,6 +5,7 @@ import org.escalade.business.contract.manager.CotationManager;
 import org.escalade.business.contract.manager.LieuManager;
 import org.escalade.business.contract.manager.ManagerFactory;
 import org.escalade.business.contract.manager.ReservationManager;
+import org.escalade.business.contract.manager.RoleManager;
 import org.escalade.business.contract.manager.SiteManager;
 import org.escalade.business.contract.manager.TopoManager;
 import org.escalade.business.contract.manager.UserManager;
@@ -14,6 +15,7 @@ public class ManagerFactoryImpl implements ManagerFactory {
 	private CotationManager cotationManager;
 	private LieuManager lieuManager;
 	private ReservationManager reservationManager;
+	private RoleManager roleManager;
 	private SiteManager siteManager;
 	private TopoManager topoManager;
 	private UserManager userManager;
@@ -56,6 +58,16 @@ public class ManagerFactoryImpl implements ManagerFactory {
 	@Override
 	public void setReservationManager(ReservationManager pReservationManager) {
 		this.reservationManager = pReservationManager;
+	}
+	
+	@Override
+	public RoleManager getRoleManager() {
+		return this.roleManager;
+	}
+	
+	@Override
+	public void setRoleManager(RoleManager pRoleManager) {
+		this.roleManager = pRoleManager;
 	}
 
 	@Override

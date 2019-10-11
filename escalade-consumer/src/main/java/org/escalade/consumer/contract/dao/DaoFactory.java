@@ -12,6 +12,9 @@ public interface DaoFactory {
 	
 	ReservationDao getReservationDao();
 	void setReservationDao(ReservationDao pReservationDao);
+	
+	RoleDao getRoleDao();
+	void setRoleDao(RoleDao pRoleDao);
 
 	SiteDao getSiteDao();
 	void setSiteDao(SiteDao pSiteDao);

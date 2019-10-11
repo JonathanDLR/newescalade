@@ -12,6 +12,7 @@
 	<bean id="cotationManager" class="org.escalade.business.impl.manager.CotationManagerImpl" parent="abstractManager" />
 	<bean id="lieuManager" class="org.escalade.business.impl.manager.LieuManagerImpl" />
 	<bean id="reservationManager" class="org.escalade.business.impl.manager.ReservationManagerImpl" parent="abstractManager" />
+	<bean id="roleManager" class="org.escalade.business.impl.manager.RoleManagerImpl" parent="abstractManager" />
 	<bean id="siteManager" class="org.escalade.business.impl.manager.SiteManagerImpl" parent="abstractManager" />
 	<bean id="topoManager" class="org.escalade.business.impl.manager.TopoManagerImpl" parent="abstractManager" />
 	<bean id="userManager" class="org.escalade.business.impl.manager.UserManagerImpl" parent="abstractManager" />
@@ -21,6 +22,7 @@
 		<property name="cotationManager" ref="cotationManager" />
 		<property name="lieuManager" ref="lieuManager" />
 		<property name="reservationManager" ref="reservationManager" />
+		<property name="roleManager" ref="roleManager" />
 		<property name="siteManager" ref="siteManager" />
 		<property name="topoManager" ref="topoManager" />
 		<property name="userManager" ref="userManager" />

@@ -5,6 +5,7 @@ import org.escalade.consumer.contract.dao.CotationDao;
 import org.escalade.consumer.contract.dao.DaoFactory;
 import org.escalade.consumer.contract.dao.LieuDao;
 import org.escalade.consumer.contract.dao.ReservationDao;
+import org.escalade.consumer.contract.dao.RoleDao;
 import org.escalade.consumer.contract.dao.SiteDao;
 import org.escalade.consumer.contract.dao.TopoDao;
 import org.escalade.consumer.contract.dao.UserDao;
@@ -14,6 +15,7 @@ public class DaoFactoryImpl implements DaoFactory {
 	private CotationDao cotationDao;
 	private LieuDao lieuDao;
 	private ReservationDao reservationDao;
+	private RoleDao roleDao;
 	private SiteDao siteDao;
 	private TopoDao topoDao;
 	private UserDao userDao;
@@ -48,6 +50,14 @@ public class DaoFactoryImpl implements DaoFactory {
 
 	public void setReservationDao(ReservationDao pReservationDao) {
 		this.reservationDao = pReservationDao;
+	}
+	
+	public RoleDao getRoleDao() {
+		return this.roleDao;
+	}
+	
+	public void setRoleDao(RoleDao pRoleDao) {
+		this.roleDao = pRoleDao;
 	}
 
 	public SiteDao getSiteDao() {

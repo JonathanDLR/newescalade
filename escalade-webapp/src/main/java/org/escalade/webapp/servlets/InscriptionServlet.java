@@ -3,7 +3,6 @@ package org.escalade.webapp.servlets;
 
 import javax.servlet.http.HttpServlet;
 
-import org.escalade.model.beans.Role;
 import org.escalade.model.beans.User;
 import org.escalade.webapp.resources.AbstractResource;
 import org.springframework.stereotype.Controller;
@@ -30,20 +29,17 @@ public class InscriptionServlet extends AbstractResource {
 
     @RequestMapping(method = RequestMethod.GET)
  	public String display(Model model) {
-    	model.addAttribute("title", "Amis Escalade: Inscription");
-    	
-    	Role role = new Role();
-    	role.setId(1);
-    	role.setName("registered");
+    	model.addAttribute("title", "Amis Escalade: Inscription");	
     	User user = new User();
-    	user.setRole(role);
+    	
     	model.addAttribute("userForm", user);
     	
  		return "inscription";
  	}
     
     @RequestMapping(method = RequestMethod.POST)
-    public String createEmployerFromForm(@ModelAttribute("userForm") User pUser) {   
+    public String createEmployerFromForm(@ModelAttribute("userForm") User pUser) { 
+    	pUser.setRole(getManagerFactory().getRoleManager().getRoleById(1));
     	getManagerFactory().getUserManager().createUser(pUser);
     	return "redirect:/";
     }
