@@ -2,7 +2,9 @@
 /home/jdlr/eclipse-workspace/escalade/escalade-business/src/main/java/org/escalade/business/impl/manager/AbstractManager.java
 /home/jdlr/eclipse-workspace/escalade/escalade-business/src/main/java/org/escalade/business/contract/manager/ReservationManager.java
 /home/jdlr/eclipse-workspace/escalade/escalade-business/src/main/java/org/escalade/business/impl/manager/UserManagerImpl.java
+/home/jdlr/eclipse-workspace/escalade/escalade-business/src/main/java/org/escalade/business/impl/manager/RoleManagerImpl.java
 /home/jdlr/eclipse-workspace/escalade/escalade-business/src/main/java/org/escalade/business/contract/manager/CommentaireManager.java
+/home/jdlr/eclipse-workspace/escalade/escalade-business/src/main/java/org/escalade/business/contract/manager/RoleManager.java
 /home/jdlr/eclipse-workspace/escalade/escalade-business/src/main/java/org/escalade/business/contract/manager/ManagerFactory.java
 /home/jdlr/eclipse-workspace/escalade/escalade-business/src/main/java/org/escalade/business/impl/manager/ReservationManagerImpl.java
 /home/jdlr/eclipse-workspace/escalade/escalade-business/src/main/java/org/escalade/business/contract/manager/TopoManager.java

@@ -7,9 +7,9 @@
 	
 	<form:form method="post" modelAttribute="userForm" action="inscription">
 		<form:hidden path="id" />
-		<label for="login">Enter your login</label>
+		<form:label path="login">Enter your login</form:label>
         <form:input path="login" type="text" />
-        <label for="pswd">Enter your password</label>
+        <form:label path="pswd">Enter your password</form:label>
         <form:input path="pswd" type="password" />	
         
         <input id="sendInscription" type="submit" value="Inscription" />

@@ -36,6 +36,10 @@
 	    <groupId>org.springframework</groupId>
 	    <artifactId>spring-webmvc</artifactId>
 	</dependency>
+	<dependency>
+		<groupId>org.hibernate</groupId>
+		<artifactId>hibernate-validator</artifactId>
+	</dependency>
     
     <dependency>
 	    <groupId>javax.servlet</groupId>
@@ -51,6 +55,12 @@
 	<artifactId>javax.servlet.jsp.jstl-api</artifactId>
 	</dependency>
 	
+	<!--  SASS TOOLS -->
+	<dependency>
+	    <groupId>com.github.warmuuh</groupId>
+	    <artifactId>libsass-maven-plugin</artifactId>
+	</dependency>
+	
         
 	<!--  TESTS -->
     <dependency>
@@ -60,7 +70,29 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  
   <build>
     <finalName>escalade-webapp</finalName>
+    
+ 
+   <plugins>
+      <plugin>
+         <groupId>com.github.warmuuh</groupId>
+         <artifactId>libsass-maven-plugin</artifactId>
+         <version>0.2.10-libsass_3.5.3</version>
+         <executions>
+            <execution>
+               <phase>generate-resources</phase>
+               <goals>
+                  <goal>compile</goal>
+               </goals>
+            </execution>
+         </executions>
+         <configuration>
+            <inputPath>${basedir}/src/main/webapp/assets/scss</inputPath>
+            <outputPath>${basedir}/src/main/webapp/assets/css</outputPath>
+         </configuration>
+      </plugin>
+   </plugins>
   </build>
 </project>

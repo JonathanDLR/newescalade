@@ -4,6 +4,7 @@
 /home/jdlr/eclipse-workspace/escalade/escalade-consumer/src/main/java/org/escalade/consumer/impl/dao/LieuDaoImpl.java
 /home/jdlr/eclipse-workspace/escalade/escalade-consumer/src/main/java/org/escalade/consumer/impl/dao/SiteDaoImpl.java
 /home/jdlr/eclipse-workspace/escalade/escalade-consumer/src/main/java/org/escalade/consumer/impl/dao/CommentaireDaoImpl.java
+/home/jdlr/eclipse-workspace/escalade/escalade-consumer/src/main/java/org/escalade/consumer/contract/dao/RoleDao.java
 /home/jdlr/eclipse-workspace/escalade/escalade-consumer/src/main/java/org/escalade/consumer/impl/dao/AbstractDaoImpl.java
 /home/jdlr/eclipse-workspace/escalade/escalade-consumer/src/main/java/org/escalade/consumer/contract/dao/DaoFactory.java
 /home/jdlr/eclipse-workspace/escalade/escalade-consumer/src/main/java/org/escalade/consumer/impl/dao/CotationDaoImpl.java
@@ -13,5 +14,6 @@
 /home/jdlr/eclipse-workspace/escalade/escalade-consumer/src/main/java/org/escalade/consumer/contract/dao/SiteDao.java
 /home/jdlr/eclipse-workspace/escalade/escalade-consumer/src/main/java/org/escalade/consumer/contract/dao/ReservationDao.java
 /home/jdlr/eclipse-workspace/escalade/escalade-consumer/src/main/java/org/escalade/consumer/contract/dao/LieuDao.java
+/home/jdlr/eclipse-workspace/escalade/escalade-consumer/src/main/java/org/escalade/consumer/impl/dao/RoleDaoImpl.java
 /home/jdlr/eclipse-workspace/escalade/escalade-consumer/src/main/java/org/escalade/consumer/impl/dao/DaoFactoryImpl.java
 /home/jdlr/eclipse-workspace/escalade/escalade-consumer/src/main/java/org/escalade/consumer/contract/dao/UserDao.java
