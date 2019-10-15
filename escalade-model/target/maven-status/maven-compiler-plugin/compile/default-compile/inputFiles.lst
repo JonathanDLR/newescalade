@@ -1,4 +1,6 @@
 /home/jdlr/eclipse-workspace/escalade/escalade-model/src/main/java/org/escalade/model/beans/Topo.java
+/home/jdlr/eclipse-workspace/escalade/escalade-model/src/main/java/org/escalade/model/annotation/PasswordConstraint.java
+/home/jdlr/eclipse-workspace/escalade/escalade-model/src/main/java/org/escalade/model/annotation/LoginConstraint.java
 /home/jdlr/eclipse-workspace/escalade/escalade-model/src/main/java/org/escalade/model/beans/Reservation.java
 /home/jdlr/eclipse-workspace/escalade/escalade-model/src/main/java/org/escalade/model/beans/Lieu.java
 /home/jdlr/eclipse-workspace/escalade/escalade-model/src/main/java/org/escalade/model/beans/Role.java

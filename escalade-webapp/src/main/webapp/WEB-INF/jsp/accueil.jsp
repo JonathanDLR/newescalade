@@ -1,3 +1,5 @@
+<c:set var="title" value="Amis Escalade" scope="page" />
+
 <%@ include file="../common/head.jsp" %>	
 <body>
 

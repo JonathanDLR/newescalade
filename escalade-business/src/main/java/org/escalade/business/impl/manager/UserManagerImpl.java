@@ -8,4 +8,11 @@ public class UserManagerImpl extends AbstractManager implements UserManager {
 	public void createUser(User pUser) {
 		getDaoFactory().getUserDao().createUser(pUser);
 	}
+	
+	@Override
+	public User getUserByLogin(String pLogin) {
+		User user = getDaoFactory().getUserDao().getUserByLogin(pLogin);
+		
+		return user;
+	}
 }

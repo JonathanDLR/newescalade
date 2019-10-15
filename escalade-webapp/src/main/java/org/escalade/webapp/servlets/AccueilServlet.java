@@ -19,7 +19,7 @@ public class AccueilServlet {
 
     @RequestMapping(method = RequestMethod.GET)
 	public String display(Model model) {
-    	model.addAttribute("title", "Amis Escalade");
+
 		return "accueil";
 	}
 }

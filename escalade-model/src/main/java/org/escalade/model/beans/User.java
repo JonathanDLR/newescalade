@@ -8,6 +8,9 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.validation.constraints.Size;
+
+import org.escalade.model.annotation.PasswordConstraint;
 
 @Entity
 @Table(name = "user")
@@ -17,10 +20,12 @@ public class User {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
-	@Column(name = "loginn")
+	@Column(name = "loginn", unique = true)
+	@Size(min = 1, message = "Veuillez renseigner votre pseudo!")
 	private String login;
 	
 	@Column(name = "pswd")
+	@PasswordConstraint
 	private String pswd;
 	
 	@ManyToOne
