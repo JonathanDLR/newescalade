@@ -6,6 +6,7 @@ import javax.validation.Valid;
 
 import org.escalade.model.beans.User;
 import org.escalade.webapp.resources.AbstractResource;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -20,6 +21,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 @RequestMapping("/inscription")
 public class InscriptionServlet extends AbstractResource {
+	private BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
        
     /**
      * @see HttpServlet#HttpServlet()
@@ -48,6 +50,7 @@ public class InscriptionServlet extends AbstractResource {
     		br.rejectValue("login", "error.userNotUnique", "Ce pseudo n'est pas disponible.");
     		return "inscription";
     	} else {
+    		pUser.setPswd(encoder.encode(pUser.getPswd()));
     		pUser.setRole(getManagerFactory().getRoleManager().getRoleById(1));
         	getManagerFactory().getUserManager().createUser(pUser);
         	return "inscription";
