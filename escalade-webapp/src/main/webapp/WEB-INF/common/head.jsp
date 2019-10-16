@@ -10,3 +10,5 @@
 			</c:when>
 		</c:choose>
 	</head>
+	
+	<body>

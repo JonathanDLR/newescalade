@@ -19,14 +19,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * Servlet implementation class InscriptionServlet
  */
 @Controller
-@RequestMapping("/inscription")
-public class InscriptionServlet extends AbstractResource {
+@RequestMapping("/connexion")
+public class ConnexionServlet extends AbstractResource {
 	private BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public InscriptionServlet() {
+    public ConnexionServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -37,23 +37,19 @@ public class InscriptionServlet extends AbstractResource {
     	
     	model.addAttribute("userForm", user);
     	
- 		return "inscription";
+ 		return "connexion";
  	}
     
     @RequestMapping(method = RequestMethod.POST)
     public String createEmployerFromForm(@Valid @ModelAttribute("userForm") User pUser, BindingResult br) {  
-    	User user = getManagerFactory().getUserManager().getUserByLogin(pUser.getLogin());
     	
     	if (br.hasErrors()) {
-    		return "inscription";
-    	} else if (user != null) {
-    		br.rejectValue("login", "error.userNotUnique", "Ce mail est déjà enregistré.");
-    		return "inscription";
-    	} else {
+    		return "connexion";
+    	}  else {
     		pUser.setPswd(encoder.encode(pUser.getPswd()));
     		pUser.setRole(getManagerFactory().getRoleManager().getRoleById(1));
         	getManagerFactory().getUserManager().createUser(pUser);
-        	return "inscription";
+        	return "connexion";
     	}	
     }
 }

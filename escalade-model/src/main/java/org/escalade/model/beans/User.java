@@ -10,6 +10,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.Size;
 
+import org.escalade.model.annotation.LoginConstraint;
 import org.escalade.model.annotation.PasswordConstraint;
 
 @Entity
@@ -21,7 +22,7 @@ public class User {
 	private int id;
 	
 	@Column(name = "loginn", unique = true)
-	@Size(min = 1, message = "Veuillez renseigner votre pseudo!")
+	@LoginConstraint
 	private String login;
 	
 	@Column(name = "pswd")
