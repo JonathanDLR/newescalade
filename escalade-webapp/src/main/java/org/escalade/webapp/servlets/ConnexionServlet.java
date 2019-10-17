@@ -5,6 +5,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
+import org.apache.commons.validator.routines.EmailValidator;
 import org.escalade.model.beans.User;
 import org.escalade.webapp.resources.AbstractResource;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -47,9 +48,19 @@ public class ConnexionServlet extends AbstractResource {
     	User user = getManagerFactory().getUserManager().getUserByLogin(pUser.getLogin());
     	String error = "Identifiant ou mot de passe incorect";
     		
-    	if (br.hasErrors()) {
+    	if (pUser.getLogin() == null) {
+    		br.rejectValue("login", "error.mailEmpty", "Veuillez renseigner votre mail.");
     		return "connexion";
-    	}  else if (user == null) {
+    	} else if (!EmailValidator.getInstance().isValid(pUser.getLogin())) {
+    		br.rejectValue("login", "error.mailNotValid", "Veuillez renseigner un mail valide.");
+    		return "connexion";
+    	} else if (pUser.getPswd() == null) {
+    		br.rejectValue("pswd", "error.pswdEmpty", "Veuillez renseigner votre mot de passe.");
+    		return "connexion";
+    	} else if (!pUser.getPswd().matches("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{6,}$")) {
+    		br.rejectValue("pswd", "error.pswdNotValid", "Votre mot de passe doit contenir au minimum une lettre minuscule, une lettre majuscule, un chiffre et 6 caractères.");
+    		return "connexion";
+    	} else if (user == null) {
     		model.addAttribute("error", error);
     		return "connexion";
     	} else if (!encoder.matches(pUser.getPswd(), user.getPswd())) {

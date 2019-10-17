@@ -4,6 +4,10 @@
 
 /* CONNEXION STYLING */
 
+form {
+	@include form-const(4);
+}
+
 #inscription, #DIVerror {
 	display: flex;
 	justify-content: center;

@@ -9,10 +9,6 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.Size;
-
-import org.escalade.model.annotation.LoginConstraint;
-import org.escalade.model.annotation.PasswordConstraint;
 
 @Entity
 @Table(name = "user")
@@ -23,12 +19,16 @@ public class User {
 	private int id;
 	
 	@Column(name = "loginn", unique = true)
-	@NotEmpty(message = "Veuillez renseigner votre mail")
+	@NotEmpty(message = "Veuillez renseigner votre pseudo.")
 	private String login;
 	
 	@Column(name = "pswd")
 	@NotEmpty(message = "Veuillez renseigner votre mot de passe.")
 	private String pswd;
+	
+	@Column(name ="pseudo")
+	@NotEmpty(message = "Veuillez renseigner votre pseudo.")
+	private String pseudo;
 	
 	@ManyToOne
 	@JoinColumn(name = "role")
@@ -55,6 +55,13 @@ public class User {
 	}
 	public void setPswd(String pPswd) {
 		this.pswd = pPswd;
+	}
+	
+	public String getPseudo() {
+		return pseudo;
+	}
+	public void setPseudo(String pPseudo) {
+		this.pseudo = pPseudo;
 	}
 
 	public Role getRole() {

@@ -11,6 +11,11 @@
 	<form:form method="post" modelAttribute="userForm" action="inscription">
 		<div><form:hidden path="id" /></div>
 		<div>
+			<form:label path="pseudo">Enter your pseudo</form:label>
+			<form:input id="pseudo" path="pseudo" type="text" />
+			<span class="error"><form:errors path="pseudo" cssClass="error"></form:errors></span>
+		</div>
+		<div>
 			<form:label path="login">Enter your mail</form:label>
         	<form:input id="login" path="login" type="text" />
         	<span class="error"><form:errors path="login" cssClass="error"></form:errors> </span>     	      	

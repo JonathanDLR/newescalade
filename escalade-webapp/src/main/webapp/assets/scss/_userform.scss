@@ -1,8 +1,14 @@
 /* STYLING THE FORM OF INSCRIPTION AND CONNEXION */
 	
-form {
+@mixin form-const($number) {
+	$j: $number - 1;
 	display: grid;
-	grid-template-rows: 0% 33% 33% 33%;
+	@if ($number == 4) {
+		grid-template-rows: 0% 33% 33% 33%;
+	}
+	@else {
+		grid-template-rows: 0% 25% 25% 25% 25%;
+	}
     grid-template-columns: 100%;
     flex-direction: column;
     justify-content: space-around;
@@ -10,7 +16,7 @@ form {
     width: 100%;
     height: 40vh;
     
-    div:not(:nth-child(1)):not(:nth-child(4)) {
+    div:not(:nth-child(1)):not(:nth-child(#{$number})) {
         display: grid;
         align-items: center;
         grid-template-columns: 20% 30% 50%;
@@ -31,20 +37,15 @@ form {
         }
     }
 
-    div:nth-child(1) {
-        grid-row: 1;
-    }
+	@while $j > 0 {
+		div:nth-child(#{$j}) {
+        	grid-row: $j;
+        }
+       $j: $j - 1;
+    }	 
 
-    div:nth-child(2) {
-        grid-row: 2;
-    }
-   
-   div:nth-child(3) {
-        grid-row: 3;
-    }
-
-    div:nth-child(4) {
-        grid-row: 4;
+    div:nth-child(#{$number}) {
+        grid-row: $number;
         display: grid;
         align-items: center;
 
