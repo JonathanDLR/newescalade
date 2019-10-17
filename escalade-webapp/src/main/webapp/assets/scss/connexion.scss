@@ -1,0 +1,10 @@
+@import 'template';
+@import 'error';
+@import 'userform';
+
+/* CONNEXION STYLING */
+
+#inscription, #DIVerror {
+	display: flex;
+	justify-content: center;
+}

@@ -1,0 +1,23 @@
+/* TEMPLATE STYLE */
+html, body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0; }
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: center; }
+
+/* MENU */
+#menu {
+  display: flex;
+  justify-content: space-between; }
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: end; }
+
+/*# sourceMappingURL=../../../../../target/accueil.css.map */

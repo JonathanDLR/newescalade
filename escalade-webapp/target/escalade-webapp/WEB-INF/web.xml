@@ -34,7 +34,7 @@
 	    </jsp-property-group>
 	  </jsp-config>
 	  
-	<!--  SPRING LISTENER -->
+	<!--  SPRING LISTENER -->   
 	<listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
@@ -42,6 +42,12 @@
         <param-name>contextConfigLocation</param-name>
         <param-value>classpath:/bootstrapContext.xml</param-value>
     </context-param>
+    
+    <listener>
+	    <listener-class>
+	      org.springframework.security.web.session.HttpSessionEventPublisher
+	    </listener-class>
+	</listener>
 	 
 	 <!--  SERVLETS --> 
 	<servlet>    

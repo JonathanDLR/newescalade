@@ -15,6 +15,7 @@
     <context:component-scan base-package="org.escalade.webapp.servlets" />  
     <context:annotation-config/> 
     <mvc:annotation-driven />
+    <mvc:resources mapping="/assets/**" location="/assets/" />
 	<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
 	
 	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -24,6 +25,5 @@
 		<property name="suffix">
 			<value>.jsp</value>
 		</property>
-   </bean>
-  
+   </bean>  
 </beans>  

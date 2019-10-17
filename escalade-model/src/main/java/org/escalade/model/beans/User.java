@@ -8,6 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 
 import org.escalade.model.annotation.LoginConstraint;
@@ -22,11 +23,11 @@ public class User {
 	private int id;
 	
 	@Column(name = "loginn", unique = true)
-	@LoginConstraint
+	@NotEmpty(message = "Veuillez renseigner votre mail")
 	private String login;
 	
 	@Column(name = "pswd")
-	@PasswordConstraint
+	@NotEmpty(message = "Veuillez renseigner votre mot de passe.")
 	private String pswd;
 	
 	@ManyToOne

@@ -1,3 +1,4 @@
+/home/jdlr/eclipse-workspace/escalade/escalade-model/src/main/java/org/escalade/model/validators/LoginValidator.java
 /home/jdlr/eclipse-workspace/escalade/escalade-model/src/main/java/org/escalade/model/beans/Topo.java
 /home/jdlr/eclipse-workspace/escalade/escalade-model/src/main/java/org/escalade/model/annotation/PasswordConstraint.java
 /home/jdlr/eclipse-workspace/escalade/escalade-model/src/main/java/org/escalade/model/annotation/LoginConstraint.java
@@ -7,4 +8,5 @@
 /home/jdlr/eclipse-workspace/escalade/escalade-model/src/main/java/org/escalade/model/beans/Commentaire.java
 /home/jdlr/eclipse-workspace/escalade/escalade-model/src/main/java/org/escalade/model/beans/User.java
 /home/jdlr/eclipse-workspace/escalade/escalade-model/src/main/java/org/escalade/model/beans/Cotation.java
+/home/jdlr/eclipse-workspace/escalade/escalade-model/src/main/java/org/escalade/model/validators/PasswordValidator.java
 /home/jdlr/eclipse-workspace/escalade/escalade-model/src/main/java/org/escalade/model/beans/Site.java

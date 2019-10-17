@@ -2,6 +2,7 @@ package org.escalade.webapp.servlets;
 
 
 import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
 import org.escalade.model.beans.User;
@@ -41,15 +42,22 @@ public class ConnexionServlet extends AbstractResource {
  	}
     
     @RequestMapping(method = RequestMethod.POST)
-    public String createEmployerFromForm(@Valid @ModelAttribute("userForm") User pUser, BindingResult br) {  
-    	
+    public String createEmployerFromForm(@Valid @ModelAttribute("userForm") User pUser, BindingResult br, 
+    		HttpSession session, Model model) {
+    	User user = getManagerFactory().getUserManager().getUserByLogin(pUser.getLogin());
+    	String error = "Identifiant ou mot de passe incorect";
+    		
     	if (br.hasErrors()) {
     		return "connexion";
-    	}  else {
-    		pUser.setPswd(encoder.encode(pUser.getPswd()));
-    		pUser.setRole(getManagerFactory().getRoleManager().getRoleById(1));
-        	getManagerFactory().getUserManager().createUser(pUser);
-        	return "connexion";
+    	}  else if (user == null) {
+    		model.addAttribute("error", error);
+    		return "connexion";
+    	} else if (!encoder.matches(pUser.getPswd(), user.getPswd())) {
+    		model.addAttribute("error", error);
+    		return "connexion";
+    	} else {
+        	session.setAttribute("user", user);
+        	return "redirect:/";
     	}	
     }
 }
