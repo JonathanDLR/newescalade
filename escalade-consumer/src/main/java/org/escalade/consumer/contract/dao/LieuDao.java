@@ -1,5 +1,9 @@
 package org.escalade.consumer.contract.dao;
 
-public interface LieuDao {
+import java.util.List;
 
+import org.escalade.model.beans.Lieu;
+
+public interface LieuDao {
+	List<Lieu> getAllLieu();
 }

@@ -6,8 +6,11 @@
 	@if ($number == 4) {
 		grid-template-rows: 0% 33% 33% 33%;
 	}
-	@else {
+	@elseif ($number == 5) {
 		grid-template-rows: 0% 25% 25% 25% 25%;
+	}
+	@else {
+		grid-template-rows: 0% 20% 20% 20% 20% 20%;
 	}
     grid-template-columns: 100%;
     flex-direction: column;
@@ -27,7 +30,7 @@
             grid-column: 2;
             height: 3vh;
             width: 80%;
-            margin-left: 4%;
+            margin: 0;
         }
 
         label {
@@ -35,6 +38,12 @@
             grid-column: 1;
             line-height: 1.75em;
         }
+       
+       select {
+       		justify-self: center;
+       		grid-column: 2;
+       		width: 80%;
+       }
     }
 
 	@while $j > 0 {

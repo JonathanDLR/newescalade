@@ -1,5 +1,9 @@
 package org.escalade.business.contract.manager;
 
-public interface LieuManager {
+import java.util.List;
 
+import org.escalade.model.beans.Lieu;
+
+public interface LieuManager {
+	List<Lieu> getAllLieus();
 }
