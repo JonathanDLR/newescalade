@@ -9,14 +9,15 @@ const INSCRIPTION = {
 	},
 		
 	check: function(e) {
-		const pseudo = document.getElementById("pseudo");
-			
+		const pseudo = document.getElementById("pseudo");	
 		if (pseudo.value == "") {
 			e.preventDefault();
 			pseudo.nextElementSibling.innerText = "Veuillez renseigner votre pseudo.";
 		} else {
-			CHECKUSER.check(e);
-		} 
+			pseudo.nextElementSibling.innerText = "";
+		}
+		
+		CHECKUSER.check(e);
 	}
 }
 

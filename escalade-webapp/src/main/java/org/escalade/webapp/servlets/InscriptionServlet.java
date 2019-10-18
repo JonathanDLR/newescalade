@@ -4,6 +4,7 @@ package org.escalade.webapp.servlets;
 
 import javax.validation.Valid;
 
+import org.apache.commons.text.StringEscapeUtils;
 import org.apache.commons.validator.routines.EmailValidator;
 import org.escalade.model.beans.User;
 import org.escalade.webapp.resources.AbstractResource;
@@ -36,8 +37,8 @@ public class InscriptionServlet extends AbstractResource {
     @RequestMapping(method = RequestMethod.POST)
     public String createEmployerFromForm(@Valid @ModelAttribute("userForm") User pUser, BindingResult br) {  
     	User user = getManagerFactory().getUserManager().getUserByLogin(pUser.getLogin());
-    	System.out.print(pUser.getPswd());
     	
+    	// CHECK INFO BEFORE INJECTING IN DB
     	if (br.hasErrors()) {
     		return "inscription";
     	} else if  (!EmailValidator.getInstance().isValid(pUser.getLogin())){
@@ -50,7 +51,9 @@ public class InscriptionServlet extends AbstractResource {
     		br.rejectValue("pswd", "error.pswdNotValid", "Votre mot de passe doit contenir au minimum une lettre minuscule, une lettre majuscule, un chiffre et 6 caractères.");
     		return "inscription";
     	} else {
-    		pUser.setPswd(encoder.encode(pUser.getPswd()));
+    		pUser.setPseudo(StringEscapeUtils.escapeHtml4(pUser.getPseudo()));
+    		pUser.setLogin(StringEscapeUtils.escapeHtml4(pUser.getLogin()));
+    		pUser.setPswd(encoder.encode(StringEscapeUtils.escapeHtml4(pUser.getPswd())));
     		pUser.setRole(getManagerFactory().getRoleManager().getRoleById(1));
         	getManagerFactory().getUserManager().createUser(pUser);
         	

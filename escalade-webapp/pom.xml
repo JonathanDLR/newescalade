@@ -72,6 +72,13 @@
 	<artifactId>javax.servlet.jsp.jstl-api</artifactId>
 	</dependency>
 	
+	<!--  TOOLS -->
+	<dependency>
+	    <groupId>org.apache.commons</groupId>
+	    <artifactId>commons-lang3</artifactId>
+	</dependency>
+	
+	
 	<!--  SASS TOOLS -->
 	<dependency>
 	    <groupId>com.github.warmuuh</groupId>

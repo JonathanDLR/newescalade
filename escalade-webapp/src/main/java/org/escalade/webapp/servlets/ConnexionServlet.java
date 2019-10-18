@@ -47,7 +47,8 @@ public class ConnexionServlet extends AbstractResource {
     		HttpSession session, Model model) {
     	User user = getManagerFactory().getUserManager().getUserByLogin(pUser.getLogin());
     	String error = "Identifiant ou mot de passe incorect";
-    		
+    	
+    	// CHECK INFO BEFORE CREATING SESSION
     	if (pUser.getLogin() == null) {
     		br.rejectValue("login", "error.mailEmpty", "Veuillez renseigner votre mail.");
     		return "connexion";

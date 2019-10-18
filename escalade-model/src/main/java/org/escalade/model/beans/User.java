@@ -19,7 +19,7 @@ public class User {
 	private int id;
 	
 	@Column(name = "loginn", unique = true)
-	@NotEmpty(message = "Veuillez renseigner votre pseudo.")
+	@NotEmpty(message = "Veuillez renseigner votre mail.")
 	private String login;
 	
 	@Column(name = "pswd")
