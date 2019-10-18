@@ -1,7 +1,6 @@
 package org.escalade.model.beans;
 
 import java.util.Date;
-import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -9,9 +8,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.validation.constraints.NotEmpty;
 
 @Entity
 @Table(name = "topo")
@@ -22,15 +21,19 @@ public class Topo {
 	private int id;
 	
 	@Column(name = "name")
+	@NotEmpty(message = "Veuillez renseigner le nom.")
 	private String name;
 	
 	@Column(name = "description", columnDefinition = "TEXT")
+	@NotEmpty(message = "Veuillez renseigner une description.")
 	private String description;
 	
-	@ManyToMany(mappedBy = "topos")
-	private Set<Site> sites;
+	@ManyToOne
+	@JoinColumn(name = "lieu")
+	private Lieu lieu;
 	
 	@Column(name = "date_parution")
+	@NotEmpty(message = "Veuillez renseigner la date de parution.")
 	private Date dateParution;
 	
 	@Column(name = "disponible")
@@ -63,11 +66,11 @@ public class Topo {
 		this.description = pDescription;
 	}
 
-	public Set<Site> getSites() {
-		return sites;
+	public Lieu getLieu() {
+		return lieu;
 	}
-	public void setSites(Set<Site> sites) {
-		this.sites = sites;
+	public void setLieu(Lieu lieu) {
+		this.lieu = lieu;
 	}
 	
 	public Date getDateParution() {

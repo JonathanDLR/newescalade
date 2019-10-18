@@ -1,14 +1,19 @@
 
-    <ul id="menu">
-    	<li style="display: inline; padding: 5px 10px;"><a href="/escalade-webapp">Accueil</a></li>
-    	<li style="display: inline; padding: 5px 10px;"><a href="/escalade-webapp/site">Site</a></li>
-    	<li style="display: inline; padding: 5px 10px;"><a href="/escalade-webapp/topo">Topo</a></li>
+    <div id="menu">
+    	<div><a href="/escalade-webapp">Accueil</a></div>
+    	<div><a href="/escalade-webapp/site">Site</a></div>
+    	<div><a href="/escalade-webapp/topo">Topo</a></div>
     	<c:choose>
     		<c:when test="${ !empty user }">
-    			<li style="display: inline; padding: 5px 10px;"><a href="/escalade-webapp/compte"><c:out value="${user.pseudo }" /></a></li>
+    			<div>
+    				<div id="DIVaccdeco">
+	    				<a id="DIVaccount" href="/escalade-webapp/account"><c:out value="${user.pseudo }" /></a>
+	    				<a id="DIVdeco" href="/escalade-webapp/deco">Se Deconnecter</a>
+	    			</div>
+    			</div>			
     		</c:when>
     		<c:otherwise>
-    			<li style="display: inline; padding: 5px 10px;"><a href="/escalade-webapp/connexion">Connexion/Inscription</a></li>
+    			<div><a href="/escalade-webapp/connexion">Connexion/Inscription</a></div>
     		</c:otherwise>
     	</c:choose>
-    </ul>
+    </div>

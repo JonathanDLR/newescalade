@@ -1,9 +1,9 @@
 {
 	"version": 3,
-	"file": "../src/main/webapp/assets/css/accueil.css",
+	"file": "../src/main/webapp/assets/css/account.css",
 	"sources": [
-		"../src/main/webapp/assets/scss/accueil.scss",
-		"../src/main/webapp/assets/scss/accueil.scss/JSASS_CUSTOM.scss",
+		"../src/main/webapp/assets/scss/account.scss",
+		"../src/main/webapp/assets/scss/account.scss/JSASS_CUSTOM.scss",
 		"../src/main/webapp/assets/scss/_template.scss"
 	],
 	"names": [],

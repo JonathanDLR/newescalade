@@ -1,7 +1,7 @@
 package org.escalade.webapp.servlets;
 
 
-import javax.servlet.http.HttpServlet;
+
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
@@ -24,14 +24,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("/connexion")
 public class ConnexionServlet extends AbstractResource {
 	private BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public ConnexionServlet() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
 
     @RequestMapping(method = RequestMethod.GET)
  	public String display(Model model) {

@@ -6,5 +6,8 @@
 			<script type="module" src="<c:url value="/assets/js/connexion.js" />"></script>
 		</c:when>
 	</c:choose>
+	<c:if test="${ !empty user }">
+		<script src="<c:url value="/assets/js/menu.js" />"></script>
+	</c:if>
 </body>
 </html>
