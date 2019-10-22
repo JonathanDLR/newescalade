@@ -4,5 +4,9 @@
 /* STYLING ACCOUNT PAGE */
 
 form {
-	@include form-const(6);
+	@include form-const(7);
 }
+
+#DIVrep {
+	display: flex;
+	justify-content: center;

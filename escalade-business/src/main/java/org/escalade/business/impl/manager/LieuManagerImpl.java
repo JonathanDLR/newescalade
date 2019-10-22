@@ -6,6 +6,12 @@ import org.escalade.business.contract.manager.LieuManager;
 import org.escalade.model.beans.Lieu;
 
 public class LieuManagerImpl extends AbstractManager implements LieuManager {
+	@Override
+	public Lieu getLieuById(int pId) {
+		Lieu lieu = getDaoFactory().getLieuDao().getLieuById(pId);
+		
+		return lieu;
+	}
 
 	@Override
 	public List<Lieu> getAllLieus() {

@@ -54,9 +54,20 @@
 	    <servlet-name>spring</servlet-name>    
 	    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>    
 	    <load-on-startup>1</load-on-startup>      
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>InscriptionSuccessServlet</display-name>
+		<servlet-name>InscriptionSuccessServlet</servlet-name>
+		<servlet-class>org.escalade.webapp.servlets.InscriptionSuccessServlet</servlet-class>
 	</servlet>    
 	<servlet-mapping>    
 	    <servlet-name>spring</servlet-name>    
 	    <url-pattern>/</url-pattern>    
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>InscriptionSuccessServlet</servlet-name>
+		<url-pattern>/InscriptionSuccessServlet</url-pattern>
 	</servlet-mapping>    
 </web-app>

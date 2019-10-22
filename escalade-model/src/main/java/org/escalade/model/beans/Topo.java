@@ -4,6 +4,7 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -11,6 +12,11 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+
+import org.escalade.model.annotation.DateConstraint;
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.format.annotation.DateTimeFormat.ISO;
 
 @Entity
 @Table(name = "topo")
@@ -20,7 +26,7 @@ public class Topo {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
-	@Column(name = "name")
+	@Column(name = "name", unique = true)
 	@NotEmpty(message = "Veuillez renseigner le nom.")
 	private String name;
 	
@@ -28,12 +34,13 @@ public class Topo {
 	@NotEmpty(message = "Veuillez renseigner une description.")
 	private String description;
 	
-	@ManyToOne
+	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "lieu")
 	private Lieu lieu;
 	
 	@Column(name = "date_parution")
-	@NotEmpty(message = "Veuillez renseigner la date de parution.")
+	@NotNull(message = "Veuillez rentrer la date de parution.")
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date dateParution;
 	
 	@Column(name = "disponible")

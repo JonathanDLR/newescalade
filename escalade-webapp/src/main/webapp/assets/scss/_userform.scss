@@ -9,8 +9,8 @@
 	@elseif ($number == 5) {
 		grid-template-rows: 0% 25% 25% 25% 25%;
 	}
-	@else {
-		grid-template-rows: 0% 20% 20% 20% 20% 20%;
+	@elseif ($number == 7) {
+		grid-template-rows: 0% 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
 	}
     grid-template-columns: 100%;
     flex-direction: column;

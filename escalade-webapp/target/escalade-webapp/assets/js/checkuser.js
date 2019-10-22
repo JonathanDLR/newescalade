@@ -1,13 +1,9 @@
+export {CHECKUSER};
+
 /**
- * CHECK VALUE IN USER FORM
+ * MODULE FOR CHECK THE VALUE IN USER FORM
  */
-USERCHECK = {
-	submit: document.getElementById("checkSubmit"),
-	
-	init: function() {
-		USERCHECK.submit.addEventListener("click", USERCHECK.check);
-	},
-	
+const CHECKUSER = {
 	check: function(e) {
 		const login = document.getElementById("login");
 		const pswd = document.getElementById("pswd");
@@ -20,14 +16,17 @@ USERCHECK = {
 		} else if (!regexMail.test(login.value)) {
 			e.preventDefault();
 			login.nextElementSibling.innerText = "Veuillez renseigner un mail valide.";
-		} else if (pswd.value == "") {
+		} else {
+			login.nextElementSibling.innerText = "";
+		}
+		if (pswd.value == "") {
 			e.preventDefault();
 			pswd.nextElementSibling.innerText = "Veuillez renseigner votre mot de passe.";
 		} else if (!regexMdp.test(pswd.value)) {
 			e.preventDefault();
 			pswd.nextElementSibling.innerText = "Votre mot de passe doit contenir au minimum une lettre minuscule, une lettre majuscule, un chiffre et 6 caractères.";
+		} else {
+			pswd.nextElementSibling.innerText = "";
 		}
 	}
 }
-
-window.onload = USERCHECK.init();

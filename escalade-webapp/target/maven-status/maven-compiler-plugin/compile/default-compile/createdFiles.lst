@@ -1,4 +1,7 @@
-org/escalade/webapp/resources/AbstractResource.class
-org/escalade/webapp/servlets/AccueilServlet.class
 org/escalade/webapp/servlets/ConnexionServlet.class
+org/escalade/webapp/servlets/DeconnexionServlet.class
+org/escalade/webapp/resources/AbstractResource.class
+org/escalade/webapp/servlets/InscriptionSuccessServlet.class
+org/escalade/webapp/servlets/AccueilServlet.class
+org/escalade/webapp/servlets/AccountServlet.class
 org/escalade/webapp/servlets/InscriptionServlet.class

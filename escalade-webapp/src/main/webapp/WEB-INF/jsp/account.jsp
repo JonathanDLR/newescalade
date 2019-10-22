@@ -15,7 +15,7 @@
 	
 	<h2>Créer un nouveau topos</h2>
 	
-	<form:form method="post" modelAttribute="topoForm" action="topo">
+	<form:form method="post" modelAttribute="topoForm" action="account">
 		<div><form:hidden path="id" /></div>
 		<div>
 			<form:label path="name">Entrez le nom</form:label>
@@ -30,9 +30,14 @@
 		<div>
 			<form:label path="lieu">Entrez le lieu</form:label>
 			<form:select path="lieu">
-				<form:options items="${lieus }" itemLabel="name" />
+				<form:options items="${sessionScope.lieus }" itemValue="id" itemLabel="name" />
 			</form:select>
 			<span class="error"><form:errors path="lieu" cssClass="lieu"></form:errors></span>
+		</div>
+		<div>
+			<form:label path="dateParution">Entrez la date de publication</form:label>
+			<form:input id="dateParution" path="dateParution" type="date" />
+			<span class="error"><form:errors path="dateParution" cssClass="error"></form:errors></span>
 		</div>
 		<div>
 			<form:label path="disponible">Disponible</form:label>
@@ -42,6 +47,8 @@
         	<input id="topoSubmit" type="submit" value="Créer" />
         </div>   
 	</form:form>
+	
+	<div id="DIVrep"></div>
 	
 	<%@ include file="../common/footer.jsp" %>	
 <%@ include file="../common/script.jsp" %>	

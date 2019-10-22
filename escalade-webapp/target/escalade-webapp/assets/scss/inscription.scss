@@ -4,3 +4,6 @@
 
 /* INSCRIPTION STYLE */
 	
+form {
+	@include form-const(5);
+}

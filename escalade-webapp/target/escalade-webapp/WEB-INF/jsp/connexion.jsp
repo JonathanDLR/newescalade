@@ -25,6 +25,10 @@
         </div>      
 	</form:form>
 	
+	<div id="DIVerror">
+		<span class="error"><c:out value="${error }" /></span>
+	</div>
+	
 	<div id="inscription">
 		<a href="/escalade-webapp/inscription">Pas encore inscrit?</a>
 	</div>

@@ -11,6 +11,28 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 
 public class LieuDaoImpl extends AbstractDaoImpl implements LieuDao {
+	@Override
+	public Lieu getLieuById(int pId) {
+		Session session = null;
+		Transaction tx = null;
+		Lieu lieu = null;
+		try {
+			session = getSessionFactory().openSession();
+			tx = session.beginTransaction();
+			lieu = session.get(Lieu.class, pId);
+			tx.commit();
+		} catch (Exception e) {
+			if (tx != null) {
+				tx.rollback();
+			}
+		} finally {
+			if (session != null) {
+				session.close();
+			}
+		}	
+		
+		return lieu;
+	}
 
 	@Override
 	public List<Lieu> getAllLieu() {

@@ -4,4 +4,5 @@ import org.escalade.model.beans.Topo;
 
 public interface TopoDao {
 	void createTopo(Topo pTopo);
+	Topo getTopoByName(String pName);
 }

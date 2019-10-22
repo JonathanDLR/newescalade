@@ -9,5 +9,12 @@ public class TopoManagerImpl extends AbstractManager implements TopoManager {
 	public void createTopo(Topo pTopo) {
 		getDaoFactory().getTopoDao().createTopo(pTopo);
 	}
+	
+	@Override
+	public Topo getTopoByName(String pName) {
+		Topo topo = getDaoFactory().getTopoDao().getTopoByName(pName);
+		
+		return topo;
+	}
 
 }

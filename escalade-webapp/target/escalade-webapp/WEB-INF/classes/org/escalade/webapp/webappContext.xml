@@ -14,10 +14,5 @@
 		<property name="arguments" ref="managerFactory" />
 	</bean>
 	
-	<sec:http>
-	    <sec:session-management>
-	        <sec:concurrency-control max-sessions="2" />
-	    </sec:session-management>
-	</sec:http>
 </beans>
 	

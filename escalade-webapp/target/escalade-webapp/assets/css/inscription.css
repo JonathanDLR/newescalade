@@ -13,7 +13,27 @@ header {
 /* MENU */
 #menu {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-around;
+  width: 100%;
+  height: 10vh; }
+  #menu div:not(#DIVdeco):not(#DIVacceco) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%; }
+  #menu div:nth-child(4) {
+    flex-direction: column; }
+    #menu div:nth-child(4) div {
+      width: 100%; }
+
+#DIVaccdeco {
+  height: 4vh; }
+
+#DIVdeco {
+  display: none;
+  justify-content: center;
+  position: absolute;
+  margin-top: 3vh; }
 
 /* FOOTER */
 footer {
@@ -25,45 +45,50 @@ footer {
   color: red; }
 
 /* STYLING THE FORM OF INSCRIPTION AND CONNEXION */
+/* INSCRIPTION STYLE */
 form {
   display: grid;
-  grid-template-rows: 0% 33% 33% 33%;
+  grid-template-rows: 0% 25% 25% 25% 25%;
   grid-template-columns: 100%;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   width: 100%;
   height: 40vh; }
-  form div:not(:nth-child(1)):not(:nth-child(4)) {
+  form div:not(:nth-child(1)):not(:nth-child(5)) {
     display: grid;
     align-items: center;
     grid-template-columns: 20% 30% 50%;
     grid-template-rows: 100%; }
-    form div:not(:nth-child(1)):not(:nth-child(4)) input {
+    form div:not(:nth-child(1)):not(:nth-child(5)) input {
       justify-self: center;
       grid-column: 2;
       height: 3vh;
       width: 80%;
-      margin-left: 4%; }
-    form div:not(:nth-child(1)):not(:nth-child(4)) label {
+      margin: 0; }
+    form div:not(:nth-child(1)):not(:nth-child(5)) label {
       justify-self: end;
       grid-column: 1;
       line-height: 1.75em; }
-  form div:nth-child(1) {
-    grid-row: 1; }
-  form div:nth-child(2) {
-    grid-row: 2; }
+    form div:not(:nth-child(1)):not(:nth-child(5)) select {
+      justify-self: center;
+      grid-column: 2;
+      width: 80%; }
+  form div:nth-child(4) {
+    grid-row: 4; }
   form div:nth-child(3) {
     grid-row: 3; }
-  form div:nth-child(4) {
-    grid-row: 4;
+  form div:nth-child(2) {
+    grid-row: 2; }
+  form div:nth-child(1) {
+    grid-row: 1; }
+  form div:nth-child(5) {
+    grid-row: 5;
     display: grid;
     align-items: center; }
-    form div:nth-child(4) input {
+    form div:nth-child(5) input {
       justify-self: center;
       height: 3vh;
       width: 20%; }
-
-/* INSCRIPTION STYLE */
 
 /*# sourceMappingURL=../../../../../target/inscription.css.map */

@@ -1,12 +1,10 @@
 org/escalade/model/beans/Site.class
 org/escalade/model/beans/Reservation.class
-org/escalade/model/validators/PasswordValidator.class
 org/escalade/model/beans/Cotation.class
 org/escalade/model/beans/Role.class
-org/escalade/model/validators/LoginValidator.class
+org/escalade/model/validators/DateValidator.class
 org/escalade/model/beans/Topo.class
 org/escalade/model/beans/Commentaire.class
-org/escalade/model/annotation/PasswordConstraint.class
+org/escalade/model/annotation/DateConstraint.class
 org/escalade/model/beans/Lieu.class
 org/escalade/model/beans/User.class
-org/escalade/model/annotation/LoginConstraint.class

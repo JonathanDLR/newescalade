@@ -1,0 +1,8 @@
+@import 'template';
+@import 'userform';
+
+/* STYLING ACCOUNT PAGE */
+
+form {
+	@include form-const(7);
+}
