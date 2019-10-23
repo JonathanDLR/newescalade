@@ -4,10 +4,11 @@ package org.escalade.webapp.servlets;
 
 import javax.validation.Valid;
 
-import org.apache.commons.text.StringEscapeUtils;
 import org.apache.commons.validator.routines.EmailValidator;
 import org.escalade.model.beans.User;
 import org.escalade.webapp.resources.AbstractResource;
+import org.owasp.html.HtmlPolicyBuilder;
+import org.owasp.html.PolicyFactory;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -51,9 +52,11 @@ public class InscriptionServlet extends AbstractResource {
     		br.rejectValue("pswd", "error.pswdNotValid", "Votre mot de passe doit contenir au minimum une lettre minuscule, une lettre majuscule, un chiffre et 6 caractères.");
     		return "inscription";
     	} else {
-    		pUser.setPseudo(StringEscapeUtils.escapeHtml4(pUser.getPseudo()));
-    		pUser.setLogin(StringEscapeUtils.escapeHtml4(pUser.getLogin()));
-    		pUser.setPswd(encoder.encode(StringEscapeUtils.escapeHtml4(pUser.getPswd())));
+    		PolicyFactory sanitizer = new HtmlPolicyBuilder().toFactory();
+    		
+    		pUser.setPseudo(sanitizer.sanitize(pUser.getPseudo()));
+    		pUser.setLogin(sanitizer.sanitize(pUser.getLogin()));
+    		pUser.setPswd(encoder.encode(sanitizer.sanitize(pUser.getPswd())));
     		pUser.setRole(getManagerFactory().getRoleManager().getRoleById(1));
         	getManagerFactory().getUserManager().createUser(pUser);
         	

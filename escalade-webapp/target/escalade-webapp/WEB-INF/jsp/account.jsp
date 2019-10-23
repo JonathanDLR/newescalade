@@ -30,7 +30,7 @@
 		<div>
 			<form:label path="lieu">Entrez le lieu</form:label>
 			<form:select path="lieu">
-				<form:options items="${lieus }" itemValue="id" itemLabel="name" />
+				<form:options items="${sessionScope.lieus }" itemValue="id" itemLabel="name" />
 			</form:select>
 			<span class="error"><form:errors path="lieu" cssClass="lieu"></form:errors></span>
 		</div>
@@ -47,6 +47,8 @@
         	<input id="topoSubmit" type="submit" value="Créer" />
         </div>   
 	</form:form>
+	
+	<div id="DIVrep"><c:out value="${rep }" /></div>
 	
 	<%@ include file="../common/footer.jsp" %>	
 <%@ include file="../common/script.jsp" %>	

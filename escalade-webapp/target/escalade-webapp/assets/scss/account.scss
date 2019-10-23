@@ -1,8 +1,14 @@
 @import 'template';
 @import 'userform';
+@import 'error';
 
 /* STYLING ACCOUNT PAGE */
 
 form {
 	@include form-const(7);
+}
+
+#DIVrep {
+	display: flex;
+	justify-content: center;
 }

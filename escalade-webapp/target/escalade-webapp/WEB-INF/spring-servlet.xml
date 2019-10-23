@@ -14,7 +14,7 @@
     
     <context:component-scan base-package="org.escalade.webapp.servlets" />  
     <context:annotation-config/> 
-    <mvc:annotation-driven />
+    <mvc:annotation-driven conversion-service="conversionService" />
     <mvc:resources mapping="/assets/**" location="/assets/" />
 	<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
 	
@@ -25,5 +25,16 @@
 		<property name="suffix">
 			<value>.jsp</value>
 		</property>
+		<property name="contentType" value="text/html;charset=UTF-8" />
    </bean>  
+   
+   <bean id="conversionService"
+      class="org.springframework.context.support.ConversionServiceFactoryBean">
+    <property name="converters">
+        <list>
+            <bean class="org.escalade.webapp.converters.IdToLieuConverter"/>
+            <bean class="org.escalade.webapp.converters.StringToDateConverter"/>
+        </list>
+    </property>
+</bean>
 </beans>  

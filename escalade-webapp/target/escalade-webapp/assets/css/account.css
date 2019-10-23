@@ -41,6 +41,10 @@ footer {
   justify-content: end; }
 
 /* STYLING THE FORM OF INSCRIPTION AND CONNEXION */
+/* ERROR STYLE */
+.error {
+  color: red; }
+
 /* STYLING ACCOUNT PAGE */
 form {
   display: grid;
@@ -90,5 +94,9 @@ form {
       justify-self: center;
       height: 3vh;
       width: 20%; }
+
+#DIVrep {
+  display: flex;
+  justify-content: center; }
 
 /*# sourceMappingURL=../../../../../target/account.css.map */

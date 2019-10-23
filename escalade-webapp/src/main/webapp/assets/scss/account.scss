@@ -1,5 +1,6 @@
 @import 'template';
 @import 'userform';
+@import 'error';
 
 /* STYLING ACCOUNT PAGE */
 
@@ -10,3 +11,4 @@ form {
 #DIVrep {
 	display: flex;
 	justify-content: center;
+}

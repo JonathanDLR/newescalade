@@ -48,7 +48,7 @@
         </div>   
 	</form:form>
 	
-	<div id="DIVrep"></div>
+	<div id="DIVrep"><c:out value="${rep }" /></div>
 	
 	<%@ include file="../common/footer.jsp" %>	
 <%@ include file="../common/script.jsp" %>	

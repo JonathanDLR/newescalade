@@ -1,7 +1,10 @@
 org/escalade/webapp/servlets/ConnexionServlet.class
 org/escalade/webapp/servlets/DeconnexionServlet.class
 org/escalade/webapp/resources/AbstractResource.class
+org/escalade/webapp/converters/IdToLieuConverter.class
 org/escalade/webapp/servlets/InscriptionSuccessServlet.class
+org/escalade/webapp/resources/UTFFilter.class
+org/escalade/webapp/converters/StringToDateConverter.class
 org/escalade/webapp/servlets/AccueilServlet.class
 org/escalade/webapp/servlets/AccountServlet.class
 org/escalade/webapp/servlets/InscriptionServlet.class

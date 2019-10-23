@@ -1,27 +1,23 @@
 package org.escalade.webapp.servlets;
 
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.time.LocalDateTime;
-import java.util.Date;
 import java.util.List;
 
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
-import org.apache.commons.text.StringEscapeUtils;
 import org.escalade.model.beans.Lieu;
 import org.escalade.model.beans.Topo;
 import org.escalade.model.beans.User;
 import org.escalade.webapp.resources.AbstractResource;
-import org.springframework.format.annotation.DateTimeFormat;
+import org.owasp.html.HtmlPolicyBuilder;
+import org.owasp.html.PolicyFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 
 
 /**
@@ -45,28 +41,38 @@ public class AccountServlet extends AbstractResource {
     	}
  	}
     
-    @RequestMapping(method = RequestMethod.POST)
+    @RequestMapping(method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
     public String createTopoFromForm(@Valid @ModelAttribute("topoForm") Topo pTopo, BindingResult br, Model model,
     		HttpSession session) throws ParseException {  
-    	Topo topo = getManagerFactory().getTopoManager().getTopoByName(pTopo.getName());
     	
-    	
-    	// CHECK INFO BEFORE INJECTING IN DB
-    	if (br.hasErrors()) {    		
-    		return "account";
-    	} else if (topo != null) {
-    		br.rejectValue("name", "error.topoNotUnique", "Un topo avec ce nom existe déjà.");
-    		
-    		return "account";
-    	} 
-   
-    	else {
-    		pTopo.setName(StringEscapeUtils.escapeHtml4(pTopo.getName()));
-    		pTopo.setDescription(StringEscapeUtils.escapeHtml4(pTopo.getDescription()));
-    		pTopo.setUser((User) session.getAttribute("user"));
-        	getManagerFactory().getTopoManager().createTopo(pTopo);
+    	if (session.getAttribute("user") != null) {
+    		Topo topo = getManagerFactory().getTopoManager().getTopoByName(pTopo.getName());
+        	System.out.print(pTopo.getDescription());
         	
-        	return "account";
+        	
+        	// CHECK INFO BEFORE INJECTING IN DB
+        	if (br.hasErrors()) {    		
+        		return "account";
+        	} else if (topo != null) {
+        		br.rejectValue("name", "error.topoNotUnique", "Un topo avec ce nom existe déjà.");
+        		
+        		return "account";
+        	} 
+       
+        	else {
+        		PolicyFactory sanitizer = new HtmlPolicyBuilder().toFactory();
+        		
+        		pTopo.setName(sanitizer.sanitize(pTopo.getName()));
+        		pTopo.setDescription(sanitizer.sanitize(pTopo.getDescription()));
+        		pTopo.setUser((User) session.getAttribute("user"));
+            	getManagerFactory().getTopoManager().createTopo(pTopo);
+            	
+            	model.addAttribute("rep", "Votre topo a bien été créé.");
+            	return "account";
+        	}
+    	} else {
+    		return "accounterror";
     	}
+    	
     }
 }
