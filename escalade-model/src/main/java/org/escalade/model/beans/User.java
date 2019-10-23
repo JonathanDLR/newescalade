@@ -1,12 +1,16 @@
 package org.escalade.model.beans;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotEmpty;
 
@@ -33,6 +37,9 @@ public class User {
 	@ManyToOne
 	@JoinColumn(name = "role")
 	private Role role;
+	
+	@OneToMany(fetch = FetchType.EAGER, mappedBy = "user")
+	private List<Topo> topos;
 	
 	// GETTERS SETTERS //
 	
@@ -69,5 +76,12 @@ public class User {
 	}
 	public void setRole(Role pRole) {
 		this.role = pRole;
+	}
+	
+	public List<Topo> getTopos() {
+		return topos;
+	}
+	public void setTopos(List<Topo> topos) {
+		this.topos = topos;
 	}
 }

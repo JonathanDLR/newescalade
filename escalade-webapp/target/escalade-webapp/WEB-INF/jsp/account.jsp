@@ -25,14 +25,20 @@
 		<div>
 			<form:label path="description">Entrez la description</form:label>
 			<form:input id="description" path="description" type="textarea" />
-			<span class="errror"><form:errors path="description" cssClass="error"></form:errors></span>
+			<span class="error"><form:errors path="description" cssClass="error"></form:errors></span>
 		</div>
 		<div>
 			<form:label path="lieu">Entrez le lieu</form:label>
-			<form:select path="lieu">
+			<form:select id ="selectlieu" path="lieu">
 				<form:options items="${sessionScope.lieus }" itemValue="id" itemLabel="name" />
 			</form:select>
 			<span class="error"><form:errors path="lieu" cssClass="lieu"></form:errors></span>
+		</div>
+		<div>
+			<label>Créer un nouveau lieu</label>
+			<input id="newlieu" type="text" />
+			<button id="subnewlieu">Créer</button>
+			<span id="newlieuerror" class="error"></span>
 		</div>
 		<div>
 			<form:label path="dateParution">Entrez la date de publication</form:label>

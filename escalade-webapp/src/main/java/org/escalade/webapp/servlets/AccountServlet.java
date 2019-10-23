@@ -66,10 +66,15 @@ public class AccountServlet extends AbstractResource {
         	else {
         		PolicyFactory sanitizer = new HtmlPolicyBuilder().toFactory();
         		
+        		// SANITIZE INPUT AND CREATE TOPO
         		pTopo.setName(sanitizer.sanitize(pTopo.getName()));
         		pTopo.setDescription(sanitizer.sanitize(pTopo.getDescription()));
         		pTopo.setUser((User) session.getAttribute("user"));
             	getManagerFactory().getTopoManager().createTopo(pTopo);
+            	
+            	// UPDATING USER IN HTTPSESSION
+            	User user = (User) session.getAttribute("user");
+            	session.setAttribute("user", getManagerFactory().getUserManager().getUserByLogin(user.getLogin()));
             	
             	model.addAttribute("rep", "Votre topo a bien été créé.");
             	return "account";
@@ -91,7 +96,7 @@ public class AccountServlet extends AbstractResource {
     	// Creating the new lieu
     	getManagerFactory().getLieuManager().createLieu(newLieu);
     	
-    	// Sending all the lieu to jsp
+    	// Sending all the lieu to jsp with JSON
     	List<Lieu> lieus = getManagerFactory().getLieuManager().getAllLieus();
     	Gson gson = new GsonBuilder().setPrettyPrinting().create();
     	

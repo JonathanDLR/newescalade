@@ -12,6 +12,9 @@
 	<p>Bonjour <c:out value="${user.pseudo }" /></p>
 	
 	<h2>Vos Topos</h2>
+	<c:forEach items="${user.topos }" var="topo" varStatus="status">
+    	<p><c:out value="${ topo.name }" /></p>
+	</c:forEach>
 	
 	<h2>Créer un nouveau topos</h2>
 	

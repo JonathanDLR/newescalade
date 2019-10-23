@@ -38,9 +38,11 @@ public class UserDaoImpl extends AbstractDaoImpl implements UserDao {
 		try {
 			session = getSessionFactory().openSession();
 			tx = session.beginTransaction();
-			TypedQuery<User> query =  session.createQuery("SELECT u FROM User u WHERE u.login = :login", User.class);
-			query.setParameter("login", pLogin);
-			user = query.getSingleResult();
+			user = (User) session.createQuery("from User as user where user.login = :login")
+							  	 .setParameter("login", pLogin).uniqueResult();
+//			TypedQuery<User> query =  session.createQuery("SELECT u FROM User u WHERE u.login = :login", User.class);
+//			query.setParameter("login", pLogin);
+//			user = query.getSingleResult();
 			tx.commit();
 		} catch (Exception e) {
 			if (tx != null) {
