@@ -18,15 +18,19 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 
 /**
  * Servlet implementation class InscriptionServlet
  */
 @Controller
-@RequestMapping("/account")
 public class AccountServlet extends AbstractResource {   
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping(value="/account", method = RequestMethod.GET)
  	public String display(HttpSession session, Model model) {
     	if (session.getAttribute("user") != null) {
     		List<Lieu> lieus = getManagerFactory().getLieuManager().getAllLieus();
@@ -41,7 +45,7 @@ public class AccountServlet extends AbstractResource {
     	}
  	}
     
-    @RequestMapping(method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
+    @RequestMapping(value="/account", method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
     public String createTopoFromForm(@Valid @ModelAttribute("topoForm") Topo pTopo, BindingResult br, Model model,
     		HttpSession session) throws ParseException {  
     	
@@ -74,5 +78,23 @@ public class AccountServlet extends AbstractResource {
     		return "accounterror";
     	}
     	
+    }
+    
+    @ResponseBody
+    @RequestMapping(value = "/newlieu", method = RequestMethod.POST)
+    public String newlieu(@RequestParam("newlieu") String newlieu) {
+    	PolicyFactory sanitizer = new HtmlPolicyBuilder().toFactory();
+    	
+    	// Creating the new lieu
+    	Lieu newLieu = new Lieu();
+    	newLieu.setName(sanitizer.sanitize(newlieu));
+    	// Creating the new lieu
+    	getManagerFactory().getLieuManager().createLieu(newLieu);
+    	
+    	// Sending all the lieu to jsp
+    	List<Lieu> lieus = getManagerFactory().getLieuManager().getAllLieus();
+    	Gson gson = new GsonBuilder().setPrettyPrinting().create();
+    	
+    	return gson.toJson(lieus);
     }
 }

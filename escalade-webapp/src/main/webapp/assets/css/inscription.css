@@ -66,6 +66,13 @@ form {
       height: 3vh;
       width: 80%;
       margin: 0; }
+    form div:not(:nth-child(1)):not(:nth-child(5)) button {
+      justify-self: start;
+      grid-column: 3;
+      grid-row: 1;
+      height: 3vh;
+      width: 20%;
+      margin: 0; }
     form div:not(:nth-child(1)):not(:nth-child(5)) label {
       justify-self: end;
       grid-column: 1;
@@ -74,6 +81,10 @@ form {
       justify-self: center;
       grid-column: 2;
       width: 80%; }
+    form div:not(:nth-child(1)):not(:nth-child(5)) #newlieuerror {
+      justify-self: center;
+      grid-column: 3;
+      grid-row: 1; }
   form div:nth-child(4) {
     grid-row: 4; }
   form div:nth-child(3) {

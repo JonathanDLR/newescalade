@@ -7,4 +7,5 @@ import org.escalade.model.beans.Lieu;
 public interface LieuManager {
 	Lieu getLieuById(int pId);
 	List<Lieu> getAllLieus();
+	void createLieu(Lieu pLieu);
 }

@@ -58,4 +58,25 @@ public class LieuDaoImpl extends AbstractDaoImpl implements LieuDao {
 		
 		return lieus;
 	}
+	
+	@Override
+	public void createLieu(Lieu pLieu) {
+		Session session = null;
+		Transaction tx = null;
+		
+		try {
+			session = getSessionFactory().openSession();
+			tx = session.beginTransaction();
+			session.save(pLieu);
+			tx.commit();
+		} catch (Exception e) {
+			if (tx != null) {
+				tx.rollback();
+			}		
+		} finally {
+			if (session != null) {
+				session.close();
+			}			
+		}	
+	}
 }
