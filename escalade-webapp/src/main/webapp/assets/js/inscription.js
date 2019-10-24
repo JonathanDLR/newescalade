@@ -9,11 +9,16 @@ const INSCRIPTION = {
 	},
 		
 	check: function(e) {
-		const pseudo = document.getElementById("pseudo");	
+		const pseudo = document.getElementById("pseudo");
+		const regexPseudo = /^[A-zÀ-ÖØ-öø-ÿ0-9_\-]+$/;
 		if (pseudo.value == "") {
 			e.preventDefault();
 			pseudo.nextElementSibling.innerText = "Veuillez renseigner votre pseudo.";
-		} else {
+		} else if (!regexPseudo.test(pseudo.value)) {
+			e.preventDefault();
+			pseudo.nextElementSibling.innerText = "Votre pseudo ne peut contenir que des caractères alphanumériques, des _ et des -";
+		}
+		else {
 			pseudo.nextElementSibling.innerText = "";
 		}
 		

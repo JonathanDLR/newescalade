@@ -1,0 +1,17 @@
+@import 'template';
+
+#DIVtab {
+	display: flex;
+	flex-direction: column;
+    
+    div {
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: space-around;
+    	margin-left: 10vw;
+    	
+    	button {
+    		width: 10%;
+    	}
+    }
+ }

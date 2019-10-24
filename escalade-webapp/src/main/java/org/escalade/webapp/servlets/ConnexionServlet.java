@@ -35,7 +35,7 @@ public class ConnexionServlet extends AbstractResource {
  	}
     
     @RequestMapping(method = RequestMethod.POST)
-    public String createEmployerFromForm(@Valid @ModelAttribute("userForm") User pUser, BindingResult br, 
+    public String connect(@Valid @ModelAttribute("userForm") User pUser, BindingResult br, 
     		HttpSession session, Model model) {
     	User user = getManagerFactory().getUserManager().getUserByLogin(pUser.getLogin());
     	String error = "Identifiant ou mot de passe incorect";

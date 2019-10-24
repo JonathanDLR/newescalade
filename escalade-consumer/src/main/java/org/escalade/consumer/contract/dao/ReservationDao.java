@@ -1,5 +1,7 @@
 package org.escalade.consumer.contract.dao;
 
-public interface ReservationDao {
+import org.escalade.model.beans.Reservation;
 
+public interface ReservationDao {
+	void createResa(Reservation pResa);
 }

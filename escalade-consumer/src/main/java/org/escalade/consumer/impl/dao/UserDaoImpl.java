@@ -1,7 +1,5 @@
 package org.escalade.consumer.impl.dao;
 
-import javax.persistence.TypedQuery;
-
 import org.escalade.consumer.contract.dao.UserDao;
 import org.escalade.model.beans.User;
 import org.hibernate.Session;
@@ -39,10 +37,8 @@ public class UserDaoImpl extends AbstractDaoImpl implements UserDao {
 			session = getSessionFactory().openSession();
 			tx = session.beginTransaction();
 			user = (User) session.createQuery("from User as user where user.login = :login")
-							  	 .setParameter("login", pLogin).uniqueResult();
-//			TypedQuery<User> query =  session.createQuery("SELECT u FROM User u WHERE u.login = :login", User.class);
-//			query.setParameter("login", pLogin);
-//			user = query.getSingleResult();
+							  	 .setParameter("login", pLogin)
+							  	 .uniqueResult();
 			tx.commit();
 		} catch (Exception e) {
 			if (tx != null) {

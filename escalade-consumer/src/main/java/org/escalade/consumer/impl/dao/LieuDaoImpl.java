@@ -33,6 +33,31 @@ public class LieuDaoImpl extends AbstractDaoImpl implements LieuDao {
 		
 		return lieu;
 	}
+	
+	@Override
+	public Lieu getLieuByName(String pName) {
+		Session session = null;
+		Transaction tx = null;
+		Lieu lieu = null;
+		try {
+			session = getSessionFactory().openSession();
+			tx = session.beginTransaction();
+			lieu = (Lieu) session.createQuery("from Lieu as lieu where lieu.name = :name")
+								 .setParameter("name", pName)
+								 .uniqueResult();
+			tx.commit();
+		} catch (Exception e) {
+			if (tx != null) {
+				tx.rollback();
+			}
+		} finally {
+			if (session != null) {
+				session.close();
+			}
+		}	
+		
+		return lieu;
+	}
 
 	@Override
 	public List<Lieu> getAllLieu() {

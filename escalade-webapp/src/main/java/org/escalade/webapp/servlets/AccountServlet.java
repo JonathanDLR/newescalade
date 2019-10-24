@@ -88,18 +88,25 @@ public class AccountServlet extends AbstractResource {
     @ResponseBody
     @RequestMapping(value = "/newlieu", method = RequestMethod.POST)
     public String newlieu(@RequestParam("newlieu") String newlieu) {
-    	PolicyFactory sanitizer = new HtmlPolicyBuilder().toFactory();
-    	
-    	// Creating the new lieu
-    	Lieu newLieu = new Lieu();
-    	newLieu.setName(sanitizer.sanitize(newlieu));
-    	// Creating the new lieu
-    	getManagerFactory().getLieuManager().createLieu(newLieu);
-    	
-    	// Sending all the lieu to jsp with JSON
-    	List<Lieu> lieus = getManagerFactory().getLieuManager().getAllLieus();
-    	Gson gson = new GsonBuilder().setPrettyPrinting().create();
-    	
-    	return gson.toJson(lieus);
+    	Lieu lieu = getManagerFactory().getLieuManager().getLieuByName(newlieu);
+    	if (newlieu == "") {
+    		return "Veuillez renseigner votre lieu.";
+    	} else if (lieu != null) {
+    		return "Un lieu avec ce nom existe déjà.";
+    	} else {
+    		PolicyFactory sanitizer = new HtmlPolicyBuilder().toFactory();
+        	
+        	// Creating the new lieu
+        	Lieu newLieu = new Lieu();
+        	newLieu.setName(sanitizer.sanitize(newlieu));
+        	// Creating the new lieu
+        	getManagerFactory().getLieuManager().createLieu(newLieu);
+        	
+        	// Sending all the lieu to jsp with JSON
+        	List<Lieu> lieus = getManagerFactory().getLieuManager().getAllLieus();
+        	Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        	
+        	return gson.toJson(lieus);
+    	} 	
     }
 }

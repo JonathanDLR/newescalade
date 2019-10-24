@@ -36,11 +36,14 @@ public class InscriptionServlet extends AbstractResource {
  	}
     
     @RequestMapping(method = RequestMethod.POST)
-    public String createEmployerFromForm(@Valid @ModelAttribute("userForm") User pUser, BindingResult br) {  
+    public String createUserFromForm(@Valid @ModelAttribute("userForm") User pUser, BindingResult br) {  
     	User user = getManagerFactory().getUserManager().getUserByLogin(pUser.getLogin());
     	
     	// CHECK INFO BEFORE INJECTING IN DB
     	if (br.hasErrors()) {
+    		return "inscription";
+    	} else if (!pUser.getPseudo().matches("^[A-zÀ-ÖØ-öø-ÿ0-9_\\-]+$")) {
+    		br.rejectValue("pseudo", "error.pseudoNotValid", "Votre pseudo ne peut contenir que des caractères alphanumériques, des _ et des -");
     		return "inscription";
     	} else if  (!EmailValidator.getInstance().isValid(pUser.getLogin())){
     		br.rejectValue("login", "error.mailNotValid", "Veuillez renseigner un mail valide.");
@@ -55,8 +58,8 @@ public class InscriptionServlet extends AbstractResource {
     		PolicyFactory sanitizer = new HtmlPolicyBuilder().toFactory();
     		
     		pUser.setPseudo(sanitizer.sanitize(pUser.getPseudo()));
-    		pUser.setLogin(sanitizer.sanitize(pUser.getLogin()));
-    		pUser.setPswd(encoder.encode(sanitizer.sanitize(pUser.getPswd())));
+    		pUser.setLogin(pUser.getLogin());
+    		pUser.setPswd(encoder.encode(pUser.getPswd()));
     		pUser.setRole(getManagerFactory().getRoleManager().getRoleById(1));
         	getManagerFactory().getUserManager().createUser(pUser);
         	

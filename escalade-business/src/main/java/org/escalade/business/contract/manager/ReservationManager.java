@@ -1,5 +1,7 @@
 package org.escalade.business.contract.manager;
 
-public interface ReservationManager {
+import org.escalade.model.beans.Reservation;
 
+public interface ReservationManager {
+	void createResa(Reservation pResa);
 }
