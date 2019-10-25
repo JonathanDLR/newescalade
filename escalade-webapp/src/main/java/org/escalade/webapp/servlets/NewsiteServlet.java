@@ -26,9 +26,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("/newsite")
 public class NewsiteServlet extends AbstractResource {  
 	/**
-	 * Sending the account view
-	 * @param session get the connected user, pass lieus
-	 * @param model pass the form to create topo
+	 * Sending the new site view
+	 * @param session get the connected user
+	 * @param model pass the form to create site
 	 * @return
 	 */
     @RequestMapping(method = RequestMethod.GET)
@@ -51,6 +51,14 @@ public class NewsiteServlet extends AbstractResource {
     	}
  	}
     
+    /**
+     * Creating site form form info
+     * @param pSite The site created
+     * @param br
+     * @param model send OK message
+     * @param session
+     * @return
+     */
     @RequestMapping(method = RequestMethod.POST)
     public String createSiteFormForm(@Valid @ModelAttribute("siteForm") Site pSite, BindingResult br, Model model,
     		HttpSession session) {

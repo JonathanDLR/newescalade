@@ -11,6 +11,9 @@
 			<c:when test="${title == 'Amis Escalade: Connexion' }">
 				<link href="<c:url value="/assets/css/connexion.css" />" rel="stylesheet">
 			</c:when>
+			<c:when test="${title == 'Amis Escalade: Les Sites' }">
+				<link href="<c:url value="/assets/css/sites.css" />" rel="stylesheet">
+			</c:when>	
 			<c:when test="${title == 'Amis Escalade: Les Topos' }">
 				<link href="<c:url value="/assets/css/topos.css" />" rel="stylesheet">
 			</c:when>	

@@ -1,7 +1,7 @@
 
     <div id="menu">
     	<div><a href="/escalade-webapp">Accueil</a></div>
-    	<div><a href="site">Site</a></div>   	
+    	<div><a href="site">Sites</a></div>   	
     	<c:choose>
     		<c:when test="${ !empty user }">
     			<div><a href="topos">Topos</a></div>

@@ -1,0 +1,14 @@
+@import 'template';
+
+/* SITES STYLING */
+#searchBar {
+	display: flex;
+	justify-content: space-around;
+}
+	
+#DIVtab {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 10vw;
+}

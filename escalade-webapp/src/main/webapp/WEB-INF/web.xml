@@ -53,6 +53,13 @@
 		<display-name>InscriptionSuccessServlet</display-name>
 		<servlet-name>InscriptionSuccessServlet</servlet-name>
 		<servlet-class>org.escalade.webapp.servlets.InscriptionSuccessServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>SiteServlet</display-name>
+		<servlet-name>SiteServlet</servlet-name>
+		<servlet-class>org.escalade.webapp.servlets.SiteServlet</servlet-class>
 	</servlet>    
 	<servlet-mapping>    
 	    <servlet-name>spring</servlet-name>    
@@ -61,5 +68,9 @@
 	<servlet-mapping>
 		<servlet-name>InscriptionSuccessServlet</servlet-name>
 		<url-pattern>/InscriptionSuccessServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SiteServlet</servlet-name>
+		<url-pattern>/SiteServlet</url-pattern>
 	</servlet-mapping>    
 </web-app>

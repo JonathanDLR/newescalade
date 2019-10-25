@@ -12,6 +12,11 @@ public class CotationManagerImpl extends AbstractManager implements CotationMana
 	}
 	
 	@Override
+	public Cotation getCotationByCot(String pCot) {
+		return getDaoFactory().getCotationDao().getCotationByCot(pCot);
+	}
+	
+	@Override
 	public List<Cotation> getAllCotation() {
 		return getDaoFactory().getCotationDao().getAllCot();
 	}
