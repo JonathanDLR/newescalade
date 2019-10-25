@@ -7,6 +7,7 @@ import org.escalade.model.beans.User;
 
 public interface TopoDao {
 	void createTopo(Topo pTopo);
+	void topoToggleDisp(Topo pTopo);
 	Topo getTopoByName(String pName);
 	List<Topo> getTopoDisp(User pUser);
 }

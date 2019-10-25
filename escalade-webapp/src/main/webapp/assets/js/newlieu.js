@@ -39,6 +39,7 @@ const NEWLIEU = {
 	 	                        selectLieu.append(newOption);
 	 	                        newOption.setAttribute("value", item.id);	                        
 	 	                        newOption.innerHTML = item.name;
+	 	                       document.getElementById("newlieuerror").innerText = "Votre lieu a bien été créé";
 	 	                    });
 	                    } catch(e) {
 	                    	document.getElementById("newlieuerror").innerText = xhr.responseText;

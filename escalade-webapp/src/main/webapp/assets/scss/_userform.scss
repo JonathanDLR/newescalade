@@ -9,6 +9,9 @@
 	@elseif ($number == 5) {
 		grid-template-rows: 0% 25% 25% 25% 25%;
 	}
+	@elseif($number == 7) {
+		grid-template-rows: 0% 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
+	} 
 	@elseif ($number == 8) {
 		grid-template-rows: 0% 14% 14% 14% 14% 14% 14% 14%;
 	}

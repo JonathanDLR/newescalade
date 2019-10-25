@@ -4,7 +4,7 @@ public interface DaoFactory {
 	CommentaireDao getCommentaireDao();
 	void setCommentaireDao(CommentaireDao pCommentaireDao);
 	
-	CotationDao geCotationDao();
+	CotationDao getCotationDao();
 	void setCotationDao(CotationDao pCotationDao);
 	
 	LieuDao getLieuDao();

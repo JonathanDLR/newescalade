@@ -12,9 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("/inscriptionsuccess")
 public class InscriptionSuccessServlet {       
 	@RequestMapping(method = RequestMethod.GET)
- 	public String display() {
-
-    	
+ 	public String display() {  	
  		return "inscriptionsuccess";
  	}
 }

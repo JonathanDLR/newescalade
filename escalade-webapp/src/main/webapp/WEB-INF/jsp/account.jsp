@@ -11,10 +11,26 @@
 	
 	<p>Bonjour <c:out value="${user.pseudo }" /></p>
 	
-	<h2>Vos Topos</h2>
-	<c:forEach items="${user.topos }" var="topo" varStatus="status">
-    	<p><c:out value="${ topo.name }" /></p>
-	</c:forEach>
+	
+	<section id="myTopos">
+		<h2>Vos Topos</h2>
+		
+		<c:forEach items="${user.topos }" var="topo" varStatus="status">
+	    	<div>
+	    		<span id="${topo.name }"><c:out value="${ topo.name }" /></span>
+	    		<c:choose>
+	    		<c:when test="${topo.disponible == true }">
+	    			<input type="checkbox" class="topocheck" checked />
+	    		</c:when>
+	    		<c:otherwise>
+	    			<input type="checkbox" class="topocheck" />
+	    		</c:otherwise>
+	    		</c:choose>
+	    		<span></span>
+	    	</div>
+		</c:forEach>
+	</section>
+	
 	
 	<h2>Créer un nouveau topos</h2>
 	
@@ -58,6 +74,21 @@
 	</form:form>
 	
 	<div id="DIVrep"><c:out value="${rep }" /></div>
+	
+	<section>
+		<h2>Vos demandes de réservation</h2>
+		
+		<c:forEach items="${resas }" var="resa" varStatus="status">
+	    	<div>
+	    		<span>
+	    			Réservation de <c:out value="${ resa.topo.name }" /> par <c:out value="${ resa.userDemandeur.pseudo }" />
+	    		</span>
+	    		<button id="${resa.id }" data-topo="${resa.topo.name }" class="submitresa">Accepter</button> 		
+	    	</div>
+		</c:forEach>
+		
+		<span id="resarep"></span>
+	</section>
 	
 	<%@ include file="../common/footer.jsp" %>	
 <%@ include file="../common/script.jsp" %>	

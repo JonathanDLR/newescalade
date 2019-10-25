@@ -16,7 +16,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("/deco")
 public class DeconnexionServlet extends AbstractResource {
 
-       
+	/**
+	 * Deconnecting method
+	 * @param session
+	 * @return accueil view
+	 */
     @RequestMapping(method = RequestMethod.GET)
  	public String display(HttpSession session) {
     	if (session.getAttribute("user") != null) {

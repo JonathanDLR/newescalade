@@ -25,6 +25,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class ConnexionServlet extends AbstractResource {
 	private BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 
+	/**
+	 * Sending the connexion view
+	 * @param model pass the connexion form
+	 * @return
+	 */
     @RequestMapping(method = RequestMethod.GET)
  	public String display(Model model) {
     	User user = new User();
@@ -34,6 +39,14 @@ public class ConnexionServlet extends AbstractResource {
  		return "connexion";
  	}
     
+    /**
+     * Connectig user
+     * @param pUser the user creadted by form
+     * @param br
+     * @param session saving the user in session
+     * @param model pass error
+     * @return
+     */
     @RequestMapping(method = RequestMethod.POST)
     public String connect(@Valid @ModelAttribute("userForm") User pUser, BindingResult br, 
     		HttpSession session, Model model) {

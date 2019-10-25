@@ -25,13 +25,13 @@
         </div>      
 	</form:form>
 	
-	<div id="DIVerror">
+	<section id="DIVerror">
 		<span class="error"><c:out value="${error }" /></span>
-	</div>
+	</section>
 	
-	<div id="inscription">
-		<a href="/escalade-webapp/inscription">Pas encore inscrit?</a>
-	</div>
+	<section id="inscription">
+		<a href="inscription">Pas encore inscrit?</a>
+	</section>
 	
 	<%@ include file="../common/footer.jsp" %>	
 <%@ include file="../common/script.jsp" %>	

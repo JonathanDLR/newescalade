@@ -1,5 +1,10 @@
 package org.escalade.consumer.contract.dao;
 
-public interface CotationDao {
+import java.util.List;
 
+import org.escalade.model.beans.Cotation;
+
+public interface CotationDao {
+	Cotation getCotationById(int pId);
+	List<Cotation> getAllCot();
 }

@@ -28,7 +28,7 @@ public class DaoFactoryImpl implements DaoFactory {
 		this.commentaireDao = pCommentaireDao;
 	}
 
-	public CotationDao geCotationDao() {
+	public CotationDao getCotationDao() {
 		return this.cotationDao;
 	}
 

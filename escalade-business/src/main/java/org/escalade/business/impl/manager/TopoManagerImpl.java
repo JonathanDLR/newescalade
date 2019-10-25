@@ -9,8 +9,18 @@ import org.escalade.model.beans.User;
 public class TopoManagerImpl extends AbstractManager implements TopoManager {
 
 	@Override
-	public void createTopo(Topo pTopo) {
+	public void createTopo(Topo pTopo, String pName, String pDescription, User pUser) {	
+		// CREATE TOPO
+		pTopo.setName(pName);
+		pTopo.setDescription(pDescription);
+		pTopo.setUser(pUser);
+		
 		getDaoFactory().getTopoDao().createTopo(pTopo);
+	}
+	
+	@Override
+	public void topoToggleDisp(Topo pTopo) {
+		getDaoFactory().getTopoDao().topoToggleDisp(pTopo);
 	}
 	
 	@Override

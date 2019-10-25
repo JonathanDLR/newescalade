@@ -33,6 +33,32 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
 	}
 	
 	@Override
+	public void topoToggleDisp(Topo pTopo) {
+		Session session = null;
+		Transaction tx = null;
+		
+		try {
+			session = getSessionFactory().openSession();
+			tx = session.beginTransaction();
+			if (pTopo.isDisponible()) {
+				pTopo.setDisponible(false);
+			} else {
+				pTopo.setDisponible(true);
+			}		
+			session.update(pTopo);
+			tx.commit();
+		} catch (Exception e) {
+			if (tx != null) {
+				tx.rollback();
+			}		
+		} finally {
+			if (session != null) {
+				session.close();
+			}			
+		}	
+	}
+	
+	@Override
 	public Topo getTopoByName(String pName) {
 		Session session = null;
 		Transaction tx = null;

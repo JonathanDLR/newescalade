@@ -6,7 +6,7 @@
 	
 	<h1>Les Topos disponibles</h1>
 	
-	<div id="DIVtab">
+	<section id="DIVtab">
 		<c:forEach items="${topos }" var="topo" varStatus="status">
 	    	<div>
 	    		<span class="topoName"><c:out value="${ topo.name }" /></span>
@@ -15,7 +15,7 @@
 	    	</div>
 	    	<br/>
 		</c:forEach>
-	</div>
+	</section>
 	
 	<span id="newResaConf"></span>
 	

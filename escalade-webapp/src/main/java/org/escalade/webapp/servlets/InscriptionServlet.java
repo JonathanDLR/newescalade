@@ -5,11 +5,11 @@ package org.escalade.webapp.servlets;
 import javax.validation.Valid;
 
 import org.apache.commons.validator.routines.EmailValidator;
+import org.escalade.model.beans.Role;
 import org.escalade.model.beans.User;
 import org.escalade.webapp.resources.AbstractResource;
 import org.owasp.html.HtmlPolicyBuilder;
 import org.owasp.html.PolicyFactory;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -24,8 +24,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 @RequestMapping("/inscription")
 public class InscriptionServlet extends AbstractResource {
-	private BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
        
+	/**
+	 * Sending the inscription view
+	 * @param model pass the inscription form
+	 * @return inscription view
+	 */
     @RequestMapping(method = RequestMethod.GET)
  	public String display(Model model) {
     	User user = new User();
@@ -35,6 +39,12 @@ public class InscriptionServlet extends AbstractResource {
  		return "inscription";
  	}
     
+    /**
+     * Creating the user
+     * @param pUser user created by form
+     * @param br
+     * @return
+     */
     @RequestMapping(method = RequestMethod.POST)
     public String createUserFromForm(@Valid @ModelAttribute("userForm") User pUser, BindingResult br) {  
     	User user = getManagerFactory().getUserManager().getUserByLogin(pUser.getLogin());
@@ -55,13 +65,14 @@ public class InscriptionServlet extends AbstractResource {
     		br.rejectValue("pswd", "error.pswdNotValid", "Votre mot de passe doit contenir au minimum une lettre minuscule, une lettre majuscule, un chiffre et 6 caractères.");
     		return "inscription";
     	} else {
+    		
+    		//Sanitizing user value and save in db
     		PolicyFactory sanitizer = new HtmlPolicyBuilder().toFactory();
     		
-    		pUser.setPseudo(sanitizer.sanitize(pUser.getPseudo()));
-    		pUser.setLogin(pUser.getLogin());
-    		pUser.setPswd(encoder.encode(pUser.getPswd()));
-    		pUser.setRole(getManagerFactory().getRoleManager().getRoleById(1));
-        	getManagerFactory().getUserManager().createUser(pUser);
+    		String pPseudo = sanitizer.sanitize(pUser.getPseudo());
+    	
+    		Role pRole = getManagerFactory().getRoleManager().getRoleById(1);
+        	getManagerFactory().getUserManager().createUser(pUser, pPseudo, pRole);
         	
         	return "redirect:/inscriptionsuccess";
     	}

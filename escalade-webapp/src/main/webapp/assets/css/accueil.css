@@ -16,7 +16,7 @@ header {
   justify-content: space-around;
   width: 100%;
   height: 10vh; }
-  #menu div:not(#DIVdeco):not(#DIVacceco) {
+  #menu div:not(#DIVdeco):not(#DIVaccsite):not(#DIVacceco) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,13 +27,23 @@ header {
       width: 100%; }
 
 #DIVaccdeco {
-  height: 4vh; }
+  margin-top: 4vh;
+  height: 10vh; }
+
+#DIVaccount {
+  margin-bottom: 4vh; }
+
+#DIVaccsite {
+  display: none;
+  justify-content: center;
+  position: absolute;
+  margin-top: 1vh; }
 
 #DIVdeco {
   display: none;
   justify-content: center;
   position: absolute;
-  margin-top: 3vh; }
+  margin-top: 4vh; }
 
 /* FOOTER */
 footer {

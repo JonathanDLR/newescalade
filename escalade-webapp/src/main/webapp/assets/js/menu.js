@@ -5,10 +5,12 @@ MENU = {
 	},
 	
 	show: function() {
+		document.getElementById("DIVaccsite").style.display = "flex";
 		document.getElementById("DIVdeco").style.display = "flex";
 	},
 	
 	hide: function() {
+		document.getElementById("DIVaccsite").style.display = "none";
 		document.getElementById("DIVdeco").style.display = "none";
 	}
 }

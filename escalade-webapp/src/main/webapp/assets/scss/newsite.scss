@@ -1,0 +1,14 @@
+@import 'template';
+@import 'error';
+@import 'userform';
+
+/* NEW SITE STYLE */
+	
+form {
+	@include form-const(7);
+}
+
+#DIVrep {
+	display: flex;
+	justify-content: center;
+}

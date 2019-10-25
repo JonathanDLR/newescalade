@@ -23,9 +23,6 @@ const NEWRESA = {
 
         xhr.onreadystatechange = function() {
             if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
-               // RECONSTRUCT THE LIST
-            	var divToDelete = e.target.parentNode;
-            	divToDelete.parentNode.removeChild(divToDelete);
             	
                // SHOW RESPONSE
                NEWRESA.conf.innerText = xhr.responseText;

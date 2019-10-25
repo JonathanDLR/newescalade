@@ -8,5 +8,6 @@ import org.escalade.model.beans.User;
 public interface TopoManager {
 	Topo getTopoByName(String pName);
 	List<Topo> getTopoDisp(User pUser);
-	void createTopo(Topo pTopo);
+	void createTopo(Topo pTopo, String pName, String pDescription, User pUser);
+	void topoToggleDisp(Topo pTopo);
 }

@@ -1,6 +1,5 @@
 package org.escalade.model.beans;
 
-import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -9,8 +8,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "site")
@@ -20,16 +20,19 @@ public class Site {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
+	@NotNull(message = "Veuillez renseigner le nom du site")
 	@Column(name  = "nom")
 	private String nom;
 	
-	@OneToMany
-	private Set<Lieu> lieus;
+	@ManyToOne
+	@JoinColumn(name = "lieu")
+	private Lieu lieu;
 	
 	@ManyToOne
 	@JoinColumn(name = "cotation")
 	private Cotation cotation;
 	
+	@Min(value = 1, message = "Veuillez renseigner un nombre supérieur à 0" )
 	@Column(name = "nbre_secteur")
 	private int nbreSecteur;
 	
@@ -52,11 +55,11 @@ public class Site {
 		this.nom = pNom;
 	}
 		
-	public Set<Lieu> getLieus() {
-		return lieus;
+	public Lieu getLieu() {
+		return lieu;
 	}
-	public void setLieus(Set<Lieu> lieus) {
-		this.lieus = lieus;
+	public void setLieu(Lieu lieu) {
+		this.lieu = lieu;
 	}
 	
 	public Cotation getCotation() {

@@ -25,6 +25,9 @@ public class Reservation {
 	@JoinColumn(name = "user")
 	private User userDemandeur;
 	
+	@Column(name = "processed")
+	private Boolean processed;
+	
 	// GETTERS SETTERS //
 	
 	public int getId() {
@@ -46,5 +49,12 @@ public class Reservation {
 	}
 	public void setUserDemandeur(User pUserDemandeur) {
 		this.userDemandeur = pUserDemandeur;
+	}
+	
+	public Boolean getProcessed() {
+		return processed;
+	}
+	public void setProcessed(Boolean processed) {
+		this.processed = processed;
 	}	
 }
