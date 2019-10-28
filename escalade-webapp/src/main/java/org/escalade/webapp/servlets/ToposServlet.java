@@ -50,10 +50,8 @@ public class ToposServlet extends AbstractResource {
     public String createResaFromAjax(@RequestParam("newResa") String newResa, HttpSession session) {
     	//GET TOPO AND CREATE RESA
     	Topo topo = getManagerFactory().getTopoManager().getTopoByName(newResa);
-    	Reservation resa = new Reservation();
     	
-    	
-    	getManagerFactory().getReservationManager().createResa(resa, topo, (User) session.getAttribute("user"));
+    	getManagerFactory().getReservationManager().createResa(new Reservation(), topo, (User) session.getAttribute("user"));
     	
     	return "Votre demande de réservation a bien été effectuée.";
     }

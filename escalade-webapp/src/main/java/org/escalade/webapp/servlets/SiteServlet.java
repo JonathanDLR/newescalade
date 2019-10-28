@@ -4,18 +4,17 @@ import java.util.List;
 
 import javax.servlet.http.HttpSession;
 
+import org.escalade.model.beans.Commentaire;
 import org.escalade.model.beans.Cotation;
 import org.escalade.model.beans.Lieu;
 import org.escalade.model.beans.Site;
+import org.escalade.model.beans.User;
 import org.escalade.webapp.resources.AbstractResource;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 
 /**
  * Servlet implementation class SiteServlet
@@ -43,7 +42,6 @@ public class SiteServlet extends AbstractResource {
    		return "sites";
 	}
 
-	@ResponseBody
 	@RequestMapping(value ="/search", method = RequestMethod.POST)
 	public String search(@RequestParam("lieu") String lieu, @RequestParam("cotation") String cotation,
 				@RequestParam("secteur") String secteur, HttpSession session) {
@@ -59,8 +57,17 @@ public class SiteServlet extends AbstractResource {
 		// Sending all the sites to jsp with JSON
     	List<Site> sites = getManagerFactory().getSiteManager().getAllSite(pLieu, pCot, pSecteur);
     	session.setAttribute("sites", sites);
-    	Gson gson = new GsonBuilder().setPrettyPrinting().create();
     	
-    	return gson.toJson(sites);
+    	return "sites";
+	}
+	
+	@ResponseBody
+	@RequestMapping(value="/createcom", method = RequestMethod.POST)
+	public String createCom(@RequestParam("com") String com, @RequestParam("site") String site, HttpSession session) {
+		Site newSite = getManagerFactory().getSiteManager().getSiteByNom(site);
+		User user = (User) session.getAttribute("user");
+		getManagerFactory().getCommentaireManager().createCom(new Commentaire(), com, newSite, user);
+		
+		return user.getPseudo();
 	}
 }

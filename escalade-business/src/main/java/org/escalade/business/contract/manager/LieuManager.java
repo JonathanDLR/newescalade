@@ -8,5 +8,5 @@ public interface LieuManager {
 	Lieu getLieuById(int pId);
 	Lieu getLieuByName(String pName);
 	List<Lieu> getAllLieus();
-	void createLieu(Lieu pLieu);
+	void createLieu(Lieu pLieu, String pName);
 }

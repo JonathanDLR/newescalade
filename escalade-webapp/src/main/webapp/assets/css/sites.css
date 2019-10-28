@@ -50,6 +50,10 @@ footer {
   display: flex;
   justify-content: end; }
 
+/* ERROR STYLE */
+.error {
+  color: red; }
+
 /* SITES STYLING */
 #searchBar {
   display: flex;
@@ -64,11 +68,18 @@ footer {
 .DIVcom {
   display: none;
   margin-top: 2vw; }
+  .DIVcom .commentaire {
+    font-weight: bold; }
+  .DIVcom .admcom {
+    display: flex; }
+    .DIVcom .admcom button {
+      margin-left: 2vw; }
   .DIVcom .yourcom {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    margin-top: 2vh; }
     .DIVcom .yourcom div[contenteditable=true] {
-      height: 6vh;
+      height: 4vh;
       width: 50vw;
       border: solid;
       margin-right: 2vw; }

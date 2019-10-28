@@ -3,10 +3,10 @@
 <%@ include file="../common/head.jsp" %>	
 
 	<%@ include file="../common/menu.jsp" %>
-	<section id="searchBar">
+	<form id="searchBar" method="post" action="search">
 		<div>
 			<span>Localisation</span>
-			<select id="locselect">
+			<select id="lieu" name="lieu">
 				<option></option>
 				<c:forEach items="${ lieus }" var="lieu">
 				    <option value="${lieu.name }"><c:out value="${lieu.name }" /></option>
@@ -15,7 +15,7 @@
 		</div>
 		<div>
 			<span>Cotation</span>
-			<select id="cotselect">
+			<select id="cotation" name="cotation">
 				<option></option>
 				<c:forEach items="${ cotations }" var="cotation">
 				    <option value="${cotation.cot }"><c:out value="${cotation.cot }" /></option>
@@ -24,17 +24,17 @@
 		</div>
 		<div>
 			<span>Nombre de Secteur</span>
-			<input id="secteur" type="number" min="1" />
+			<input id="secteur" name="secteur" type="number" min="1" />
 		</div>
 		<div>
-			<span id="search">SEARCH</span>
+			<input type="submit" id="search" value="RECHERCHER" />
 		</div>
-	</section>	
+	</form>	
 	
 	<h1>Les Sites</h1>
 	
 	<section id="DIVtab">
-		<c:forEach items="${sites }" var="site" varStatus="status">
+		<c:forEach items="${sites }" var="site">
 	    	<div>
 	    		<h3><c:out value="${ site.nom }" /></h3>
 	    		<p>Localisation: <c:out value="${ site.lieu.name }" /></p>
@@ -44,10 +44,28 @@
 	    		<span class="showcom">Afficher les commentaires</span>
 	    		
 	    		<div class="DIVcom">
-		    		<div class="yourcom">
-		    			<div contenteditable="true"></div>
-		    			<button>Poster</button>
+		    		<div id="${site.nom }">
+		    			<c:forEach items="${site.commentaires }" var="com">
+		    				<p>
+		    					<span class="commentaire">
+		    						<c:out value="${com.userAuteur.pseudo }" />
+		    					</span>: <c:out value="${com.comm }" />		    					
+		    				</p>
+		    				
+		    				<div class="admcom">
+		    					<button class="comUpd">Modifier</button>
+		    					<button class="comDel">Supprimer</button>
+		    				</div>
+		    			</c:forEach>
 		    		</div>
+		    		<c:if test="${ !empty user }">
+			    		<div class="yourcom">
+			    			<span>Votre commentaire:  </span>
+			    			<div contenteditable="true"></div>
+			    			<button class="postcom" data-class="${ site.nom }">Poster</button>
+			    			<span class="error"></span>
+			    		</div>
+			    	</c:if>
 	    		</div>
 	    	</div>
 	    	<br/>

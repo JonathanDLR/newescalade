@@ -1,5 +1,7 @@
 package org.escalade.consumer.contract.dao;
 
-public interface CommentaireDao {
+import org.escalade.model.beans.Commentaire;
 
+public interface CommentaireDao {
+	void createCom(Commentaire pCommentaire);
 }

@@ -6,7 +6,6 @@
 			<script type="module" src="<c:url value="/assets/js/connexion.js" />"></script>
 		</c:when>
 		<c:when test="${title == 'Amis Escalade: Les Sites' }">
-			<script src="<c:url value="/assets/js/searchsite.js" />"></script>
 			<script src="<c:url value="/assets/js/commentaire.js" />"></script>
 		</c:when>
 		<c:when test="${title == 'Amis Escalade: Les Topos' }">

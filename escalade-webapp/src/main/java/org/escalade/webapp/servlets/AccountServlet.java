@@ -74,9 +74,7 @@ public class AccountServlet extends AbstractResource {
     		HttpSession session) throws ParseException {  
     	
     	if (session.getAttribute("user") != null) {
-    		Topo topo = getManagerFactory().getTopoManager().getTopoByName(pTopo.getName());
-        	System.out.print(pTopo.getDescription());
-        	
+    		Topo topo = getManagerFactory().getTopoManager().getTopoByName(pTopo.getName());       	
         	
         	// CHECK INFO BEFORE INJECTING IN DB
         	if (br.hasErrors()) {    		
@@ -126,11 +124,11 @@ public class AccountServlet extends AbstractResource {
     	} else {
     		PolicyFactory sanitizer = new HtmlPolicyBuilder().toFactory();
         	
+        	// Sanitize lieu name
+        	String pName = sanitizer.sanitize(newlieu);
+        	
         	// Creating the new lieu
-        	Lieu newLieu = new Lieu();
-        	newLieu.setName(sanitizer.sanitize(newlieu));
-        	// Creating the new lieu
-        	getManagerFactory().getLieuManager().createLieu(newLieu);
+        	getManagerFactory().getLieuManager().createLieu(new Lieu(), pName);
         	
         	// Sending all the lieu to jsp with JSON
         	List<Lieu> lieus = getManagerFactory().getLieuManager().getAllLieus();
