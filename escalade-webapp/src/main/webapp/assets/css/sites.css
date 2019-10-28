@@ -61,4 +61,18 @@ footer {
   justify-content: center;
   padding-left: 10vw; }
 
+.DIVcom {
+  display: none;
+  margin-top: 2vw; }
+  .DIVcom .yourcom {
+    display: flex;
+    align-items: center; }
+    .DIVcom .yourcom div[contenteditable=true] {
+      height: 6vh;
+      width: 50vw;
+      border: solid;
+      margin-right: 2vw; }
+    .DIVcom .yourcom button {
+      height: 3vh; }
+
 /*# sourceMappingURL=../../../../../target/sites.css.map */

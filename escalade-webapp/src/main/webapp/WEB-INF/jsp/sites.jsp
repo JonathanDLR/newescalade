@@ -40,6 +40,15 @@
 	    		<p>Localisation: <c:out value="${ site.lieu.name }" /></p>
 	    		<p>Cotation: <c:out value="${ site.cotation.cot }" /></p>
 	    		<p><c:out value="${ site.nbreSecteur }" /> secteur(s)</p>
+	    		<br/>
+	    		<span class="showcom">Afficher les commentaires</span>
+	    		
+	    		<div class="DIVcom">
+		    		<div class="yourcom">
+		    			<div contenteditable="true"></div>
+		    			<button>Poster</button>
+		    		</div>
+	    		</div>
 	    	</div>
 	    	<br/>
 		</c:forEach>

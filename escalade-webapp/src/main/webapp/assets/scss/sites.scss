@@ -12,3 +12,24 @@
 	justify-content: center;
 	padding-left: 10vw;
 }
+
+.DIVcom {
+	display: none;
+	margin-top: 2vw;
+
+	.yourcom {
+		display: flex;
+		align-items: center;
+		
+		div[contenteditable=true] {
+			height: 6vh;
+			width: 50vw;
+			border: solid;
+			margin-right: 2vw;
+		}
+		
+		button {
+			height: 3vh;
+		}
+	}
+}
