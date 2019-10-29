@@ -12,4 +12,8 @@ public class CommentaireManagerImpl extends AbstractManager implements Commentai
 		pCommentaire.setUserAuteur(pUser);
 		getDaoFactory().getCommentaireDao().createCom(pCommentaire);
 	}
+	
+	public void deleteCom(int pId) {
+		getDaoFactory().getCommentaireDao().deleteCom(pId);
+	}
 }

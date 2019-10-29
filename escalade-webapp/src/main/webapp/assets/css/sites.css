@@ -57,7 +57,8 @@ footer {
 /* SITES STYLING */
 #searchBar {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  margin-top: 5vh; }
 
 #DIVtab {
   display: flex;
@@ -68,11 +69,15 @@ footer {
 .DIVcom {
   display: none;
   margin-top: 2vw; }
+  .DIVcom .DIVcomm {
+    display: flex;
+    align-items: center; }
   .DIVcom .commentaire {
     font-weight: bold; }
   .DIVcom .admcom {
     display: flex; }
     .DIVcom .admcom button {
+      height: 3vh;
       margin-left: 2vw; }
   .DIVcom .yourcom {
     display: flex;
@@ -85,5 +90,18 @@ footer {
       margin-right: 2vw; }
     .DIVcom .yourcom button {
       height: 3vh; }
+
+.modal {
+  position: relative;
+  top: 50%;
+  right: 75%;
+  display: none;
+  border: solid;
+  background-color: white;
+  height: 10vh;
+  width: 40vw; }
+  .modal div {
+    display: flex;
+    justify-content: center; }
 
 /*# sourceMappingURL=../../../../../target/sites.css.map */

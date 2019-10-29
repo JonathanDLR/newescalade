@@ -5,6 +5,7 @@
 #searchBar {
 	display: flex;
 	justify-content: space-around;
+	margin-top: 5vh;
 }
 	
 #DIVtab {
@@ -18,6 +19,11 @@
 	display: none;
 	margin-top: 2vw;
 	
+	.DIVcomm {
+		display: flex;
+		align-items: center;
+	}
+	
 	.commentaire {
 		font-weight: bold;
 	}
@@ -26,6 +32,7 @@
 		display: flex;
 		
 		button {
+			height: 3vh;
 			margin-left: 2vw;
 		}
 	}
@@ -47,3 +54,19 @@
 		}
 	}
 }
+
+.modal {
+	position: relative;
+	top: 50%;
+	right: 75%;
+	display: none;
+	border: solid;
+	background-color: white;
+	height: 10vh;
+	width: 40vw;
+	
+	div {
+		display: flex;
+		justify-content: center;
+	}
+}	

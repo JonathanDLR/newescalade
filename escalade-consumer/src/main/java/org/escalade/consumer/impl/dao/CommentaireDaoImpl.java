@@ -26,4 +26,27 @@ public class CommentaireDaoImpl extends AbstractDaoImpl implements CommentaireDa
 			}			
 		}	
 	}
+	
+	@Override
+	public void deleteCom(int pId) {
+		Session session = null;
+		Transaction tx = null;
+		Commentaire commentaire = null;
+		
+		try {
+			session = getSessionFactory().openSession();
+			tx = session.beginTransaction();
+			commentaire = session.get(Commentaire.class, pId);
+			session.delete(commentaire);
+			tx.commit();
+		} catch (Exception e) {
+			if (tx != null) {
+				tx.rollback();
+			}		
+		} finally {
+			if (session != null) {
+				session.close();
+			}			
+		}	
+	}
 }

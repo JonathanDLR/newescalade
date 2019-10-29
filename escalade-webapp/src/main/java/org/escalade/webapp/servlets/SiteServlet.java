@@ -70,4 +70,10 @@ public class SiteServlet extends AbstractResource {
 		
 		return user.getPseudo();
 	}
+	
+	@ResponseBody
+	@RequestMapping(value="/delcom", method = RequestMethod.POST)
+	public void createCom(@RequestParam("comToDelete") String comToDelete) {
+		getManagerFactory().getCommentaireManager().deleteCom(Integer.parseInt(comToDelete));
+	}
 }

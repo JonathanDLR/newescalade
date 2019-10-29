@@ -46,16 +46,30 @@
 	    		<div class="DIVcom">
 		    		<div id="${site.nom }">
 		    			<c:forEach items="${site.commentaires }" var="com">
-		    				<p>
-		    					<span class="commentaire">
-		    						<c:out value="${com.userAuteur.pseudo }" />
-		    					</span>: <c:out value="${com.comm }" />		    					
-		    				</p>
-		    				
-		    				<div class="admcom">
-		    					<button class="comUpd">Modifier</button>
-		    					<button class="comDel">Supprimer</button>
+		    				<div id="${ com.id }" class="DIVcomm">
+		    					<p>
+			    					<span class="commentaire">
+			    						<c:out value="${com.userAuteur.pseudo }" />
+			    					</span>
+			    					<span>
+			    						: <c:out value="${com.comm }" />	
+			    					</span>	    					
+			    				</p>
+			    				<c:if test="${user.role.name == 'admin' }">
+				    				<div class="admcom">
+				    					<button class="showModal">Modifier</button>
+				    					<button class="showModal">Supprimer</button>
+				    					<div class="modal">
+				    						<p>Êtes vous sûr de vouloir supprimer ce commentaire?</p>
+				    						<div>
+				    							<button class="comDel">Oui</button>
+				    							<button class="hideModal">Non</button>
+				    						</div>
+				    					</div>
+				    				</div>
+				    			</c:if>
 		    				</div>
+		    				
 		    			</c:forEach>
 		    		</div>
 		    		<c:if test="${ !empty user }">
