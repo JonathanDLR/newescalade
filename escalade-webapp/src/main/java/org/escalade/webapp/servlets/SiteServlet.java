@@ -16,6 +16,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
 /**
  * Servlet implementation class SiteServlet
  */
@@ -66,9 +69,15 @@ public class SiteServlet extends AbstractResource {
 	public String createCom(@RequestParam("com") String com, @RequestParam("site") String site, HttpSession session) {
 		Site newSite = getManagerFactory().getSiteManager().getSiteByNom(site);
 		User user = (User) session.getAttribute("user");
-		getManagerFactory().getCommentaireManager().createCom(new Commentaire(), com, newSite, user);
+		int newId = getManagerFactory().getCommentaireManager().createCom(new Commentaire(), com, newSite, user);
 		
-		return user.getPseudo();
+		// Set the ajax response to rebuild html
+		String[] response = {user.getPseudo(), user.getRole().getName(), Integer.toString(newId)};
+		
+		final GsonBuilder builder = new GsonBuilder();
+	    final Gson gson = builder.create();
+	    
+		return gson.toJson(response);
 	}
 	
 	@ResponseBody

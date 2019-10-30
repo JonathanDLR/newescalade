@@ -6,11 +6,11 @@ import org.escalade.model.beans.Site;
 import org.escalade.model.beans.User;
 
 public class CommentaireManagerImpl extends AbstractManager implements CommentaireManager {
-	public void createCom(Commentaire pCommentaire, String pCom, Site pSite, User pUser) {
+	public int createCom(Commentaire pCommentaire, String pCom, Site pSite, User pUser) {
 		pCommentaire.setComm(pCom);
 		pCommentaire.setSite(pSite);
 		pCommentaire.setUserAuteur(pUser);
-		getDaoFactory().getCommentaireDao().createCom(pCommentaire);
+		return getDaoFactory().getCommentaireDao().createCom(pCommentaire);
 	}
 	
 	public void deleteCom(int pId) {

@@ -18,7 +18,7 @@
 			<select id="cotation" name="cotation">
 				<option></option>
 				<c:forEach items="${ cotations }" var="cotation">
-				    <option value="${cotation.cot }"><c:out value="${cotation.cot }" /></option>
+				    <option value="${ cotation.cot }"><c:out value="${ cotation.cot }" /></option>
 				</c:forEach>
 			</select>
 		</div>

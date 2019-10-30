@@ -7,14 +7,16 @@ import org.hibernate.Transaction;
 
 public class CommentaireDaoImpl extends AbstractDaoImpl implements CommentaireDao {
 	@Override
-	public void createCom(Commentaire pCom) {
+	public int createCom(Commentaire pCom) {
 		Session session = null;
 		Transaction tx = null;
+		int newId = 0;
 		
 		try {
 			session = getSessionFactory().openSession();
 			tx = session.beginTransaction();
 			session.save(pCom);
+			newId = pCom.getId();
 			tx.commit();
 		} catch (Exception e) {
 			if (tx != null) {
@@ -25,6 +27,8 @@ public class CommentaireDaoImpl extends AbstractDaoImpl implements CommentaireDa
 				session.close();
 			}			
 		}	
+		
+		return newId;
 	}
 	
 	@Override

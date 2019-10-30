@@ -55,31 +55,70 @@ const COMMENTAIRE = {
 	            xhr.send("com=" + com + "&site=" + site);
 
 	            xhr.onreadystatechange = function() {
-	                if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {                  
+	                if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+	                	
+	                	var responseArray = JSON.parse(xhr.response);
+	                	
 	                   
 	                   // RECONSTRUCT COMM ITEM WITH RESPONSE
 	                	var newDivCom = document.createElement("div");
 	                	newDivCom.classList.add("DIVcomm");
-	 	               var newP = document.createElement("p");
-	 	               var newSpan = document.createElement("span");
-	 	               newSpan.classList.add("commentaire");
-	 	               newSpan.innerHTML = xhr.responseText;
-	 	               newP.append(newSpan);
-	 	               var newSpanCom = document.createElement("span");
-	 	               newSpanCom.innerHTML = ": " + com;
-	 	               newP.append(newSpanCom);
-	 	               var newDiv = document.createElement("div");
-	 	               newDiv.classList.add("admcom");
-	 	               var newUpd = document.createElement("button");
-	 	               newUpd.classList.add("showModal");
-	 	               newUpd.innerHTML = "Modifier";
-	 	               var newDel = document.createElement("button");
-	 	               newDel.classList.add("showModal");
-	 	               newDel.innerHTML = "Supprimer";
-	 	               newDiv.append(newUpd);
-	 	               newDiv.append(newDel);
+	                	newDivCom.id = responseArray[2];
+	 	                var newP = document.createElement("p");
+	 	                var newSpan = document.createElement("span");
+	 	                newSpan.classList.add("commentaire");
+	 	                newSpan.innerHTML = responseArray[0];
+	 	                newP.append(newSpan);
+	 	                var newSpanCom = document.createElement("span");
+	 	                newSpanCom.innerHTML = ": " + com;
+	 	                newP.append(newSpanCom);
+	 	               
+	 	               
+	 	               // ADD ADMION BUTTON IF USER IS ADMIN
+	 	               if (responseArray[1] == "admin") {
+	 	            	   // CREATION DIV ADMCOM
+	 	            	   var newDiv = document.createElement("div");
+	 	            	   newDiv.classList.add("admcom");
+		 	               var newUpd = document.createElement("button");
+		 	               newUpd.classList.add("showModal");
+		 	               newUpd.innerHTML = "Modifier";
+		 	               var newDel = document.createElement("button");
+		 	               newDel.classList.add("showModal");
+		 	               newDel.innerHTML = "Supprimer";
+		 	               newUpd.addEventListener("click", COMMENTAIRE.showModal);
+		 	               newDel.addEventListener("click", COMMENTAIRE.showModal);
+		 	               
+		 	               // CREATION DELETE MODAL
+		 	               var newDivModalDel = document.createElement("div");
+		 	               newDivModalDel.classList.add("modal");
+		 	               var newPModalDel = document.createElement("p");
+		 	               newPModalDel.innerHTML = "Êtes vous sûr de vouloir supprimer ce commentaire?";
+		 	               var newDivDelBut = document.createElement("div");
+		 	               var newDelButton = document.createElement("button");
+		 	               newDelButton.innerHTML = "Oui";
+		 	               newDelButton.classList.add("comDel");
+		 	               newDelButton.addEventListener("click", COMMENTAIRE.del);
+		 	               var newDelHideButton = document.createElement("button");
+		 	               newDelHideButton.innerHTML = "Non";
+		 	               newDelHideButton.classList.add("hideModal");
+		 	               newDelHideButton.addEventListener("click", COMMENTAIRE.hideModal);
+		 	               newDivDelBut.append(newDelButton);
+		 	               newDivDelBut.append(newDelHideButton);
+		 	               
+		 	               newDivModalDel.append(newPModalDel);
+		 	               newDivModalDel.append(newDivDelBut);
+		 	               
+		 	               newDiv.append(newUpd);
+		 	               newDiv.append(newDel);
+		 	               newDiv.append(newDivModalDel);
+	 	               }
+	 	               
 	 	               newDivCom.append(newP);
-	 	               newDivCom.append(newDiv);
+	 	               
+	 	               if (responseArray[1] == "admin") {
+	 	            	  newDivCom.append(newDiv);
+	 	               }
+	 	               
 	 	               document.getElementById(site).append(newDivCom);   
 	 	               
 	 	               // RESET COM INPUT

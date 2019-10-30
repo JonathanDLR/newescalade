@@ -5,6 +5,6 @@ import org.escalade.model.beans.Site;
 import org.escalade.model.beans.User;
 
 public interface CommentaireManager {
-	void createCom(Commentaire pCommentaire, String com, Site pSite, User pUser);
+	int createCom(Commentaire pCommentaire, String com, Site pSite, User pUser);
 	void deleteCom(int pId);
 }

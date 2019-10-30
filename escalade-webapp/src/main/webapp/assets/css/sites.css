@@ -92,9 +92,9 @@ footer {
       height: 3vh; }
 
 .modal {
-  position: relative;
+  position: absolute;
   top: 50%;
-  right: 75%;
+  left: 25%;
   display: none;
   border: solid;
   background-color: white;
