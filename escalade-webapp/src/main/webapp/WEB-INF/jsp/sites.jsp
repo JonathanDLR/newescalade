@@ -51,13 +51,22 @@
 			    					<span class="commentaire">
 			    						<c:out value="${com.userAuteur.pseudo }" />
 			    					</span>
-			    					<span>
+			    					<span class="theCom">
 			    						: <c:out value="${com.comm }" />	
 			    					</span>	    					
 			    				</p>
 			    				<c:if test="${user.role.name == 'admin' }">
 				    				<div class="admcom">
 				    					<button class="showModal">Modifier</button>
+				    					<div class="modal">
+				    						<p contenteditable="true">
+				    							<c:out value="${com.comm }" />	
+				    						</p>
+				    						<div>
+				    							<button class="comUpd">Modifier</button>
+				    							<button class="hideModal">Annuler</button>
+				    						</div>
+				    					</div>
 				    					<button class="showModal">Supprimer</button>
 				    					<div class="modal">
 				    						<p>Êtes vous sûr de vouloir supprimer ce commentaire?</p>

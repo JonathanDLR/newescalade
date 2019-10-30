@@ -13,7 +13,16 @@ public class CommentaireManagerImpl extends AbstractManager implements Commentai
 		return getDaoFactory().getCommentaireDao().createCom(pCommentaire);
 	}
 	
+	public void updateCom(Commentaire pCommentaire, String pCom) {
+		pCommentaire.setComm(pCom);
+		getDaoFactory().getCommentaireDao().updateCom(pCommentaire);
+	}
+	
 	public void deleteCom(int pId) {
 		getDaoFactory().getCommentaireDao().deleteCom(pId);
+	}
+	
+	public Commentaire getCommentaireById(int pId) {
+		return getDaoFactory().getCommentaireDao().getCommentaireById(pId);
 	}
 }

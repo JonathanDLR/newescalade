@@ -32,6 +32,27 @@ public class CommentaireDaoImpl extends AbstractDaoImpl implements CommentaireDa
 	}
 	
 	@Override
+	public void updateCom(Commentaire pCommentaire) {
+		Session session = null;
+		Transaction tx = null;
+		
+		try {
+			session = getSessionFactory().openSession();
+			tx = session.beginTransaction();	
+			session.update(pCommentaire);
+			tx.commit();
+		} catch (Exception e) {
+			if (tx != null) {
+				tx.rollback();
+			}		
+		} finally {
+			if (session != null) {
+				session.close();
+			}			
+		}	
+	}
+	
+	@Override
 	public void deleteCom(int pId) {
 		Session session = null;
 		Transaction tx = null;
@@ -52,5 +73,28 @@ public class CommentaireDaoImpl extends AbstractDaoImpl implements CommentaireDa
 				session.close();
 			}			
 		}	
+	}
+	
+	@Override
+	public Commentaire getCommentaireById(int pId) {
+		Session session = null;
+		Transaction tx = null;
+		Commentaire commentaire = null;
+		try {
+			session = getSessionFactory().openSession();
+			tx = session.beginTransaction();
+			commentaire = session.get(Commentaire.class, pId);
+			tx.commit();
+		} catch (Exception e) {
+			if (tx != null) {
+				tx.rollback();
+			}
+		} finally {
+			if (session != null) {
+				session.close();
+			}
+		}	
+		
+		return commentaire;
 	}
 }

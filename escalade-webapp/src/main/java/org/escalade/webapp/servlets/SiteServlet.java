@@ -10,6 +10,8 @@ import org.escalade.model.beans.Lieu;
 import org.escalade.model.beans.Site;
 import org.escalade.model.beans.User;
 import org.escalade.webapp.resources.AbstractResource;
+import org.owasp.html.HtmlPolicyBuilder;
+import org.owasp.html.PolicyFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -67,9 +69,15 @@ public class SiteServlet extends AbstractResource {
 	@ResponseBody
 	@RequestMapping(value="/createcom", method = RequestMethod.POST)
 	public String createCom(@RequestParam("com") String com, @RequestParam("site") String site, HttpSession session) {
+		// Sanitize value
+		PolicyFactory sanitizer = new HtmlPolicyBuilder().toFactory();
+		String newCom = sanitizer.sanitize(com);
+				
 		Site newSite = getManagerFactory().getSiteManager().getSiteByNom(site);
 		User user = (User) session.getAttribute("user");
-		int newId = getManagerFactory().getCommentaireManager().createCom(new Commentaire(), com, newSite, user);
+		int newId = getManagerFactory().getCommentaireManager().createCom(new Commentaire(), newCom, newSite, user);
+		
+		
 		
 		// Set the ajax response to rebuild html
 		String[] response = {user.getPseudo(), user.getRole().getName(), Integer.toString(newId)};
@@ -78,6 +86,18 @@ public class SiteServlet extends AbstractResource {
 	    final Gson gson = builder.create();
 	    
 		return gson.toJson(response);
+	}
+	
+	@ResponseBody
+	@RequestMapping(value="/updcom", method = RequestMethod.POST)
+	public void updateCom(@RequestParam("comToUpdate") String comToUpdate, @RequestParam("newCom") String newCom) {
+		Commentaire pCommentaire = getManagerFactory().getCommentaireManager().getCommentaireById(Integer.parseInt(comToUpdate));
+		
+		// Sanitize value
+		PolicyFactory sanitizer = new HtmlPolicyBuilder().toFactory();
+		String newComSanitized = sanitizer.sanitize(newCom);
+		
+		getManagerFactory().getCommentaireManager().updateCom(pCommentaire, newComSanitized);
 	}
 	
 	@ResponseBody

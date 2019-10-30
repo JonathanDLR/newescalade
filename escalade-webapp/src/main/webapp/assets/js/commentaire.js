@@ -70,6 +70,7 @@ const COMMENTAIRE = {
 	 	                newSpan.innerHTML = responseArray[0];
 	 	                newP.append(newSpan);
 	 	                var newSpanCom = document.createElement("span");
+	 	                newSpanCom.classList.add("theCom");
 	 	                newSpanCom.innerHTML = ": " + com;
 	 	                newP.append(newSpanCom);
 	 	               
@@ -87,6 +88,27 @@ const COMMENTAIRE = {
 		 	               newDel.innerHTML = "Supprimer";
 		 	               newUpd.addEventListener("click", COMMENTAIRE.showModal);
 		 	               newDel.addEventListener("click", COMMENTAIRE.showModal);
+		 	               
+		 	               // CREATION UPDATE MODAL
+		 	              var newDivModalUpd = document.createElement("div");
+		 	               newDivModalUpd.classList.add("modal");
+		 	               var newPModalUpd = document.createElement("p");
+		 	               newPModalUpd.setAttribute("contenteditable", "true");
+		 	               newPModalUpd.innerHTML = com;
+		 	               var newDivUpdBut = document.createElement("div");
+		 	               var newUpdButton = document.createElement("button");
+		 	               newUpdButton.innerHTML = "Modifier";
+		 	               newUpdButton.classList.add("comUpd");
+		 	               newUpdButton.addEventListener("click", COMMENTAIRE.upd);
+		 	               var newUpdHideButton = document.createElement("button");
+		 	               newUpdHideButton.innerHTML = "Annuler";
+		 	               newUpdHideButton.classList.add("hideModal");
+		 	               newUpdHideButton.addEventListener("click", COMMENTAIRE.hideModal);
+		 	               newDivUpdBut.append(newUpdButton);
+		 	               newDivUpdBut.append(newUpdHideButton);
+		 	               
+		 	               newDivModalUpd.append(newPModalUpd);
+		 	               newDivModalUpd.append(newDivUpdBut);
 		 	               
 		 	               // CREATION DELETE MODAL
 		 	               var newDivModalDel = document.createElement("div");
@@ -109,6 +131,7 @@ const COMMENTAIRE = {
 		 	               newDivModalDel.append(newDivDelBut);
 		 	               
 		 	               newDiv.append(newUpd);
+		 	               newDiv.append(newDivModalUpd);
 		 	               newDiv.append(newDel);
 		 	               newDiv.append(newDivModalDel);
 	 	               }
@@ -142,7 +165,7 @@ const COMMENTAIRE = {
     	   if (buttonDelete != null) {
     		   buttonDelete.addEventListener("click", COMMENTAIRE.del);
     	   } else {
-    		   
+    		   buttonUpdate.addEventListener("click", COMMENTAIRE.upd);
     	   }
     	   buttonHide.addEventListener("click", COMMENTAIRE.hideModal);
        },
@@ -157,7 +180,7 @@ const COMMENTAIRE = {
     	   if (buttonDelete != null) {
     		   buttonDelete.removeEventListener("click", COMMENTAIRE.del);
     	   } else {
-    		   
+    		   buttonUpdate.removeEventListener("click", COMMENTAIRE.upd);
     	   }
     	   e.target.removeEventListener("click", COMMENTAIRE.hideModal);
     	   modalToHide.style.display = "none";
@@ -179,9 +202,33 @@ const COMMENTAIRE = {
                   
             	   // RECONSTRUCT COMM ITEM WITH RESPONSE	 	                    
 	               comToDeleteDIV.parentElement.removeChild(comToDeleteDIV);
+               } else {
+               	// e.target.previousElementSibling.innerHTML = "";
+               }
+           };
+       },
+       
+       // UPDATE COMM
+       upd: function(e) {
+    	   var DIVtoUpd = e.target.parentElement.parentElement.parentElement.parentElement;
+    	   var comToUpdate = DIVtoUpd.id;  	
+    	   var newCom = e.target.parentElement.parentElement.querySelector("p").innerText;
+
+    	// AJAX
+           var xhr = new XMLHttpRequest();
+          
+           xhr.open('POST', 'updcom.html');
+           xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+           xhr.send("comToUpdate=" + comToUpdate + "&newCom=" + newCom);
+
+           xhr.onreadystatechange = function() {
+               if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {                
+                  
+            	   // RECONSTRUCT COMM ITEM WITH RESPONSE	 	                    
+	               DIVtoUpd.querySelector(".theCom").innerHTML = ": " + newCom;
 	               
 	               // HIDE MODAL
-	               COMMENTAIRE.hideModal;
+	               COMMENTAIRE.hideModal(e);
                } else {
                	// e.target.previousElementSibling.innerHTML = "";
                }
