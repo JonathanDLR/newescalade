@@ -10,4 +10,5 @@ public interface SiteManager {
 	Site getSiteByNom(String pNom);
 	List<Site> getAllSite(Lieu pLieu, Cotation pCot, int pSecteur);
 	void createSite(Site pSite, String pNom);
+	void toggleOfficial(Site pSite);
 }

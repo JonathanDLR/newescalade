@@ -25,4 +25,8 @@ public class SiteManagerImpl extends AbstractManager implements SiteManager {
 		getDaoFactory().getSiteDao().createSite(pSite);
 	}
 
+	@Override
+	public void toggleOfficial(Site pSite) {
+		getDaoFactory().getSiteDao().toggleOfficial(pSite);
+	}
 }

@@ -10,4 +10,5 @@ public interface SiteDao {
 	Site getSiteByNom(String pNom);
 	List<Site> getAllSite(Lieu pLieu, Cotation pCot, int pSecteur);
 	void createSite(Site pSite);
+	void toggleOfficial(Site pSite);
 }

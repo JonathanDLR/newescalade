@@ -30,6 +30,11 @@ public class SiteServlet extends AbstractResource {
 	Cotation pCot = null;
 	int pSecteur = 0;
 
+	/**
+	 * Display the view
+	 * @param session inject the list of infos for the searchng
+	 * @return
+	 */
 	@RequestMapping(value = "/site", method = RequestMethod.GET)
 	public String display(HttpSession session) {
 		
@@ -47,6 +52,14 @@ public class SiteServlet extends AbstractResource {
    		return "sites";
 	}
 
+	/**
+	 * Searching sites with params
+	 * @param lieu
+	 * @param cotation
+	 * @param secteur
+	 * @param session updating the sites in session
+	 * @return
+	 */
 	@RequestMapping(value ="/search", method = RequestMethod.POST)
 	public String search(@RequestParam("lieu") String lieu, @RequestParam("cotation") String cotation,
 				@RequestParam("secteur") String secteur, HttpSession session) {
@@ -66,6 +79,20 @@ public class SiteServlet extends AbstractResource {
     	return "sites";
 	}
 	
+	@ResponseBody
+	@RequestMapping(value = "/togglesite", method = RequestMethod.POST)
+	public void toggleSite(@RequestParam("site") String site) {
+		Site pSite = getManagerFactory().getSiteManager().getSiteByNom(site);
+		getManagerFactory().getSiteManager().toggleOfficial(pSite);
+	}
+	
+	/**
+	 * Creating new Com
+	 * @param com the new com
+	 * @param site concerned
+	 * @param session getting the user of the com
+	 * @return
+	 */
 	@ResponseBody
 	@RequestMapping(value="/createcom", method = RequestMethod.POST)
 	public String createCom(@RequestParam("com") String com, @RequestParam("site") String site, HttpSession session) {
@@ -88,6 +115,11 @@ public class SiteServlet extends AbstractResource {
 		return gson.toJson(response);
 	}
 	
+	/**
+	 * Updating com
+	 * @param comToUpdate the com to update
+	 * @param newCom the new com
+	 */
 	@ResponseBody
 	@RequestMapping(value="/updcom", method = RequestMethod.POST)
 	public void updateCom(@RequestParam("comToUpdate") String comToUpdate, @RequestParam("newCom") String newCom) {
@@ -100,9 +132,13 @@ public class SiteServlet extends AbstractResource {
 		getManagerFactory().getCommentaireManager().updateCom(pCommentaire, newComSanitized);
 	}
 	
+	/**
+	 * Deleting com
+	 * @param comToDelete
+	 */
 	@ResponseBody
 	@RequestMapping(value="/delcom", method = RequestMethod.POST)
-	public void createCom(@RequestParam("comToDelete") String comToDelete) {
+	public void deleteCom(@RequestParam("comToDelete") String comToDelete) {
 		getManagerFactory().getCommentaireManager().deleteCom(Integer.parseInt(comToDelete));
 	}
 }

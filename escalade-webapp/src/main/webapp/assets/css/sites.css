@@ -64,7 +64,15 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 10vw; }
+  padding-left: 4vw; }
+  #DIVtab .containerCom {
+    display: flex; }
+    #DIVtab .containerCom .subCom {
+      width: 90vw; }
+    #DIVtab .containerCom .admTag {
+      margin-right: 4vw; }
+  #DIVtab .official {
+    font-style: italic; }
 
 .DIVcom {
   display: none;

@@ -104,4 +104,32 @@ public class SiteDaoImpl extends AbstractDaoImpl implements SiteDao {
 			}			
 		}	
 	}
+	
+	@Override
+	public void toggleOfficial(Site pSite) {
+		Session session = null;
+		Transaction tx = null;
+		
+		try {
+			session = getSessionFactory().openSession();
+			tx = session.beginTransaction();
+			
+			if (pSite.isOfficiel()) {
+				pSite.setOfficiel(false);
+			} else {
+				pSite.setOfficiel(true);
+			}		
+		
+			session.update(pSite);
+			tx.commit();
+		} catch (Exception e) {
+			if (tx != null) {
+				tx.rollback();
+			}		
+		} finally {
+			if (session != null) {
+				session.close();
+			}			
+		}	
+	}
 }

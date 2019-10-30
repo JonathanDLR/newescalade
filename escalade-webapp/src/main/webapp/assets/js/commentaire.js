@@ -58,8 +58,7 @@ const COMMENTAIRE = {
 	                if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
 	                	
 	                	var responseArray = JSON.parse(xhr.response);
-	                	
-	                   
+	                	                  
 	                   // RECONSTRUCT COMM ITEM WITH RESPONSE
 	                	var newDivCom = document.createElement("div");
 	                	newDivCom.classList.add("DIVcomm");
@@ -170,7 +169,7 @@ const COMMENTAIRE = {
     	   buttonHide.addEventListener("click", COMMENTAIRE.hideModal);
        },
        
-       // HIDE VALIDATING MODAL
+       // HIDE VALIDATION MODAL
        hideModal: function(e) {
     	   var modalToHide = e.target.parentElement.parentElement;
     	   var buttonDelete = e.target.parentElement.querySelector(".comDel");

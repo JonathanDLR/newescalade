@@ -12,7 +12,23 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding-left: 10vw;
+	padding-left: 4vw;
+	
+	.containerCom {
+		display: flex;
+		
+		.subCom {
+			width: 90vw;
+		}
+	
+		.admTag {
+			margin-right: 4vw;
+		}
+	}
+	
+	.official {
+		font-style: italic;
+	}
 }
 
 .DIVcom {
