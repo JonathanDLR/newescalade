@@ -40,18 +40,18 @@ public class SiteServlet extends AbstractResource {
 		pLieu = null;
 		pCot = null;
 		pSecteur = 0;
-		
-    	// GET THE SITE
-   		List<Site> sites = getManagerFactory().getSiteManager().getAllSite(pLieu, pCot, pSecteur);
-   		session.setAttribute("sites", sites);
-   		
-   		// GET INFO FOR THE SEARCHING
-   		List<Lieu> lieus = getManagerFactory().getLieuManager().getAllLieus();
-   		session.setAttribute("lieus", lieus);
-   		List<Cotation> cotations = getManagerFactory().getCotationManager().getAllCotation();
-   		session.setAttribute("cotations", cotations);
-    		   		
-   		return "sites";
+			
+	   	// GET THE SITE
+		List<Site> sites = getManagerFactory().getSiteManager().getAllSite(pLieu, pCot, pSecteur);
+	   	session.setAttribute("sites", sites);
+	   		
+	   	// GET INFO FOR THE SEARCHING
+	   	List<Lieu> lieus = getManagerFactory().getLieuManager().getAllLieus();
+	   	session.setAttribute("lieus", lieus);
+	   	List<Cotation> cotations = getManagerFactory().getCotationManager().getAllCotation();
+	   	session.setAttribute("cotations", cotations);
+	    		   		
+	   	return "sites";
 	}
 
 	/**

@@ -9,6 +9,7 @@
 		<c:when test="${title == 'Amis Escalade: Les Sites' }">
 			<script src="<c:url value="/assets/js/togglesite.js" />"></script>
 			<script src="<c:url value="/assets/js/commentaire.js" />"></script>
+			<script src="<c:url value="/assets/js/search.js" />"></script>
 		</c:when>
 		<c:when test="${title == 'Amis Escalade: Les Topos' }">
 			<script src="<c:url value="/assets/js/newresa.js" />"></script>
