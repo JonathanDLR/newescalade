@@ -37,7 +37,9 @@ public class SiteServlet extends AbstractResource {
 	 */
 	@RequestMapping(value = "/site", method = RequestMethod.GET)
 	public String display(HttpSession session) {
-		
+		pLieu = null;
+		pCot = null;
+		pSecteur = 0;
 		
     	// GET THE SITE
    		List<Site> sites = getManagerFactory().getSiteManager().getAllSite(pLieu, pCot, pSecteur);

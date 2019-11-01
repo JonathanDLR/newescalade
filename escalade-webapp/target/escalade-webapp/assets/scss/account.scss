@@ -4,6 +4,17 @@
 
 /* STYLING ACCOUNT PAGE */
 
+#myTopos {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	min-height: 20vh;
+	
+	div {
+		margin-left: 10vw;
+	}
+}
+
 form {
 	@include form-const(8);
 }

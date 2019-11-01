@@ -1,3 +1,4 @@
+	<script type="module" src="<c:url value="/assets/js/menumobile.js" />"></script>
 	<c:choose>
 		<c:when test="${title == 'Amis Escalade: Inscription'}">
 			<script type="module" src="<c:url value="/assets/js/inscription.js" />"></script>

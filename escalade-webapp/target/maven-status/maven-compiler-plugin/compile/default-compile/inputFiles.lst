@@ -1,10 +1,14 @@
-/home/jdlr/eclipse-workspace/escalade/escalade-webapp/src/main/java/org/escalade/webapp/servlets/DeconnexionServlet.java
-/home/jdlr/eclipse-workspace/escalade/escalade-webapp/src/main/java/org/escalade/webapp/servlets/AccountServlet.java
+/home/jdlr/eclipse-workspace/escalade/escalade-webapp/src/main/java/org/escalade/webapp/servlets/NewsiteServlet.java
 /home/jdlr/eclipse-workspace/escalade/escalade-webapp/src/main/java/org/escalade/webapp/converters/IdToLieuConverter.java
+/home/jdlr/eclipse-workspace/escalade/escalade-webapp/src/main/java/org/escalade/webapp/servlets/ToposServlet.java
 /home/jdlr/eclipse-workspace/escalade/escalade-webapp/src/main/java/org/escalade/webapp/servlets/AccueilServlet.java
 /home/jdlr/eclipse-workspace/escalade/escalade-webapp/src/main/java/org/escalade/webapp/resources/AbstractResource.java
-/home/jdlr/eclipse-workspace/escalade/escalade-webapp/src/main/java/org/escalade/webapp/converters/StringToDateConverter.java
 /home/jdlr/eclipse-workspace/escalade/escalade-webapp/src/main/java/org/escalade/webapp/servlets/InscriptionSuccessServlet.java
 /home/jdlr/eclipse-workspace/escalade/escalade-webapp/src/main/java/org/escalade/webapp/servlets/InscriptionServlet.java
 /home/jdlr/eclipse-workspace/escalade/escalade-webapp/src/main/java/org/escalade/webapp/servlets/ConnexionServlet.java
+/home/jdlr/eclipse-workspace/escalade/escalade-webapp/src/main/java/org/escalade/webapp/servlets/SiteServlet.java
+/home/jdlr/eclipse-workspace/escalade/escalade-webapp/src/main/java/org/escalade/webapp/servlets/DeconnexionServlet.java
+/home/jdlr/eclipse-workspace/escalade/escalade-webapp/src/main/java/org/escalade/webapp/servlets/AccountServlet.java
+/home/jdlr/eclipse-workspace/escalade/escalade-webapp/src/main/java/org/escalade/webapp/converters/StringToDateConverter.java
+/home/jdlr/eclipse-workspace/escalade/escalade-webapp/src/main/java/org/escalade/webapp/converters/StringToCotationConverter.java
 /home/jdlr/eclipse-workspace/escalade/escalade-webapp/src/main/java/org/escalade/webapp/resources/UTFFilter.java

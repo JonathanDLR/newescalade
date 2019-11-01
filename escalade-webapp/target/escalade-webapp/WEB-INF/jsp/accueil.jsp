@@ -4,9 +4,11 @@
 
 	<%@ include file="../common/menu.jsp" %>	
 	
-	<h1>Les amis de l'escalade!</h1>
+	<div id="container">
+		<h1>Les amis de l'escalade!</h1>
 	
-	<p>Bienvenue!</p>
+		<p>Bienvenue!</p>
+	</div>	
 	
 	<%@ include file="../common/footer.jsp" %>	
 <%@ include file="../common/script.jsp" %>	

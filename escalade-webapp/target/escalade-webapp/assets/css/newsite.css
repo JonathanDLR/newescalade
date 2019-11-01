@@ -1,0 +1,173 @@
+/* TEMPLATE STYLE */
+html, body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0; }
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: center; }
+
+/* MENU */
+#menu {
+  display: none;
+  justify-content: space-around;
+  width: 100%;
+  height: 10vh; }
+  @media screen and (min-width: 812px) {
+    #menu {
+      display: flex; } }
+  #menu div:not(#DIVdeco):not(#DIVaccsite):not(#DIVacceco) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%; }
+  #menu div:nth-child(4) {
+    flex-direction: column; }
+    #menu div:nth-child(4) div {
+      width: 100%; }
+
+#menuMobile {
+  display: block;
+  width: 100%;
+  height: 10vh; }
+  @media screen and (min-width: 812px) {
+    #menuMobile {
+      display: none; } }
+  #menuMobile img {
+    height: 4vh;
+    width: 4vh;
+    position: absolute;
+    top: 2%; }
+  #menuMobile #searchBut {
+    left: 2%; }
+  #menuMobile #menuBut {
+    right: 2%; }
+
+#menuMob {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  background-color: #607D8B;
+  transition: 0.5s; }
+  #menuMob a {
+    display: block;
+    transition: 0.3s;
+    margin-bottom: 2vh; }
+
+#DIVaccdeco {
+  margin-top: 4vh;
+  height: 10vh; }
+
+#DIVaccount {
+  margin-bottom: 4vh; }
+
+#DIVaccsite {
+  display: none;
+  justify-content: center;
+  position: absolute;
+  margin-top: 1vh; }
+
+#DIVdeco {
+  display: none;
+  justify-content: center;
+  position: absolute;
+  margin-top: 4vh; }
+
+/* BODY */
+a {
+  text-decoration: none; }
+
+#container {
+  min-height: 75vh; }
+
+h1 {
+  margin-block-start: 5vh; }
+
+/* FOOTER */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+  height: 10vh; }
+
+/* ERROR STYLE */
+.error {
+  color: red; }
+
+/* STYLING THE FORM OF INSCRIPTION AND CONNEXION */
+/* NEW SITE STYLE */
+form {
+  display: grid;
+  grid-template-rows: 0% 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
+  grid-template-columns: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 80vh; }
+  form div:not(:nth-child(1)):not(:nth-child(7)) {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 20% 30% 50%;
+    grid-template-rows: 100%;
+    margin-left: 2vw; }
+    form div:not(:nth-child(1)):not(:nth-child(7)) input {
+      justify-self: center;
+      grid-column: 2;
+      width: 80%;
+      margin: 0; }
+    form div:not(:nth-child(1)):not(:nth-child(7)) button {
+      justify-self: start;
+      grid-column: 3;
+      grid-row: 1;
+      width: 25%;
+      margin: 0; }
+    form div:not(:nth-child(1)):not(:nth-child(7)) label {
+      justify-self: end;
+      grid-column: 1;
+      line-height: 1.75em; }
+    form div:not(:nth-child(1)):not(:nth-child(7)) select {
+      justify-self: center;
+      grid-column: 2;
+      width: 80%; }
+    form div:not(:nth-child(1)):not(:nth-child(7)) #newlieuerror {
+      justify-self: center;
+      grid-column: 3;
+      grid-row: 1; }
+  form div:nth-child(6) {
+    grid-row: 6; }
+  form div:nth-child(5) {
+    grid-row: 5; }
+  form div:nth-child(4) {
+    grid-row: 4; }
+  form div:nth-child(3) {
+    grid-row: 3; }
+  form div:nth-child(2) {
+    grid-row: 2; }
+  form div:nth-child(1) {
+    grid-row: 1; }
+  form div:nth-child(7) {
+    grid-row: 7;
+    display: grid;
+    align-items: center; }
+    form div:nth-child(7) input {
+      justify-self: center;
+      width: 20%; }
+
+#DIVrep {
+  display: flex;
+  justify-content: center; }
+
+/*# sourceMappingURL=../../../../../target/newsite.css.map */

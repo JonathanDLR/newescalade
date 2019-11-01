@@ -24,23 +24,31 @@ const NEWLIEU = {
 	 
 	             xhr.onreadystatechange = function() {
 	                 if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
-	                    document.getElementById("newlieu").value == "";
-	                    document.getElementById("newlieuerror").value == "";
+	                    document.getElementById("newlieu").value = "";
+	                    document.getElementById("newlieuerror").innerText = "";
 	                    
 	                    // RECONSTRUCT SELECT ITEM WITH RESPONSE
-	                    selectLieu.innerHTML = "";
-	                    var arrayLieu = JSON.parse(xhr.response);                  
-
-	                    arrayLieu.forEach(function (item) {
-	                        var newOption = document.createElement("option");
-	                        selectLieu.append(newOption);
-	                        newOption.setAttribute("value", item.id);	                        
-	                        newOption.innerHTML = item.name;
-	                    });
+	                    
+	                    try {
+	                    	 var arrayLieu = JSON.parse(xhr.response);   
+	 	                    
+	 	                    selectLieu.innerHTML = "";
+	 	                    
+	 	                    arrayLieu.forEach(function (item) {
+	 	                        var newOption = document.createElement("option");
+	 	                        selectLieu.append(newOption);
+	 	                        newOption.setAttribute("value", item.id);	                        
+	 	                        newOption.innerHTML = item.name;
+	 	                       document.getElementById("newlieuerror").innerText = "Votre lieu a bien été créé";
+	 	                    });
+	                    } catch(e) {
+	                    	document.getElementById("newlieuerror").innerText = xhr.responseText;
+	                    }
+	                   
 	                    
 	                 } else {
-	                    document.getElementById("newlieu").value == "";
-	                    document.getElementById("newlieuerror").value == "";
+	                    document.getElementById("newlieu").value = "";
+	                    document.getElementById("newlieuerror").value = "";
 	                 }
 	             };
 	        }

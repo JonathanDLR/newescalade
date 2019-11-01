@@ -9,6 +9,9 @@
 	@elseif ($number == 5) {
 		grid-template-rows: 0% 25% 25% 25% 25%;
 	}
+	@elseif($number == 7) {
+		grid-template-rows: 0% 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
+	} 
 	@elseif ($number == 8) {
 		grid-template-rows: 0% 14% 14% 14% 14% 14% 14% 14%;
 	}
@@ -17,7 +20,7 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 40vh;
+    height: 80vh;
     
    
    		div:not(:nth-child(1)):not(:nth-child(#{$number})) {
@@ -25,11 +28,11 @@
         align-items: center;
         grid-template-columns: 20% 30% 50%;
         grid-template-rows: 100%;
+        margin-left: 2vw;
 
         input {
             justify-self: center;
             grid-column: 2;
-            height: 3vh;
             width: 80%;
             margin: 0;
         }
@@ -38,8 +41,7 @@
        		justify-self: start;
        		grid-column: 3;
        		grid-row: 1;
-       		height: 3vh;
-       		width: 20%;
+       		width: 25%;
        		margin: 0;
        	}
 
@@ -76,7 +78,6 @@
 
         input {
             justify-self: center;
-            height: 3vh;
             width: 20%;
         }
     }

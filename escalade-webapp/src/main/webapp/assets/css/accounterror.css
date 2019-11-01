@@ -12,11 +12,14 @@ header {
 
 /* MENU */
 #menu {
-  display: flex;
+  display: none;
   justify-content: space-around;
   width: 100%;
   height: 10vh; }
-  #menu div:not(#DIVdeco):not(#DIVaccsite):not(#DIVacceco) {
+  @media screen and (min-width: 0px) {
+    #menu {
+      display: flex; } }
+  #menu div:not(#DIVdeco):not(#DIVaccsite):not(#DIVaccdeco) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +29,45 @@ header {
     #menu div:nth-child(4) div {
       width: 100%; }
 
+#menuMobile {
+  display: block;
+  width: 100%;
+  height: 10vh; }
+  @media screen and (min-width: 0px) {
+    #menuMobile {
+      display: none; } }
+  #menuMobile img {
+    height: 4vh;
+    width: 4vh;
+    position: absolute;
+    top: 2%; }
+  #menuMobile #searchBut {
+    left: 2%; }
+  #menuMobile #menuBut {
+    right: 2%; }
+
+#menuMob {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  background-color: #607D8B;
+  transition: 0.5s; }
+  #menuMob a {
+    display: block;
+    transition: 0.3s;
+    margin-bottom: 2vh; }
+
 #DIVaccdeco {
+  display: flex;
+  justify-content: center;
   margin-top: 4vh;
   height: 10vh; }
 
@@ -37,17 +78,30 @@ header {
   display: none;
   justify-content: center;
   position: absolute;
-  margin-top: 1vh; }
+  margin-top: 3vh; }
 
 #DIVdeco {
   display: none;
   justify-content: center;
   position: absolute;
-  margin-top: 4vh; }
+  margin-top: 6vh; }
+
+/* BODY */
+a {
+  text-decoration: none; }
+
+#container {
+  min-height: 75vh; }
+
+h1 {
+  margin-block-start: 5vh; }
 
 /* FOOTER */
 footer {
   display: flex;
-  justify-content: end; }
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+  height: 10vh; }
 
 /*# sourceMappingURL=../../../../../target/accounterror.css.map */

@@ -1,0 +1,171 @@
+/* TEMPLATE STYLE */
+html, body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0; }
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: center; }
+
+/* MENU */
+#menu {
+  display: none;
+  justify-content: space-around;
+  width: 100%;
+  height: 10vh; }
+  @media screen and (min-width: 812px) {
+    #menu {
+      display: flex; } }
+  #menu div:not(#DIVdeco):not(#DIVaccsite):not(#DIVacceco) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%; }
+  #menu div:nth-child(4) {
+    flex-direction: column; }
+    #menu div:nth-child(4) div {
+      width: 100%; }
+
+#menuMobile {
+  display: block;
+  width: 100%;
+  height: 10vh; }
+  @media screen and (min-width: 812px) {
+    #menuMobile {
+      display: none; } }
+  #menuMobile img {
+    height: 4vh;
+    width: 4vh;
+    position: absolute;
+    top: 2%; }
+  #menuMobile #searchBut {
+    left: 2%; }
+  #menuMobile #menuBut {
+    right: 2%; }
+
+#menuMob {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  background-color: #607D8B;
+  transition: 0.5s; }
+  #menuMob a {
+    display: block;
+    transition: 0.3s;
+    margin-bottom: 2vh; }
+
+#DIVaccdeco {
+  margin-top: 4vh;
+  height: 10vh; }
+
+#DIVaccount {
+  margin-bottom: 4vh; }
+
+#DIVaccsite {
+  display: none;
+  justify-content: center;
+  position: absolute;
+  margin-top: 1vh; }
+
+#DIVdeco {
+  display: none;
+  justify-content: center;
+  position: absolute;
+  margin-top: 4vh; }
+
+/* BODY */
+a {
+  text-decoration: none; }
+
+#container {
+  min-height: 75vh; }
+
+h1 {
+  margin-block-start: 5vh; }
+
+/* FOOTER */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+  height: 10vh; }
+
+/* ERROR STYLE */
+.error {
+  color: red; }
+
+/* SITES STYLING */
+#searchBar {
+  display: none;
+  justify-content: space-around;
+  margin-top: 5vh;
+  width: 100%; }
+  @media screen and (min-width: 812px) {
+    #searchBar {
+      display: flex; } }
+
+#DIVtab {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 4vw; }
+  #DIVtab .containerCom {
+    display: flex; }
+    #DIVtab .containerCom .subCom {
+      width: 90vw; }
+    #DIVtab .containerCom .admTag {
+      margin-right: 4vw; }
+  #DIVtab .official {
+    font-style: italic; }
+
+.DIVcom {
+  display: none;
+  margin-top: 2vw; }
+  .DIVcom .DIVcomm {
+    display: flex;
+    align-items: center; }
+  .DIVcom .commentaire {
+    font-weight: bold; }
+  .DIVcom .admcom {
+    display: flex; }
+    .DIVcom .admcom button {
+      height: 3vh;
+      margin-left: 2vw; }
+  .DIVcom .yourcom {
+    display: flex;
+    align-items: center;
+    margin-top: 2vh; }
+    .DIVcom .yourcom div[contenteditable=true] {
+      height: 4vh;
+      width: 50vw;
+      border: solid;
+      margin-right: 2vw; }
+    .DIVcom .yourcom button {
+      height: 3vh; }
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  display: none;
+  border: solid;
+  background-color: white;
+  height: 10vh;
+  width: 40vw; }
+  .modal div {
+    display: flex;
+    justify-content: center; }
+
+/*# sourceMappingURL=../../../../../target/sites.css.map */

@@ -34,6 +34,7 @@
         <list>
             <bean class="org.escalade.webapp.converters.IdToLieuConverter"/>
             <bean class="org.escalade.webapp.converters.StringToDateConverter"/>
+            <bean class="org.escalade.webapp.converters.StringToCotationConverter"/>
         </list>
     </property>
 </bean>
