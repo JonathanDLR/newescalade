@@ -7,7 +7,7 @@
 
 	<%@ include file="../common/menu.jsp" %>
 	
-	<div id="container">
+	<div id="containerCon">
 		<h1>Connexion</h1>
 	
 		<form:form method="post" modelAttribute="userForm" action="connexion">

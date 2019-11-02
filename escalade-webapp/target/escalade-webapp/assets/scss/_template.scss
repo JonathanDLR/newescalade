@@ -25,8 +25,13 @@ header {
 	@media screen and (min-width: 812px) {
         display: flex;  
     }
+   
+   #logoAcc {
+   		width: 17.85vh;
+   		height: 10vh;
+   	}
 	
-	div:not(#DIVdeco):not(#DIVaccsite):not(#DIVacceco) {
+	div:not(#DIVdeco):not(#DIVaccsite):not(#DIVaccdeco) {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -65,6 +70,12 @@ header {
    #menuBut {   	
 	   	right: 2%;
    	}
+   
+   #logo {
+   		left: 50%;
+   		margin-left: -2vh;
+   		width: 7.5vh !important;
+   	}
 }
 
 #menuMob {
@@ -81,15 +92,29 @@ header {
 	  overflow-x: hidden;
 	  background-color: #607D8B;
 	  transition: 0.5s;	
+	  border: 0.5px solid;
 	  
 	  a {
 	  	display: block;
   		transition: 0.3s;
   		margin-bottom: 2vh;
+  		color: white;
+  		 -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	  }
+	 
+	 a:focus {
+	 	outline: none;
+	 }
+
+	 a:active {
+	 	outline: none;
+	 	color: black;
+	 }
 }
 
 #DIVaccdeco {
+	display: flex;
+	justify-content: center;
 	margin-top: 4vh;
 	height: 10vh;
 }
@@ -102,20 +127,25 @@ header {
 	display: none;
 	justify-content: center;
 	position: absolute;
-	margin-top: 1vh;
+	margin-top: 3vh;
 }
 
 #DIVdeco {
 	display: none;
 	justify-content: center;
 	position: absolute;
-	margin-top: 4vh;
+	margin-top: 6vh;
 }
 
 /* BODY */
 
 a {
 	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: #607D8B;
 }
 
 #container {

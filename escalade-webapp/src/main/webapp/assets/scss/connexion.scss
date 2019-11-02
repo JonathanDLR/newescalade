@@ -6,9 +6,11 @@
 
 form {
 	@include form-const(4);
+	height: 57.2vh !important;
 }
 
 #inscription, #DIVerror {
 	display: flex;
 	justify-content: center;
+	height: 5vh;
 }

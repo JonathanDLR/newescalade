@@ -14,21 +14,30 @@
 	
 	<section id="myTopos">
 		<h2>Vos Topos</h2>
+		<c:choose>
+			<c:when test="${ !empty user.topos }">
 		
-		<c:forEach items="${user.topos }" var="topo" varStatus="status">
-	    	<div>
-	    		<span id="${topo.name }"><c:out value="${ topo.name }" /></span>
-	    		<c:choose>
-	    		<c:when test="${topo.disponible == true }">
-	    			<input type="checkbox" class="topocheck" checked />
-	    		</c:when>
-	    		<c:otherwise>
-	    			<input type="checkbox" class="topocheck" />
-	    		</c:otherwise>
-	    		</c:choose>
-	    		<span></span>
-	    	</div>
-		</c:forEach>
+				<c:forEach items="${user.topos }" var="topo" varStatus="status">
+			    	<div>
+			    		<span id="${topo.name }"><c:out value="${ topo.name }" /></span>
+			    		<c:choose>
+			    		<c:when test="${topo.disponible == true }">
+			    			<input type="checkbox" class="topocheck" checked />
+			    		</c:when>
+			    		<c:otherwise>
+			    			<input type="checkbox" class="topocheck" />
+			    		</c:otherwise>
+			    		</c:choose>
+			    		<span></span>
+			    	</div>
+				</c:forEach>
+			</c:when>
+			<c:otherwise>
+				<div>
+					<span>Vous n'avez aps encore enregistrer de topos</span>
+				</div>
+			</c:otherwise>
+		</c:choose>
 	</section>
 	
 	
@@ -78,14 +87,23 @@
 	<section>
 		<h2>Vos demandes de réservation</h2>
 		
-		<c:forEach items="${resas }" var="resa" varStatus="status">
-	    	<div>
-	    		<span>
-	    			Réservation de <c:out value="${ resa.topo.name }" /> par <c:out value="${ resa.userDemandeur.pseudo }" />
-	    		</span>
-	    		<button id="${resa.id }" data-topo="${resa.topo.name }" class="submitresa">Accepter</button> 		
-	    	</div>
-		</c:forEach>
+		<c:choose>
+			<c:when test="${ !empty resas }">
+				<c:forEach items="${resas }" var="resa" varStatus="status">
+			    	<div>
+			    		<span>
+			    			Réservation de <c:out value="${ resa.topo.name }" /> par <c:out value="${ resa.userDemandeur.pseudo }" />
+			    		</span>
+			    		<button id="${resa.id }" data-topo="${resa.topo.name }" class="submitresa">Accepter</button> 		
+			    	</div>
+				</c:forEach>
+			</c:when>
+			<c:otherwise>
+				<div>
+					<span>Vous n'avez aucune demande de réservation en attente</span>
+				</div>
+			</c:otherwise>
+		</c:choose>
 		
 		<span id="resarep"></span>
 	</section>
