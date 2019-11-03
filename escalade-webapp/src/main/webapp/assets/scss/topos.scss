@@ -9,13 +9,21 @@
     	flex-direction: column;
     	justify-content: space-around;
     	margin-left: 10vw;
+    	margin-bottom: 2vh;
     	
     	button {
     		width: 20%;
+    		border: 0.2vh solid;
+			border-color: black;
+			background-color: #f2fcf5;
     		
     		@media screen and (min-width: 812px) {
 		        width: 10%;  
 		    }
+    	}
+    
+    	button:hover {
+    		cursor: pointer;
     	}
     }
  }

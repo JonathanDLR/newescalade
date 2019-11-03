@@ -115,6 +115,9 @@ a:hover {
 
 #container {
   min-height: 71.8vh; }
+  @media screen and (min-width: 812px) {
+    #container {
+      min-height: 69.6vh; } }
 
 h1 {
   padding-left: 2%;
@@ -139,6 +142,9 @@ footer {
 /* CONNEXION STYLING */
 #containerCon {
   height: 71.8vh; }
+  @media screen and (min-width: 812px) {
+    #containerCon {
+      height: 69.6vh; } }
 
 form {
   display: grid;
@@ -149,7 +155,7 @@ form {
   align-items: center;
   width: 100%;
   height: 80vh;
-  height: 55.2vh !important; }
+  height: 54.2vh !important; }
   form input, form select, form button {
     border: 0.2vh solid;
     border-color: black;
