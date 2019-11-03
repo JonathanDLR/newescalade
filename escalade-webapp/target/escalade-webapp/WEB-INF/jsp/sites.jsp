@@ -35,85 +35,97 @@
 		<h1>Les Sites</h1>
 	
 		<section id="DIVtab">
-			<c:forEach items="${sites }" var="site">
-				<div class="containerCom">
-			    	<div class="subCom">
-			    		<h3><c:out value="${ site.nom }" /></h3>
-			    		<c:if test="${ site.officiel }">
-			    			<span class="official">Officiel les amis de l'escalade</span>
-			    		</c:if>
-			    		<p>Localisation: <c:out value="${ site.lieu.name }" /></p>
-			    		<p>Cotation: <c:out value="${ site.cotation.cot }" /></p>
-			    		<p><c:out value="${ site.nbreSecteur }" /> secteur(s)</p>
-			    		<br/>
-			    		<span class="showcom">Afficher les commentaires</span>
-			    		
-			    		<div class="DIVcom">
-				    		<div id="${site.nom }">
-				    			<c:forEach items="${site.commentaires }" var="com">
-				    				<div id="${ com.id }" class="DIVcomm">
-				    					<p>
-					    					<span class="commentaire">
-					    						<c:out value="${com.userAuteur.pseudo }" />
-					    					</span>
-					    					<span class="theCom">
-					    						: <c:out value="${com.comm }" />	
-					    					</span>	    					
-					    				</p>
-					    				<c:if test="${user.role.name == 'admin' }">
-						    				<div class="admcom">
-						    					<button class="showModal">Modifier</button>
-						    					<div class="modal">
-						    						<p contenteditable="true">
-						    							<c:out value="${com.comm }" />	
-						    						</p>
-						    						<div>
-						    							<button class="comUpd">Modifier</button>
-						    							<button class="hideModal">Annuler</button>
-						    						</div>
-						    					</div>
-						    					<button class="showModal">Supprimer</button>
-						    					<div class="modal">
-						    						<p>Êtes vous sûr de vouloir supprimer ce commentaire?</p>
-						    						<div>
-						    							<button class="comDel">Oui</button>
-						    							<button class="hideModal">Non</button>
-						    						</div>
-						    					</div>
+			<c:choose>
+				<c:when test="${ !empty sites }">
+					<c:forEach items="${sites }" var="site">
+						<div class="containerCom">
+					    	<div class="subCom">
+					    		<h3><c:out value="${ site.nom }" /></h3>
+					    		<c:if test="${ site.officiel }">
+					    			<span class="official">Officiel les amis de l'escalade</span>
+					    		</c:if>
+					    		<p>Localisation: <c:out value="${ site.lieu.name }" /></p>
+					    		<p>Cotation: <c:out value="${ site.cotation.cot }" /></p>
+					    		<p><c:out value="${ site.nbreSecteur }" /> secteur(s)</p>
+					    		<br/>
+					    		<span class="showcom">
+					    			<img src="<c:url value="/assets/img/comment.png" />" id="comment" alt="comment"/>
+					    			Afficher les commentaires
+					    		</span>
+					    		
+					    		<div class="DIVcom">
+						    		<div id="${site.nom }">
+						    			<c:forEach items="${site.commentaires }" var="com">
+						    				<div id="${ com.id }" class="DIVcomm">
+						    					<p>
+							    					<span class="commentaire">
+							    						<c:out value="${com.userAuteur.pseudo }" />
+							    					</span>
+							    					<span class="theCom">
+							    						: <c:out value="${com.comm }" />	
+							    					</span>	    					
+							    				</p>
+							    				<c:if test="${user.role.name == 'admin' }">
+								    				<div class="admcom">
+								    					<button class="showModal">Modifier</button>
+								    					<div class="modal">
+								    						<p contenteditable="true">
+								    							<c:out value="${com.comm }" />	
+								    						</p>
+								    						<div>
+								    							<button class="comUpd">Modifier</button>
+								    							<button class="hideModal">Annuler</button>
+								    						</div>
+								    					</div>
+								    					<button class="showModal">Supprimer</button>
+								    					<div class="modal">
+								    						<p>Êtes vous sûr de vouloir supprimer ce commentaire?</p>
+								    						<div>
+								    							<button class="comDel">Oui</button>
+								    							<button class="hideModal">Non</button>
+								    						</div>
+								    					</div>
+								    				</div>
+								    			</c:if>
 						    				</div>
-						    			</c:if>
-				    				</div>
-				    				
-				    			</c:forEach>
-				    		</div>
-				    		<c:if test="${ !empty user }">
-					    		<div class="yourcom">
-					    			<span>Votre commentaire:  </span>
-					    			<div contenteditable="true"></div>
-					    			<button class="postcom" data-class="${ site.nom }">Poster</button>
-					    			<span class="error"></span>
+						    				
+						    			</c:forEach>
+						    		</div>
+						    		<c:if test="${ !empty user }">
+							    		<div class="yourcom">
+							    			<span>Votre commentaire:  </span>
+							    			<div contenteditable="true"></div>
+							    			<button class="postcom" data-class="${ site.nom }">Poster</button>
+							    			<span class="error"></span>
+							    		</div>
+							    	</c:if>
 					    		</div>
-					    	</c:if>
-			    		</div>
-			    	</div>
-			    	<c:if test="${user.role.name == 'admin' }">
-					<div class="admTag" data-name="${ site.nom }">
-						<button class="toggleTag">
-							<c:choose>
-								<c:when test="${ site.officiel }">
-									Enlever le tag
-								</c:when>
-								<c:otherwise>
-									Ajouter le tag
-								</c:otherwise>
-							</c:choose>
-						</button>
+					    	</div>
+					    	<c:if test="${user.role.name == 'admin' }">
+							<div class="admTag" data-name="${ site.nom }">
+								<button class="toggleTag">
+									<c:choose>
+										<c:when test="${ site.officiel }">
+											Enlever le tag
+										</c:when>
+										<c:otherwise>
+											Ajouter le tag
+										</c:otherwise>
+									</c:choose>
+								</button>
+							</div>
+						</c:if>
 					</div>
-				</c:if>
-			</div>
-		    	
-		    <br/>
-			</c:forEach>
+				    	
+				    <br/>
+					</c:forEach>
+				</c:when>
+				<c:otherwise>
+					<div>
+						<span>Aucun site ne correspond à votre recherche</span>
+					</div>
+				</c:otherwise>
+			</c:choose>
 		</section>
 		
 		<span id="spanerror" class="error"></span>

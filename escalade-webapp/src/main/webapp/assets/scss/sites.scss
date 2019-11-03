@@ -56,11 +56,25 @@
 		
 		.subCom {
 			width: 90vw;
+			
+			.DIVshowcom {
+				display: flex;
+			}
+			
+			.showcom:hover {
+				cursor: pointer;
+			}
+			
+			.comment {
+			width: 2.5vh;
+			height: 2.5vh;
+			margin-right: 1vw;	
+		}
 		}
 	
 		.admTag {
 			margin-right: 4vw;
-		}
+		}		
 	}
 	
 	.official {

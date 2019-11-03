@@ -5,11 +5,25 @@ const SEARCH = {
 		searchBar: document.getElementById("searchBar"),
 		
 		init: function() {
-			SEARCH.searchBut.addEventListener("click", SEARCH.appear);
-			document.body.addEventListener("click", SEARCH.disappear, false);
-			SEARCH.searchBar.addEventListener("click", function(e) {
-				e.stopPropagation();
-			}, true);
+			//ADD OR REMOVE SEARCH BAR AND ENVENT LISTENER DEPEND ON WINDOW SIZE
+			if (window.matchMedia("(max-width: 812px)").matches) {
+				document.getElementById("searchBar").style.display = "none";
+				
+				SEARCH.searchBut.addEventListener("click", SEARCH.appear);
+				document.body.addEventListener("click", SEARCH.disappear, false);
+				SEARCH.searchBar.addEventListener("click", function(e) {
+					e.stopPropagation();
+				}, true);
+			} else if (window.matchMedia("(min-width: 812px)").matches) {
+				document.getElementById("searchBar").style.display = "flex";
+				
+				SEARCH.searchBut.removeEventListener("click", SEARCH.appear);
+				document.body.removeEventListener("click", SEARCH.disappear, false);
+				SEARCH.searchBar.removeEventListener("click", function(e) {
+					e.stopPropagation();
+				}, true);
+			}	
+			
 		},
 		
 		appear: function() {
@@ -24,3 +38,4 @@ const SEARCH = {
 }
 
 window.onload = SEARCH.init();
+window.onresize = SEARCH.init;

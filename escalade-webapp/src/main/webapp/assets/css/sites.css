@@ -182,6 +182,14 @@ footer {
     display: flex; }
     #DIVtab .containerCom .subCom {
       width: 90vw; }
+      #DIVtab .containerCom .subCom .DIVshowcom {
+        display: flex; }
+      #DIVtab .containerCom .subCom .showcom:hover {
+        cursor: pointer; }
+      #DIVtab .containerCom .subCom .comment {
+        width: 2.5vh;
+        height: 2.5vh;
+        margin-right: 1vw; }
     #DIVtab .containerCom .admTag {
       margin-right: 4vw; }
   #DIVtab .official {

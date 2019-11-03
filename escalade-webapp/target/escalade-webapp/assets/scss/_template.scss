@@ -20,7 +20,9 @@ header {
 	display: none;
 	justify-content: space-around;
 	width: 100%;
-	height: 10vh;
+	height: 12.8vh;
+	border-bottom: 0.2vh solid;
+	
 	
 	@media screen and (min-width: 812px) {
         display: flex;  
@@ -50,7 +52,8 @@ header {
 #menuMobile {
 	display: block;
 	width: 100%;
-	height: 10vh;
+	height: 12.8vh;
+	border-bottom: 0.2vh solid;
 	
 	@media screen and (min-width: 812px) {
         display: none;  
@@ -92,7 +95,7 @@ header {
 	  overflow-x: hidden;
 	  background-color: #607D8B;
 	  transition: 0.5s;	
-	  border: 0.5px solid;
+	  border-right: 0.2vh solid;
 	  
 	  a {
 	  	display: block;
@@ -149,19 +152,23 @@ a:hover {
 }
 
 #container {
-	min-height: 75vh;
+	min-height: 71.8vh;
 }
 
 h1 {
+	padding-left: 2%;
 	margin-block-start: 5vh;
 }
 
 /* FOOTER */
 
 footer {
+	background-color: #607D8B;
+	border-top: 0.2vh solid;
     display: flex;
     align-items: center;
     justify-content: end;
-    width: 100%;
+    padding-left: 2%;
+    width: 98%;
     height: 10vh;
 }

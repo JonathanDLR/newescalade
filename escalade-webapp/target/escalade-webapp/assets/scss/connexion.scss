@@ -3,10 +3,13 @@
 @import 'userform';
 
 /* CONNEXION STYLING */
+#containerCon {
+	height: 71.8vh;
+}
 
 form {
 	@include form-const(4);
-	height: 55vh !important;
+	height: 55.2vh !important;
 }
 
 #inscription, #DIVerror {
