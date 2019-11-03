@@ -15,7 +15,8 @@ header {
   display: none;
   justify-content: space-around;
   width: 100%;
-  height: 10vh; }
+  height: 12.8vh;
+  border-bottom: 0.2vh solid; }
   @media screen and (min-width: 812px) {
     #menu {
       display: flex; } }
@@ -35,9 +36,8 @@ header {
 #menuMobile {
   display: block;
   width: 100%;
-  height: 10vh;
-  background-color: #607D8B;
-  border: 0.5px solid; }
+  height: 12.8vh;
+  border-bottom: 0.2vh solid; }
   @media screen and (min-width: 812px) {
     #menuMobile {
       display: none; } }
@@ -69,7 +69,7 @@ header {
   overflow-x: hidden;
   background-color: #607D8B;
   transition: 0.5s;
-  border-bottom: 0.2vh solid; }
+  border-right: 0.2vh solid; }
   #menuMob a {
     display: block;
     transition: 0.3s;
@@ -112,7 +112,7 @@ a:hover {
   color: #607D8B; }
 
 #container {
-  min-height: 74.8vh; }
+  min-height: 71.8vh; }
 
 h1 {
   padding-left: 2%;
@@ -135,6 +135,9 @@ footer {
 
 /* STYLING THE FORM OF INSCRIPTION AND CONNEXION */
 /* CONNEXION STYLING */
+#containerCon {
+  height: 71.8vh; }
+
 form {
   display: grid;
   grid-template-rows: 0% 33% 33% 33%;
@@ -144,7 +147,7 @@ form {
   align-items: center;
   width: 100%;
   height: 80vh;
-  height: 57.2vh !important; }
+  height: 55.2vh !important; }
   form div:not(:nth-child(1)):not(:nth-child(4)) {
     display: grid;
     align-items: center;
