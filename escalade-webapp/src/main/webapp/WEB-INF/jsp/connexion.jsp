@@ -13,12 +13,12 @@
 		<form:form method="post" modelAttribute="userForm" action="connexion">
 			<div><form:hidden path="id" /></div>
 			<div>
-				<form:label path="login">Enter your mail</form:label>
+				<form:label path="login">Entrez votre email</form:label>
 	        	<form:input id="login" path="login" type="text" />
 	        	<span class="error"><form:errors path="login" ccsClass="error"></form:errors></span>
 			</div>
 			<div>
-				<form:label path="pswd">Enter your password</form:label>
+				<form:label path="pswd">Entrez votre mot de passe</form:label>
 	        	<form:input id="pswd" path="pswd" type="password" />	
 	        	<span class="error"><form:errors path="pswd" cssClass="error"></form:errors></span>
 			</div>

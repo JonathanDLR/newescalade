@@ -15,7 +15,7 @@ header {
   display: none;
   justify-content: space-around;
   width: 100%;
-  height: 12.8vh;
+  height: 15vh;
   border-bottom: 0.2vh solid; }
   @media screen and (min-width: 812px) {
     #menu {
@@ -46,6 +46,8 @@ header {
     width: 4vh;
     position: absolute;
     top: 2%; }
+  #menuMobile img:hover {
+    cursor: pointer; }
   #menuMobile #searchBut {
     left: 2%; }
   #menuMobile #menuBut {
@@ -85,7 +87,7 @@ header {
 #DIVaccdeco {
   display: flex;
   justify-content: center;
-  margin-top: 4vh;
+  margin-top: 6.2vh;
   height: 10vh; }
 
 #DIVaccount {
@@ -138,7 +140,7 @@ footer {
   min-height: 71.8vh; }
   @media screen and (min-width: 812px) {
     #siteContainer {
-      min-height: 61.6vh; } }
+      min-height: 59.4vh; } }
 
 #searchBar {
   display: none;
@@ -171,7 +173,15 @@ footer {
       background-color: #607D8B;
       border-top: none;
       border-left: none;
-      border-right: none; } }
+      border-right: none; }
+      #searchBar input, #searchBar select, #searchBar button {
+        background-color: #f2fcf5; } }
+  #searchBar input, #searchBar select, #searchBar button {
+    border: 0.2vh solid;
+    border-color: black;
+    background-color: white; }
+  #searchBar input[type='submit']:hover {
+    cursor: pointer; }
 
 #DIVtab {
   display: flex;
@@ -185,7 +195,8 @@ footer {
       #DIVtab .containerCom .subCom .DIVshowcom {
         display: flex; }
       #DIVtab .containerCom .subCom .showcom:hover {
-        cursor: pointer; }
+        cursor: pointer;
+        color: #607D8B; }
       #DIVtab .containerCom .subCom .comment {
         width: 2.5vh;
         height: 2.5vh;
@@ -232,5 +243,13 @@ footer {
   .modal div {
     display: flex;
     justify-content: center; }
+
+button {
+  border: 0.2vh solid;
+  border-color: black;
+  background-color: #f2fcf5; }
+
+button:hover {
+  cursor: pointer; }
 
 /*# sourceMappingURL=../../../../../target/sites.css.map */

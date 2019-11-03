@@ -22,8 +22,18 @@
     width: 100%;
     height: 80vh;
     
+    input, select, button {
+    	border: 0.2vh solid;
+		border-color: black;
+		background-color: #f2fcf5;
+	}
+
+	button:hover, input[type='submit']:hover {
+		cursor: pointer;
+	}
+    
    
-   		div:not(:nth-child(1)):not(:nth-child(#{$number})) {
+   	div:not(:nth-child(1)):not(:nth-child(#{$number})) {
         display: grid;
         align-items: center;
         grid-template-columns: 20% 30% 50%;
