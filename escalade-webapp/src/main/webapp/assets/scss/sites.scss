@@ -67,6 +67,7 @@
 	
 	.containerCom {
 		display: flex;
+		position: relative;
 		
 		.subCom {
 			width: 90vw;
@@ -88,7 +89,8 @@
 		}
 	
 		.admTag {
-			margin-right: 4vw;
+			position: absolute;
+			right: 4vw;
 		}		
 	}
 	
