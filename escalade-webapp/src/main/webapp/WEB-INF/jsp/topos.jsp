@@ -11,8 +11,10 @@
 			<c:forEach items="${topos }" var="topo" varStatus="status">
 		    	<div>
 		    		<span class="topoName"><c:out value="${ topo.name }" /></span>
-		    		<span class="topoUser">de: <c:out value="${ topo.user.pseudo }" /></span>
-		    		<button id="${topo.name }">Réserver</button>
+		    		<span class="topoUser">de: <span class="topoProp"><c:out value="${ topo.user.pseudo }" /></span></span>
+		    		<div class="resaButton">
+		    			<button id="${topo.name }">Réserver</button>
+		    		</div>	    		
 		    	</div>
 		    	<br/>
 			</c:forEach>

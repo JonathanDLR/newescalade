@@ -6,7 +6,7 @@ const SEARCH = {
 		
 		init: function() {
 			//ADD OR REMOVE SEARCH BAR AND ENVENT LISTENER DEPEND ON WINDOW SIZE
-			if (window.matchMedia("(max-width: 812px)").matches) {
+			if (window.matchMedia("(max-width: 813px)").matches) {
 				document.getElementById("searchBar").style.display = "none";
 				
 				SEARCH.searchBut.addEventListener("click", SEARCH.appear);
@@ -14,7 +14,7 @@ const SEARCH = {
 				SEARCH.searchBar.addEventListener("click", function(e) {
 					e.stopPropagation();
 				}, true);
-			} else if (window.matchMedia("(min-width: 812px)").matches) {
+			} else if (window.matchMedia("(min-width: 813px)").matches) {
 				document.getElementById("searchBar").style.display = "flex";
 				
 				SEARCH.searchBut.removeEventListener("click", SEARCH.appear);

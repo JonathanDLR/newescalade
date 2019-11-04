@@ -3,23 +3,49 @@
 @import 'error';
 
 /* STYLING ACCOUNT PAGE */
+#accountContainer {
+	padding-left : 4vw;
+	padding-right: 4vw;
+}
 
 #myTopos {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	min-height: 20vh;
-	
-	div {
-		margin-left: 10vw;
-	}
+	border-bottom: 0.2vh solid;
 }
 
 form {
 	@include form-const(8);
+	border-bottom: 0.2vh solid;
+}
+
+#subnewlieu {
+	margin-right: 2vh !important;
 }
 
 #DIVrep {
 	display: flex;
 	justify-content: center;
+}
+
+#SECresa {
+	margin-bottom: 4vh;
+	
+	div:not(:last-of-type) {
+		border-bottom: 0.2vh dashed;
+		padding-bottom: 4vh;
+		margin-bottom: 4vh;
+	}
+
+	.resaUser {
+		font-weight: bold;
+	}
+
+	button {
+		border: 0.2vh solid;
+		border-color: black;
+		background-color: #f2fcf5;
+	}
 }
