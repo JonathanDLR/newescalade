@@ -140,6 +140,11 @@ form input, form select, form button, #SECresa button {
   border-color: black;
   background-color: #f2fcf5; }
 
+/* STYLING THE BACK OF DIV */
+#myTopos, form, #SECresa article {
+  background-color: rgba(96, 125, 139, 0.075);
+  box-shadow: 0.2vh -0.2vh 0.2vh 0.2vh rgba(96, 125, 139, 0.15), -0.2vh 0vh 0.2vh 0.2vh rgba(96, 125, 139, 0.15), 0vh 0.2vh 0.2vh 0.2vh rgba(0, 0, 0, 0.2); }
+
 /* STYLING THE FORM OF INSCRIPTION AND CONNEXION */
 /* ERROR STYLE */
 .error {
@@ -151,6 +156,11 @@ form input, form select, form button, #SECresa button {
   border-color: black;
   background-color: #f2fcf5; }
 
+/* STYLING THE BACK OF DIV */
+#myTopos, form, #SECresa article {
+  background-color: rgba(96, 125, 139, 0.075);
+  box-shadow: 0.2vh -0.2vh 0.2vh 0.2vh rgba(96, 125, 139, 0.15), -0.2vh 0vh 0.2vh 0.2vh rgba(96, 125, 139, 0.15), 0vh 0.2vh 0.2vh 0.2vh rgba(0, 0, 0, 0.2); }
+
 /* STYLING ACCOUNT PAGE */
 #accountContainer {
   padding-left: 4vw;
@@ -161,7 +171,7 @@ form input, form select, form button, #SECresa button {
   flex-direction: column;
   justify-content: space-around;
   min-height: 20vh;
-  border-bottom: 0.2vh solid; }
+  padding-left: 2vw; }
 
 form {
   display: grid;
@@ -170,9 +180,14 @@ form {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+  width: 92vw;
   height: 80vh;
-  border-bottom: 0.2vh solid; }
+  margin-left: 4vw;
+  margin-right: 4vw;
+  margin-bottom: 4vh;
+  margin-left: 0;
+  margin-right: 0;
+  width: inherit; }
   form button:hover, form input[type='submit']:hover {
     cursor: pointer; }
   form div:not(:nth-child(1)):not(:nth-child(8)) {
@@ -193,7 +208,6 @@ form {
       width: 25%;
       margin: 0; }
     form div:not(:nth-child(1)):not(:nth-child(8)) label {
-      justify-self: end;
       grid-column: 1;
       line-height: 1.75em; }
     form div:not(:nth-child(1)):not(:nth-child(8)) select {
@@ -235,10 +249,14 @@ form {
 
 #SECresa {
   margin-bottom: 4vh; }
-  #SECresa div:not(:last-of-type) {
-    border-bottom: 0.2vh dashed;
+  #SECresa div {
+    padding-left: 2vw;
     padding-bottom: 4vh;
     margin-bottom: 4vh; }
+  #SECresa div:first-of-type {
+    padding-top: 4vh; }
+  #SECresa div:not(:last-of-type) {
+    border-bottom: 0.2vh dashed; }
   #SECresa .resaUser {
     font-weight: bold; }
 

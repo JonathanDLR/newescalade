@@ -134,43 +134,47 @@ footer {
   width: 98%;
   height: 10vh; }
 
+/* STYLING THE BACK OF DIV */
+#DIVtab > div {
+  background-color: rgba(96, 125, 139, 0.075);
+  box-shadow: 0.2vh -0.2vh 0.2vh 0.2vh rgba(96, 125, 139, 0.15), -0.2vh 0vh 0.2vh 0.2vh rgba(96, 125, 139, 0.15), 0vh 0.2vh 0.2vh 0.2vh rgba(0, 0, 0, 0.2); }
+
 #DIVtab {
   display: flex;
   flex-direction: column;
   padding-left: 4vw;
   padding-right: 4vw; }
-  #DIVtab div {
+  #DIVtab > div {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     position: relative;
     margin-bottom: 2vh;
-    height: 12vh; }
+    height: 12vh;
+    padding-left: 2vw; }
     @media screen and (max-height: 420px) {
-      #DIVtab div {
+      #DIVtab > div {
         height: 20vh; } }
-    #DIVtab div .topoProp {
+    #DIVtab > div .topoProp {
       font-weight: bold; }
-    #DIVtab div .resaButton {
-      position: absolute;
-      right: 12vw; }
-      @media screen and (min-width: 812px) {
-        #DIVtab div .resaButton {
-          right: 18vw; } }
-      #DIVtab div .resaButton button {
-        height: 9vh;
-        width: 9vh;
-        border-radius: 50%;
-        border: 0.2vh solid;
-        border-color: black;
-        background-color: #f2fcf5; }
-        @media screen and (max-height: 420px) {
-          #DIVtab div .resaButton button {
-            height: 16vh;
-            width: 16vh; } }
-    #DIVtab div button:hover {
+    #DIVtab > div button:hover {
       cursor: pointer; }
-  #DIVtab div:not(:last-of-type) {
-    border-bottom: 0.2vh solid; }
+  #DIVtab .resaButton {
+    position: absolute;
+    right: 12vw; }
+    @media screen and (min-width: 812px) {
+      #DIVtab .resaButton {
+        right: 18vw; } }
+    #DIVtab .resaButton button {
+      height: 9vh;
+      width: 9vh;
+      border-radius: 50%;
+      border: 0.2vh solid;
+      border-color: black;
+      background-color: #f2fcf5; }
+      @media screen and (max-height: 420px) {
+        #DIVtab .resaButton button {
+          height: 16vh;
+          width: 16vh; } }
 
 /*# sourceMappingURL=../../../../../target/topos.css.map */

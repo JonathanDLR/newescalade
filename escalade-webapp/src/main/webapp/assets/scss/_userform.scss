@@ -1,4 +1,6 @@
 @import 'buttonstyle';
+@import 'backcolor';
+
 /* STYLING THE FORM OF INSCRIPTION AND CONNEXION */
 	
 @mixin form-const($number) {
@@ -20,8 +22,12 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: 92vw;
     height: 80vh;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-bottom: 4vh;
+    @extend %back-color;
     
     input, select, button {
     	@extend %button-style;
@@ -55,7 +61,7 @@
        	}
 
         label {
-            justify-self: end;
+            // justify-self: end;
             grid-column: 1;
             line-height: 1.75em;
         }

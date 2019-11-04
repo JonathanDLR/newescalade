@@ -144,6 +144,11 @@ button {
   border-color: black;
   background-color: #f2fcf5; }
 
+/* STYLING THE BACK OF DIV */
+#DIVtab .containerCom {
+  background-color: rgba(96, 125, 139, 0.075);
+  box-shadow: 0.2vh -0.2vh 0.2vh 0.2vh rgba(96, 125, 139, 0.15), -0.2vh 0vh 0.2vh 0.2vh rgba(96, 125, 139, 0.15), 0vh 0.2vh 0.2vh 0.2vh rgba(0, 0, 0, 0.2); }
+
 /* SITES STYLING */
 #siteContainer {
   min-height: 71.8vh; }
@@ -204,7 +209,8 @@ button {
   padding-right: 4vw; }
   #DIVtab .containerCom {
     display: flex;
-    position: relative; }
+    position: relative;
+    padding-left: 2vw; }
     #DIVtab .containerCom .subCom {
       width: 90vw; }
       #DIVtab .containerCom .subCom .DIVshowcom {
@@ -234,8 +240,6 @@ button {
             width: 20vh; } }
       #DIVtab .containerCom .admTag .toggleTag:focus {
         outline: none; }
-  #DIVtab .containerCom:not(:last-of-type) {
-    border-bottom: 0.2vh solid; }
   #DIVtab .official {
     font-style: italic; }
 

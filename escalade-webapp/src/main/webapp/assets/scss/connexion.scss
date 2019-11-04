@@ -13,7 +13,11 @@
 
 form {
 	@include form-const(4);
-	height: 54.2vh !important;
+	height: 50.2vh !important;
+	
+	@media screen and (max-height: 420px) {
+			height: 42vh !important;
+		}
 }
 
 #inscription, #DIVerror {

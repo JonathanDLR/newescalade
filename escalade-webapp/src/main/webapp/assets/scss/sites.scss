@@ -1,6 +1,7 @@
 @import 'template';
 @import 'error';
 @import 'buttonstyle';
+@import 'backcolor';
 
 /* SITES STYLING */
 #siteContainer {
@@ -77,6 +78,8 @@
 	.containerCom {
 		display: flex;
 		position: relative;
+		@extend %back-color;
+		padding-left: 2vw;
 		
 		
 		.subCom {
@@ -123,10 +126,6 @@
 			}
 		}		
 	}
-
-	.containerCom:not(:last-of-type)  {
-    	border-bottom: 0.2vh solid;
-    }
 	
 	.official {
 		font-style: italic;

@@ -144,6 +144,11 @@ form input, form select, form button {
   border-color: black;
   background-color: #f2fcf5; }
 
+/* STYLING THE BACK OF DIV */
+form {
+  background-color: rgba(96, 125, 139, 0.075);
+  box-shadow: 0.2vh -0.2vh 0.2vh 0.2vh rgba(96, 125, 139, 0.15), -0.2vh 0vh 0.2vh 0.2vh rgba(96, 125, 139, 0.15), 0vh 0.2vh 0.2vh 0.2vh rgba(0, 0, 0, 0.2); }
+
 /* STYLING THE FORM OF INSCRIPTION AND CONNEXION */
 /* CONNEXION STYLING */
 #containerCon {
@@ -159,9 +164,12 @@ form {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+  width: 92vw;
   height: 80vh;
-  height: 54.2vh !important; }
+  margin-left: 4vw;
+  margin-right: 4vw;
+  margin-bottom: 4vh;
+  height: 50.2vh !important; }
   form button:hover, form input[type='submit']:hover {
     cursor: pointer; }
   form div:not(:nth-child(1)):not(:nth-child(4)) {
@@ -182,7 +190,6 @@ form {
       width: 25%;
       margin: 0; }
     form div:not(:nth-child(1)):not(:nth-child(4)) label {
-      justify-self: end;
       grid-column: 1;
       line-height: 1.75em; }
     form div:not(:nth-child(1)):not(:nth-child(4)) select {
@@ -206,6 +213,9 @@ form {
     form div:nth-child(4) input {
       justify-self: center;
       width: 20%; }
+  @media screen and (max-height: 420px) {
+    form {
+      height: 42vh !important; } }
 
 #inscription, #DIVerror {
   display: flex;
