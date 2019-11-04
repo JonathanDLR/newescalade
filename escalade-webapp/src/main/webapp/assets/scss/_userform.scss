@@ -1,3 +1,4 @@
+@import 'buttonstyle';
 /* STYLING THE FORM OF INSCRIPTION AND CONNEXION */
 	
 @mixin form-const($number) {
@@ -23,9 +24,7 @@
     height: 80vh;
     
     input, select, button {
-    	border: 0.2vh solid;
-		border-color: black;
-		background-color: #f2fcf5;
+    	@extend %button-style;
 	}
 
 	button:hover, input[type='submit']:hover {

@@ -138,6 +138,12 @@ footer {
 .error {
   color: red; }
 
+/* STYLING THE BUTTON */
+button {
+  border: 0.2vh solid;
+  border-color: black;
+  background-color: #f2fcf5; }
+
 /* SITES STYLING */
 #siteContainer {
   min-height: 71.8vh; }
@@ -287,13 +293,9 @@ footer {
     display: flex;
     justify-content: center; }
 
-button {
-  border: 0.2vh solid;
-  border-color: black;
-  background-color: #f2fcf5; }
-  @media screen and (max-height: 420px) {
-    button {
-      height: 10vh; } }
+@media screen and (max-height: 420px) {
+  button {
+    height: 10vh; } }
 
 button:hover {
   cursor: pointer; }

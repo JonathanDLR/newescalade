@@ -1,5 +1,6 @@
 @import 'template';
 @import 'error';
+@import 'buttonstyle';
 
 /* SITES STYLING */
 #siteContainer {
@@ -211,9 +212,7 @@
 }
 
 button {
-	border: 0.2vh solid;
-	border-color: black;
-	background-color: #f2fcf5;
+	@extend %button-style;
 	
 	@media screen and (max-height: 420px) {
 		height: 10vh;

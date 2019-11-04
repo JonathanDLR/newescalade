@@ -1,6 +1,7 @@
 @import 'template';
 @import 'userform';
 @import 'error';
+@import 'buttonstyle';
 
 /* STYLING ACCOUNT PAGE */
 #accountContainer {
@@ -44,8 +45,6 @@ form {
 	}
 
 	button {
-		border: 0.2vh solid;
-		border-color: black;
-		background-color: #f2fcf5;
+		@extend %button-style;
 	}
 }
