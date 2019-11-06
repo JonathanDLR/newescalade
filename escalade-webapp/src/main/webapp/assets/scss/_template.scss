@@ -114,6 +114,10 @@ header {
 	  @media screen and(max-height: 412px) {
 	  	font-size: 4vw;
 	  }
+	 
+	  @media screen and (min-width: 813px) {
+	    display: none;  
+	  }
 	  
 	  a {
 	  	display: block;

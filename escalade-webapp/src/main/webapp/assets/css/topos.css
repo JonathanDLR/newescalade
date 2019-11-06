@@ -89,6 +89,9 @@ header {
   @media screen and (max-height: 412px) {
     #menuMob {
       font-size: 4vw; } }
+  @media screen and (min-width: 813px) {
+    #menuMob {
+      display: none; } }
   #menuMob a {
     display: block;
     transition: 0.3s;
