@@ -5,3 +5,8 @@
 	border-color: black;
 	background-color: #f2fcf5;
 }
+
+%transform-button {
+	transform: scale(1.2);
+  	transition: all 0.2s ease-in-out 0.1s;
+ }

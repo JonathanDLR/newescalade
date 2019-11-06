@@ -1,3 +1,13 @@
+/* STYLING THE BUTTON */
+button {
+  border: 0.2vh solid;
+  border-color: black;
+  background-color: #f2fcf5; }
+
+#menuMob a:hover, a:hover {
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out 0.1s; }
+
 /* TEMPLATE STYLE */
 html, body {
   width: 100%;
@@ -147,6 +157,10 @@ button {
   border: 0.2vh solid;
   border-color: black;
   background-color: #f2fcf5; }
+
+#menuMob a:hover, a:hover {
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out 0.1s; }
 
 /* STYLING THE BACK OF DIV */
 #DIVtab .containerCom {

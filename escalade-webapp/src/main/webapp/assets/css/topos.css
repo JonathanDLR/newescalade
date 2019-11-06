@@ -1,3 +1,8 @@
+/* STYLING THE BUTTON */
+#menuMob a:hover, a:hover, #DIVtab > div button:hover {
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out 0.1s; }
+
 /* TEMPLATE STYLE */
 html, body {
   width: 100%;
@@ -143,6 +148,11 @@ footer {
   background-color: rgba(96, 125, 139, 0.075);
   box-shadow: 0.2vh -0.2vh 0.2vh 0.2vh rgba(96, 125, 139, 0.15), -0.2vh 0vh 0.2vh 0.2vh rgba(96, 125, 139, 0.15), 0vh 0.2vh 0.2vh 0.2vh rgba(0, 0, 0, 0.2); }
 
+/* STYLING THE BUTTON */
+#menuMob a:hover, a:hover, #DIVtab > div button:hover {
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out 0.1s; }
+
 #DIVtab {
   display: flex;
   flex-direction: column;
@@ -163,6 +173,8 @@ footer {
       font-weight: bold; }
     #DIVtab > div button:hover {
       cursor: pointer; }
+    #DIVtab > div button:focus {
+      outline: none; }
   #DIVtab .resaButton {
     position: absolute;
     right: 12vw; }

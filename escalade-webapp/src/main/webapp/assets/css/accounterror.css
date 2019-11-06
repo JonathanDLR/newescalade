@@ -1,3 +1,8 @@
+/* STYLING THE BUTTON */
+#menuMob a:hover, a:hover {
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out 0.1s; }
+
 /* TEMPLATE STYLE */
 html, body {
   width: 100%;
