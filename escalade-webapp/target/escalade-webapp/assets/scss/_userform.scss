@@ -1,3 +1,6 @@
+@import 'buttonstyle';
+@import 'backcolor';
+
 /* STYLING THE FORM OF INSCRIPTION AND CONNEXION */
 	
 @mixin form-const($number) {
@@ -19,11 +22,23 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: 92vw;
     height: 80vh;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-bottom: 4vh;
+    @extend %back-color;
+    
+    input, select, button {
+    	@extend %button-style;
+	}
+
+	button:hover, input[type='submit']:hover {
+		cursor: pointer;
+	}
     
    
-   		div:not(:nth-child(1)):not(:nth-child(#{$number})) {
+   	div:not(:nth-child(1)):not(:nth-child(#{$number})) {
         display: grid;
         align-items: center;
         grid-template-columns: 20% 30% 50%;
@@ -46,7 +61,7 @@
        	}
 
         label {
-            justify-self: end;
+            // justify-self: end;
             grid-column: 1;
             line-height: 1.75em;
         }
@@ -58,7 +73,8 @@
        }
       
       	#newlieuerror {
-      		justify-self: center;
+      		// justify-self: end;
+      		margin-left: 12vw;
       		grid-column: 3;
       		grid-row: 1;
       	}

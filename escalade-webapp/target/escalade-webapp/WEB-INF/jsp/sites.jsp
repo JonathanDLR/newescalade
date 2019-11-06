@@ -48,10 +48,10 @@
 					    		<p>Cotation: <c:out value="${ site.cotation.cot }" /></p>
 					    		<p><c:out value="${ site.nbreSecteur }" /> secteur(s)</p>
 					    		<br/>
-					    		<span class="showcom">
-					    			<img src="<c:url value="/assets/img/comment.png" />" id="comment" alt="comment"/>
-					    			Afficher les commentaires
-					    		</span>
+					    		<div class="DIVshowcom">
+					    			<img src="<c:url value="/assets/img/comment.png" />" class="comment" alt="comment"/>
+					    			<span class="showcom">Afficher les commentaires</span>
+					    		</div>
 					    		
 					    		<div class="DIVcom">
 						    		<div id="${site.nom }">

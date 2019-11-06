@@ -100,6 +100,11 @@ header {
 	  background-color: #607D8B;
 	  transition: 0.5s;	
 	  border-right: 0.2vh solid;
+	  font-size: 6vw;
+	  
+	  @media screen and(max-height: 412px) {
+	  	font-size: 4vw;
+	  }
 	  
 	  a {
 	  	display: block;
@@ -158,7 +163,7 @@ a:hover {
 #container {
 	min-height: 71.8vh;
 	
-	@media screen and (min-width: 812px) {
+	@media screen and (min-width: 813px) {
 		min-height: 69.6vh;
 	}
 }

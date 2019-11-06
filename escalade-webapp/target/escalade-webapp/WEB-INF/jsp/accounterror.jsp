@@ -4,7 +4,9 @@
 
 	<%@ include file="../common/menu.jsp" %>	
 	
-	<h1>Vous n'êtes pas connecté!</h1>
+	<div id="container">
+		<h1>Vous n'êtes pas connecté!</h1>
+	</div>
 	
 	<%@ include file="../common/footer.jsp" %>	
 <%@ include file="../common/script.jsp" %>	

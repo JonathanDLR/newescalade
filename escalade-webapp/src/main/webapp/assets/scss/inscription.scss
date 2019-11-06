@@ -6,9 +6,5 @@
 	
 form {
 	@include form-const(5);
-	height: 63.9vh !important;
-	
-	@media screen and (min-width: 812px) {
-		height: 58vh !important;	
-	}
+	height: 58vh !important;
 }

@@ -71,7 +71,11 @@ header {
   overflow-x: hidden;
   background-color: #607D8B;
   transition: 0.5s;
-  border-right: 0.2vh solid; }
+  border-right: 0.2vh solid;
+  font-size: 6vw; }
+  @media screen and (max-height: 412px) {
+    #menuMob {
+      font-size: 4vw; } }
   #menuMob a {
     display: block;
     transition: 0.3s;
@@ -115,7 +119,7 @@ a:hover {
 
 #container {
   min-height: 71.8vh; }
-  @media screen and (min-width: 812px) {
+  @media screen and (min-width: 813px) {
     #container {
       min-height: 69.6vh; } }
 
@@ -163,13 +167,13 @@ form {
   margin-left: 4vw;
   margin-right: 4vw;
   margin-bottom: 4vh;
-  height: 63.9vh !important; }
+  height: 58vh !important; }
   form button:hover, form input[type='submit']:hover {
     cursor: pointer; }
   form div:not(:nth-child(1)):not(:nth-child(5)) {
     display: grid;
     align-items: center;
-    grid-template-columns: 20% 30% 50%;
+    grid-template-columns: 30% 30% 40%;
     grid-template-rows: 100%;
     margin-left: 2vw; }
     form div:not(:nth-child(1)):not(:nth-child(5)) input {
@@ -208,9 +212,12 @@ form {
     align-items: center; }
     form div:nth-child(5) input {
       justify-self: center;
-      width: 20%; }
-  @media screen and (min-width: 812px) {
-    form {
-      height: 58vh !important; } }
+      width: 24%; }
+      @media screen and (max-height: 412px) {
+        form div:nth-child(5) input {
+          width: 20%; } }
+      @media screen and (min-width: 813px) {
+        form div:nth-child(5) input {
+          width: 20%; } }
 
 /*# sourceMappingURL=../../../../../target/inscription.css.map */

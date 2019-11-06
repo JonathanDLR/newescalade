@@ -1,0 +1,8 @@
+/* STYLING THE BACK OF DIV */
+
+%back-color {
+	background-color: rgba(96, 125, 139, 0.075);
+	box-shadow: 0.2vh -0.2vh 0.2vh 0.2vh rgba(96, 125, 139, 0.15),
+				-0.2vh 0vh 0.2vh 0.2vh rgba(96, 125, 139, 0.15),
+				0vh 0.2vh 0.2vh 0.2vh rgba(0, 0, 0, 0.2);
+}

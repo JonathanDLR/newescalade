@@ -71,7 +71,11 @@ header {
   overflow-x: hidden;
   background-color: #607D8B;
   transition: 0.5s;
-  border-right: 0.2vh solid; }
+  border-right: 0.2vh solid;
+  font-size: 6vw; }
+  @media screen and (max-height: 412px) {
+    #menuMob {
+      font-size: 4vw; } }
   #menuMob a {
     display: block;
     transition: 0.3s;
@@ -115,7 +119,7 @@ a:hover {
 
 #container {
   min-height: 71.8vh; }
-  @media screen and (min-width: 812px) {
+  @media screen and (min-width: 813px) {
     #container {
       min-height: 69.6vh; } }
 
@@ -152,7 +156,7 @@ button {
 /* SITES STYLING */
 #siteContainer {
   min-height: 71.8vh; }
-  @media screen and (min-width: 812px) {
+  @media screen and (min-width: 813px) {
     #siteContainer {
       min-height: 59.4vh; } }
 

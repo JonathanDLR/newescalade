@@ -5,15 +5,27 @@
 /* CONNEXION STYLING */
 #containerCon {
 	height: 71.8vh;
+	
+	@media screen and (min-width: 812px) {
+		height: 69.6vh;
+	}
 }
 
 form {
 	@include form-const(4);
-	height: 55.2vh !important;
+	height: 50.2vh !important;
+	
+	@media screen and (max-height: 420px) {
+			height: 42vh !important;
+		}
 }
 
 #inscription, #DIVerror {
 	display: flex;
 	justify-content: center;
 	height: 5vh;
+}
+
+#inscription a {
+	text-decoration: underline !important;
 }

@@ -10,7 +10,7 @@ const COMMENTAIRE = {
 		},
 		
 		show: function(e) {
-			var DIVcom = e.target.nextElementSibling;
+			var DIVcom = e.target.parentElement.nextElementSibling;
 			var buttonCreate = DIVcom.querySelector(".postcom");
 			var buttonsShow = document.querySelectorAll(".showModal");
 			

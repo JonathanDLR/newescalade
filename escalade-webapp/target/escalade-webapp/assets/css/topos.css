@@ -15,9 +15,9 @@ header {
   display: none;
   justify-content: space-around;
   width: 100%;
-  height: 12.8vh;
+  height: 15vh;
   border-bottom: 0.2vh solid; }
-  @media screen and (min-width: 812px) {
+  @media screen and (min-width: 813px) {
     #menu {
       display: flex; } }
   #menu #logoAcc {
@@ -38,7 +38,7 @@ header {
   width: 100%;
   height: 12.8vh;
   border-bottom: 0.2vh solid; }
-  @media screen and (min-width: 812px) {
+  @media screen and (min-width: 813px) {
     #menuMobile {
       display: none; } }
   #menuMobile img {
@@ -46,6 +46,8 @@ header {
     width: 4vh;
     position: absolute;
     top: 2%; }
+  #menuMobile img:hover {
+    cursor: pointer; }
   #menuMobile #searchBut {
     left: 2%; }
   #menuMobile #menuBut {
@@ -85,7 +87,7 @@ header {
 #DIVaccdeco {
   display: flex;
   justify-content: center;
-  margin-top: 4vh;
+  margin-top: 6.2vh;
   height: 10vh; }
 
 #DIVaccount {
@@ -113,6 +115,9 @@ a:hover {
 
 #container {
   min-height: 71.8vh; }
+  @media screen and (min-width: 812px) {
+    #container {
+      min-height: 69.6vh; } }
 
 h1 {
   padding-left: 2%;
@@ -129,18 +134,47 @@ footer {
   width: 98%;
   height: 10vh; }
 
+/* STYLING THE BACK OF DIV */
+#DIVtab > div {
+  background-color: rgba(96, 125, 139, 0.075);
+  box-shadow: 0.2vh -0.2vh 0.2vh 0.2vh rgba(96, 125, 139, 0.15), -0.2vh 0vh 0.2vh 0.2vh rgba(96, 125, 139, 0.15), 0vh 0.2vh 0.2vh 0.2vh rgba(0, 0, 0, 0.2); }
+
 #DIVtab {
   display: flex;
-  flex-direction: column; }
-  #DIVtab div {
+  flex-direction: column;
+  padding-left: 4vw;
+  padding-right: 4vw; }
+  #DIVtab > div {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-left: 10vw; }
-    #DIVtab div button {
-      width: 20%; }
-      @media screen and (min-width: 812px) {
-        #DIVtab div button {
-          width: 10%; } }
+    position: relative;
+    margin-bottom: 2vh;
+    height: 12vh;
+    padding-left: 2vw; }
+    @media screen and (max-height: 420px) {
+      #DIVtab > div {
+        height: 20vh; } }
+    #DIVtab > div .topoProp {
+      font-weight: bold; }
+    #DIVtab > div button:hover {
+      cursor: pointer; }
+  #DIVtab .resaButton {
+    position: absolute;
+    right: 12vw; }
+    @media screen and (min-width: 812px) {
+      #DIVtab .resaButton {
+        right: 18vw; } }
+    #DIVtab .resaButton button {
+      height: 9vh;
+      width: 9vh;
+      border-radius: 50%;
+      border: 0.2vh solid;
+      border-color: black;
+      background-color: #f2fcf5; }
+      @media screen and (max-height: 420px) {
+        #DIVtab .resaButton button {
+          height: 16vh;
+          width: 16vh; } }
 
 /*# sourceMappingURL=../../../../../target/topos.css.map */

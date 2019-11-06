@@ -15,9 +15,9 @@ header {
   display: none;
   justify-content: space-around;
   width: 100%;
-  height: 12.8vh;
+  height: 15vh;
   border-bottom: 0.2vh solid; }
-  @media screen and (min-width: 812px) {
+  @media screen and (min-width: 813px) {
     #menu {
       display: flex; } }
   #menu #logoAcc {
@@ -38,7 +38,7 @@ header {
   width: 100%;
   height: 12.8vh;
   border-bottom: 0.2vh solid; }
-  @media screen and (min-width: 812px) {
+  @media screen and (min-width: 813px) {
     #menuMobile {
       display: none; } }
   #menuMobile img {
@@ -46,6 +46,8 @@ header {
     width: 4vh;
     position: absolute;
     top: 2%; }
+  #menuMobile img:hover {
+    cursor: pointer; }
   #menuMobile #searchBut {
     left: 2%; }
   #menuMobile #menuBut {
@@ -85,7 +87,7 @@ header {
 #DIVaccdeco {
   display: flex;
   justify-content: center;
-  margin-top: 4vh;
+  margin-top: 6.2vh;
   height: 10vh; }
 
 #DIVaccount {
@@ -113,6 +115,9 @@ a:hover {
 
 #container {
   min-height: 71.8vh; }
+  @media screen and (min-width: 812px) {
+    #container {
+      min-height: 69.6vh; } }
 
 h1 {
   padding-left: 2%;
@@ -133,10 +138,24 @@ footer {
 .error {
   color: red; }
 
+/* STYLING THE BUTTON */
+form input, form select, form button {
+  border: 0.2vh solid;
+  border-color: black;
+  background-color: #f2fcf5; }
+
+/* STYLING THE BACK OF DIV */
+form {
+  background-color: rgba(96, 125, 139, 0.075);
+  box-shadow: 0.2vh -0.2vh 0.2vh 0.2vh rgba(96, 125, 139, 0.15), -0.2vh 0vh 0.2vh 0.2vh rgba(96, 125, 139, 0.15), 0vh 0.2vh 0.2vh 0.2vh rgba(0, 0, 0, 0.2); }
+
 /* STYLING THE FORM OF INSCRIPTION AND CONNEXION */
 /* CONNEXION STYLING */
 #containerCon {
   height: 71.8vh; }
+  @media screen and (min-width: 812px) {
+    #containerCon {
+      height: 69.6vh; } }
 
 form {
   display: grid;
@@ -145,9 +164,14 @@ form {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+  width: 92vw;
   height: 80vh;
-  height: 55.2vh !important; }
+  margin-left: 4vw;
+  margin-right: 4vw;
+  margin-bottom: 4vh;
+  height: 50.2vh !important; }
+  form button:hover, form input[type='submit']:hover {
+    cursor: pointer; }
   form div:not(:nth-child(1)):not(:nth-child(4)) {
     display: grid;
     align-items: center;
@@ -166,7 +190,6 @@ form {
       width: 25%;
       margin: 0; }
     form div:not(:nth-child(1)):not(:nth-child(4)) label {
-      justify-self: end;
       grid-column: 1;
       line-height: 1.75em; }
     form div:not(:nth-child(1)):not(:nth-child(4)) select {
@@ -174,7 +197,7 @@ form {
       grid-column: 2;
       width: 80%; }
     form div:not(:nth-child(1)):not(:nth-child(4)) #newlieuerror {
-      justify-self: center;
+      margin-left: 12vw;
       grid-column: 3;
       grid-row: 1; }
   form div:nth-child(3) {
@@ -190,10 +213,16 @@ form {
     form div:nth-child(4) input {
       justify-self: center;
       width: 20%; }
+  @media screen and (max-height: 420px) {
+    form {
+      height: 42vh !important; } }
 
 #inscription, #DIVerror {
   display: flex;
   justify-content: center;
   height: 5vh; }
+
+#inscription a {
+  text-decoration: underline !important; }
 
 /*# sourceMappingURL=../../../../../target/connexion.css.map */

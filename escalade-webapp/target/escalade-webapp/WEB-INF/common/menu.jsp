@@ -29,10 +29,10 @@
     
     <div id="menuMob">
     	<div><a href="/escalade-webapp">Accueil</a></div>
-    	<div><a href="site">Sites</a></div>   	
+    	<div><a href="site">Les Sites</a></div>   	
     	<c:choose>
     		<c:when test="${ !empty user }">
-    			<div><a href="topos">Topos</a></div>
+    			<div><a href="topos">Les Topos</a></div>
     			<div><a href="account">Votre Compte</a></div>
 	    		<div><a href="newsite">Créer un site</a></div>
 	    		<div><a href="deco">Se Deconnecter</a></div>		

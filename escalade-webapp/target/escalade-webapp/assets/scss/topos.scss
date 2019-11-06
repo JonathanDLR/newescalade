@@ -1,21 +1,55 @@
 @import 'template';
+@import 'backcolor';
 
 #DIVtab {
 	display: flex;
 	flex-direction: column;
+	padding-left: 4vw;
+    padding-right: 4vw;
     
-    div {
+    > div {
     	display: flex;
     	flex-direction: column;
     	justify-content: space-around;
-    	margin-left: 10vw;
+    	position: relative;   	
+    	margin-bottom: 2vh;
+    	height: 12vh;
+    	@extend %back-color;
+    	padding-left: 2vw;
     	
-    	button {
-    		width: 20%;
-    		
-    		@media screen and (min-width: 812px) {
-		        width: 10%;  
-		    }
+    	@media screen and (max-height: 420px) {
+			height: 20vh;
+		}
+    	
+    	.topoProp {
+    		font-weight: bold;
+    	}
+    
+    	button:hover {
+    		cursor: pointer;
     	}
     }
+   
+   .resaButton {
+    		position: absolute;
+			right: 12vw;
+			
+			@media screen and (min-width: 812px) {
+				right: 18vw;
+			}			
+    	
+	    	button {
+	    		height: 9vh;
+				width: 9vh;
+				border-radius: 50%;
+	    		border: 0.2vh solid;
+				border-color: black;
+				background-color: #f2fcf5;
+				
+				@media screen and (max-height: 420px) {
+					height: 16vh;
+					width: 16vh;
+				}
+			}
+    	}
  }
