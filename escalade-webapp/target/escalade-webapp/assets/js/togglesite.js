@@ -27,7 +27,9 @@ const TOGGLESITE = {
 	               if (e.target.innerHTML.trim() == "Enlever le tag") {
 	            	   var spanToDelete = e.target.parentElement.previousElementSibling.querySelector(".official");
 	            	   spanToDelete.parentElement.removeChild(spanToDelete);
-	            	   e.target.innerHTML = "Ajouter le tag";
+	            	   setTimeout(function() {
+	            		   e.target.innerHTML = "Ajouter le tag"; 
+	            	   }, 1000);	            	   
 	               } else {
 	            	   var newOff = document.createElement("span");
 	            	   newOff.classList.add("official");
@@ -36,7 +38,10 @@ const TOGGLESITE = {
 	            	   var elementBefore = e.target.parentElement.previousElementSibling.querySelector("h3");
 	            	   elementBefore.insertAdjacentElement("afterend", newOff);
 	            	   
-	            	   e.target.innerHTML = "Enlever le tag";
+	            	   setTimeout(function() {
+	            		   e.target.innerHTML = "Enlever le tag";
+	            	   }, 1000);
+	            	   
 	               }
 	               
 	            } else {

@@ -28,10 +28,7 @@
     
     	button:hover {
     		cursor: pointer;
-    		
-    		@media screen and(min-width: 813px) {
-    			@extend %transform-button;
-    		}
+   			@extend %transform-button;
     	}
     
     	button:focus {

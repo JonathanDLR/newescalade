@@ -1,4 +1,5 @@
 @import 'buttonstyle';
+@import 'fonts';
 
 /* TEMPLATE STYLE */
 
@@ -49,6 +50,12 @@ header {
 			width: 100%;
 		}
 	}
+
+	a {
+		font-family:'title', 'serif';
+		font-size: 1.5em;
+	}
+	
 }
 
 #menuMobile {
@@ -114,6 +121,8 @@ header {
   		margin-bottom: 2vh;
   		color: white;
   		 -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+		font-family:'title', 'serif';
+		font-size: 1.25em;
 	  }
 	 
 	 a:hover {
@@ -133,7 +142,7 @@ header {
 #DIVaccdeco {
 	display: flex;
 	justify-content: center;
-	margin-top: 6.2vh;
+	margin-top: 5.4vh;
 	height: 10vh;
 }
 
@@ -178,6 +187,13 @@ a:hover {
 h1 {
 	padding-left: 2%;
 	margin-block-start: 5vh;
+	font-family: 'title', 'serif';
+	font-size: 4em;
+	font-weight: normal;
+}
+
+h2, p, span {
+	font-family: 'helvetica', 'serif';
 }
 
 /* FOOTER */

@@ -1,3 +1,13 @@
+/* STYLING THE BUTTON */
+@media screen and (min-width: 813px) {
+  #menuMob a:hover, a:hover {
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out 0.1s; } }
+
+@font-face {
+  font-family: 'garden';
+  src: url("../font/garden.ttf") format("opentype"); }
+
 /* TEMPLATE STYLE */
 html, body {
   width: 100%;
@@ -71,7 +81,11 @@ header {
   overflow-x: hidden;
   background-color: #607D8B;
   transition: 0.5s;
-  border-right: 0.2vh solid; }
+  border-right: 0.2vh solid;
+  font-size: 6vw; }
+  @media screen and (max-height: 412px) {
+    #menuMob {
+      font-size: 4vw; } }
   #menuMob a {
     display: block;
     transition: 0.3s;
@@ -115,13 +129,16 @@ a:hover {
 
 #container {
   min-height: 71.8vh; }
-  @media screen and (min-width: 812px) {
+  @media screen and (min-width: 813px) {
     #container {
       min-height: 69.6vh; } }
 
 h1 {
   padding-left: 2%;
   margin-block-start: 5vh; }
+
+h2, p, span {
+  font-family: 'helvetica', 'serif'; }
 
 /* FOOTER */
 footer {

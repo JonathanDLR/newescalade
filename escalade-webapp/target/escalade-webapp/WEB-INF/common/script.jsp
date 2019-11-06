@@ -10,9 +10,13 @@
 			<script src="<c:url value="/assets/js/togglesite.js" />"></script>
 			<script src="<c:url value="/assets/js/commentaire.js" />"></script>
 			<script src="<c:url value="/assets/js/search.js" />"></script>
+			<c:if test="${ user.role.name == 'admin' }">
+				<script src="<c:url value="/assets/js/buttonzoom.js" />"></script>
+			</c:if>
 		</c:when>
 		<c:when test="${title == 'Amis Escalade: Les Topos' }">
 			<script src="<c:url value="/assets/js/newresa.js" />"></script>
+			<script src="<c:url value="/assets/js/buttonzoom.js" />"></script>
 		</c:when>
 		<c:when test="${title == 'Amis Escalade: Votre Compte' }">
 			<script src="<c:url value="/assets/js/newlieu.js" />"></script>

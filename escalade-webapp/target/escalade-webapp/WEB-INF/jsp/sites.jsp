@@ -103,7 +103,7 @@
 					    	</div>
 					    	<c:if test="${user.role.name == 'admin' }">
 							<div class="admTag" data-name="${ site.nom }">
-								<button class="toggleTag">
+								<button class="toggleTag zoom">
 									<c:choose>
 										<c:when test="${ site.officiel }">
 											Enlever le tag

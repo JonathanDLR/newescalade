@@ -1,7 +1,12 @@
 /* STYLING THE BUTTON */
-#menuMob a:hover, a:hover {
-  transform: scale(1.2);
-  transition: all 0.2s ease-in-out 0.1s; }
+@media screen and (min-width: 813px) {
+  #menuMob a:hover, a:hover {
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out 0.1s; } }
+
+@font-face {
+  font-family: 'title';
+  src: url("../font/title.ttf") format("opentype"); }
 
 /* TEMPLATE STYLE */
 html, body {
@@ -37,6 +42,9 @@ header {
     flex-direction: column; }
     #menu div:nth-child(4) div {
       width: 100%; }
+  #menu a {
+    font-family: 'title', 'serif';
+    font-size: 1.5em; }
 
 #menuMobile {
   display: block;
@@ -86,7 +94,9 @@ header {
     transition: 0.3s;
     margin-bottom: 2vh;
     color: white;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: 'title', 'serif';
+    font-size: 1.25em; }
   #menuMob a:focus {
     outline: none; }
   #menuMob a:active {
@@ -96,7 +106,7 @@ header {
 #DIVaccdeco {
   display: flex;
   justify-content: center;
-  margin-top: 6.2vh;
+  margin-top: 5.4vh;
   height: 10vh; }
 
 #DIVaccount {
@@ -130,7 +140,13 @@ a:hover {
 
 h1 {
   padding-left: 2%;
-  margin-block-start: 5vh; }
+  margin-block-start: 5vh;
+  font-family: 'title', 'serif';
+  font-size: 4em;
+  font-weight: normal; }
+
+h2, p, span {
+  font-family: 'helvetica', 'serif'; }
 
 /* FOOTER */
 footer {

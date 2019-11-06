@@ -1,5 +1,6 @@
 @import 'template';
 @import 'backcolor';
+@import 'buttonstyle';
 
 #DIVtab {
 	display: flex;
@@ -27,6 +28,11 @@
     
     	button:hover {
     		cursor: pointer;
+   			@extend %transform-button;
+    	}
+    
+    	button:focus {
+    		outline: none;
     	}
     }
    

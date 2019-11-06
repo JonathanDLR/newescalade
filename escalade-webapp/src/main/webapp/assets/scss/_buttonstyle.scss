@@ -7,6 +7,8 @@
 }
 
 %transform-button {
-	transform: scale(1.2);
-  	transition: all 0.2s ease-in-out 0.1s;
+	@media screen and(min-width: 813px) {
+		transform: scale(1.2);
+	  	transition: all 0.2s ease-in-out 0.1s;
+	}
  }
