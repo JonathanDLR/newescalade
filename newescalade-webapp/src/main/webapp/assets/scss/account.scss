@@ -1,0 +1,68 @@
+@import 'template';
+@import 'userform';
+@import 'error';
+@import 'buttonstyle';
+@import 'backcolor';
+
+/* STYLING ACCOUNT PAGE */
+#accountContainer {
+	padding-left : 4vw;
+	padding-right: 4vw;
+}
+
+#myTopos {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	min-height: 20vh;
+	@extend %back-color;
+	padding-left: 2vw;
+}
+
+form {
+	@include form-const(8);
+	@extend %back-color;
+	margin-left: 0;
+	margin-right: 0;
+	width: inherit;
+}
+
+#subnewlieu {
+	margin-right: 2vh !important;
+}
+
+#DIVrep {
+	display: flex;
+	justify-content: center;
+}
+
+#SECresa {
+	margin-bottom: 4vh;
+	
+	article {
+		@extend %back-color;
+	}
+
+	div {
+		padding-left: 2vw;
+		padding-bottom: 4vh;
+		margin-bottom: 4vh;
+	}
+
+	div:first-of-type {
+		padding-top: 4vh;
+	}	
+	
+	
+	div:not(:last-of-type) {
+		border-bottom: 0.2vh dashed;
+	}
+
+	.resaUser {
+		font-weight: bold;
+	}
+
+	button {
+		@extend %button-style;
+	}
+}

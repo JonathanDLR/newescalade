@@ -1,0 +1,14 @@
+/* STYLING THE BUTTON */
+
+%button-style {
+	border: 0.2vh solid;
+	border-color: black;
+	background-color: #f2fcf5;
+}
+
+%transform-button {
+	@media screen and(min-width: 813px) {
+		transform: scale(1.2);
+	  	transition: all 0.2s ease-in-out 0.1s;
+	}
+ }

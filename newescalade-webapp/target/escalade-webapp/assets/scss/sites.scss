@@ -1,0 +1,223 @@
+@import 'template';
+@import 'error';
+@import 'buttonstyle';
+@import 'backcolor';
+
+/* SITES STYLING */
+#siteContainer {
+	min-height: 71.8vh;
+	
+	@media screen and (min-width: 813px) {
+		min-height: 59.4vh;	
+	}
+}
+
+#searchBar {
+	display: none;
+	flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+	width: 90%;
+	height: 60vh;
+	left: 50%;
+	margin-left: -45%;
+	top: 50%;
+	margin-top: -30vh;	
+	background-color: #f2fcf5;
+	border-top: 0.2vh solid;
+	border-left: 0.2vh solid;
+	border-right: 0.2vh solid;
+	border-bottom: 0.2vh solid;
+	z-index: 2;
+	
+	@media screen and (min-width: 813px) {
+        display: flex;  
+        flex-direction: row;
+        justify-content: space-around;
+        position: static;
+        width: 100%;
+        height: 10vh;
+        left: 0;
+        margin-left: 0;
+        margin-top: 0;
+        background-color: #607D8B;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        
+        input, select, button {    	
+			background-color: #f2fcf5;
+		}
+	
+		button {
+			@media screen and (max-height: 420px) {
+				height: 10vh;
+			}
+		}
+    }
+   
+   input, select, button {
+		border: 0.2vh solid;
+		border-color: black; 
+		background-color: white;  	
+	}	
+
+	input[type='submit']:hover {
+		cursor: pointer;
+	}
+}
+	
+#DIVtab {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 4vw;
+	padding-right: 4vw;
+	
+	.containerCom {
+		display: flex;
+		position: relative;
+		@extend %back-color;
+		padding-left: 2vw;
+		
+		
+		.subCom {
+			width: 90vw;
+			
+			.DIVshowcom {
+				display: flex;
+				margin-bottom: 2vh;
+			}
+			
+			.showcom:hover {
+				cursor: pointer;
+				color: #607D8B;
+			}
+			
+			.comment {
+				width: 2.5vh;
+				height: 2.5vh;
+				margin-right: 1vw;	
+			}
+		}
+	
+		.admTag {
+			position: absolute;
+			top: 4vh;
+			right: 12vw;
+			@media screen and (min-width: 812px) {
+				right: 18vw;
+			}
+			
+			.toggleTag {
+				height: 8vh;
+				width: 8vh;
+				border-radius: 50%;
+				
+				@media screen and (max-height: 420px) {
+					height: 20vh;
+					width: 20vh;
+				}
+			}
+		
+			.toggleTag:focus {
+				outline: none;
+			}
+		}		
+	}
+	
+	.official {
+		font-style: italic;
+	}
+}
+
+.DIVcom {
+	display: none;
+	margin-top: 2vw;
+	margin-bottom: 2vh;
+	
+	.DIVcomm {
+		display: flex;
+		align-items: center;
+	}
+	
+	.commentaire {
+		font-weight: bold;
+	}
+	
+	.admcom {
+		display: flex;
+		
+		button {
+			height: 3vh;
+			margin-left: 2vw;
+			
+			@media screen and (max-height: 420px) {
+				height: 6vh;
+			}
+		}
+	}
+
+	.yourcom {
+		display: flex;
+		align-items: center;
+		margin-top: 2vh;
+		
+		div[contenteditable=true] {
+			height: 4vh;
+			width: 50vw;
+			border: solid;
+			margin-right: 2vw;
+			background-color: #f2fcf5;
+			
+			@media screen and (max-height: 420px) {
+				margin-left: 2vw;
+			}
+		
+			@media screen and (min-width: 812px) {
+				margin-left: 2vw;
+			}
+		}
+		
+		button {
+			height: 3vh;
+			
+			@media screen and (max-height: 420px) {
+				height: 6vh;
+			}
+		}
+	}
+}
+
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 25%;
+	display: none;
+	border: solid;
+	background-color: white;
+	height: 10vh;
+	width: 40vw;
+	
+	p {
+		text-align: center;
+	}
+	
+	div {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+button {
+	@extend %button-style;
+	
+	@media screen and (max-height: 420px) {
+		height: 10vh;
+	}
+}
+
+button:hover {
+	cursor: pointer;
+}	

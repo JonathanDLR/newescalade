@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>jdlr.demo</groupId>
-  <artifactId>escalade</artifactId>
+  <artifactId>newescalade</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
@@ -11,7 +11,7 @@
   <url>http://maven.apache.org</url>
 
   <properties>
-  	<projectName>escalade</projectName>
+  	<projectName>newescalade</projectName>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
@@ -24,27 +24,27 @@
   		<!--  MODULES -->
   		<dependency>
   			<groupId>${project.groupId}</groupId>
-  			<artifactId>escalade-business</artifactId>
+  			<artifactId>newescalade-business</artifactId>
   			<version>${project.version}</version>
   		</dependency>
   		<dependency>
   			<groupId>${project.groupId}</groupId>
-  			<artifactId>escalade-consumer</artifactId>
+  			<artifactId>newescalade-consumer</artifactId>
   			<version>${project.version}</version>
   		</dependency>
   		<dependency>
   			<groupId>${project.groupId}</groupId>
-  			<artifactId>escalade-model</artifactId>
+  			<artifactId>newescalade-model</artifactId>
   			<version>${project.version}</version>
   		</dependency>
   		<dependency>
   			<groupId>${project.groupId}</groupId>
-  			<artifactId>escalade-technical</artifactId>
+  			<artifactId>newescalade-technical</artifactId>
   			<version>${project.version}</version>
   		</dependency>
   		<dependency>
   			<groupId>${project.groupId}</groupId>
-  			<artifactId>escalade-webapp</artifactId>
+  			<artifactId>newescalade-webapp</artifactId>
   			<version>${project.version}</version>
   		</dependency>
   		
@@ -217,10 +217,10 @@
     </dependency>
   </dependencies>
   <modules>
-  	<module>escalade-business</module>
-  	<module>escalade-consumer</module>
-  	<module>escalade-model</module>
-  	<module>escalade-technical</module>
-  	<module>escalade-webapp</module>
+  	<module>newescalade-business</module>
+  	<module>newescalade-consumer</module>
+  	<module>newescalade-model</module>
+  	<module>newescalade-technical</module>
+  	<module>newescalade-webapp</module>
   </modules>
 </project>

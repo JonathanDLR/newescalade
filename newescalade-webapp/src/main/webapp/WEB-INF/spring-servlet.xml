@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"   
+    xmlns:context="http://www.springframework.org/schema/context"  
+    xmlns:mvc="http://www.springframework.org/schema/mvc"  
+    xsi:schemaLocation="  
+        http://www.springframework.org/schema/beans  
+        http://www.springframework.org/schema/beans/spring-beans.xsd  
+        http://www.springframework.org/schema/context  
+        http://www.springframework.org/schema/context/spring-context.xsd  
+        http://www.springframework.org/schema/mvc  
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd">  
+  
+    
+    <context:component-scan base-package="org.escalade.webapp.servlets" />  
+    <context:annotation-config/> 
+    <mvc:annotation-driven conversion-service="conversionService" />
+    <mvc:resources mapping="/assets/**" location="/assets/" />
+	<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
+	
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix">
+			<value>/WEB-INF/jsp/</value>
+		</property>
+		<property name="suffix">
+			<value>.jsp</value>
+		</property>
+		<property name="contentType" value="text/plain;charset=UTF-8" />
+   </bean>  
+   
+   <bean id="conversionService"
+      class="org.springframework.context.support.ConversionServiceFactoryBean">
+    <property name="converters">
+        <list>
+            <bean class="org.escalade.webapp.converters.IdToLieuConverter"/>
+            <bean class="org.escalade.webapp.converters.StringToDateConverter"/>
+            <bean class="org.escalade.webapp.converters.StringToCotationConverter"/>
+        </list>
+    </property>
+</bean>
+</beans>  
