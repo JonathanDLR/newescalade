@@ -1,0 +1,1469 @@
+2019-11-07 12:40:42 DEBUG WebClient:333 - Get page for window named '', using WebRequest[<url="http://localhost:8080/escalade-webapp/connexion.jsp", GET, EncodingType[name=application/x-www-form-urlencoded], [], {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8, Accept-Encoding=gzip, deflate}, null>]
+2019-11-07 12:40:42 DEBUG WebClient:1267 - Load response for GET http://localhost:8080/escalade-webapp/connexion.jsp
+2019-11-07 12:40:43 DEBUG RequestAddCookies:122 - CookieSpec selected: mine
+2019-11-07 12:40:43 DEBUG RequestAuthCache:76 - Auth cache not set in the context
+2019-11-07 12:40:43 DEBUG PoolingHttpClientConnectionManager:249 - Connection request: [route: {}->http://localhost:8080][total kept alive: 0; route allocated: 0 of 6; total allocated: 0 of 20]
+2019-11-07 12:40:43 DEBUG PoolingHttpClientConnectionManager:282 - Connection leased: [id: 0][route: {}->http://localhost:8080][total kept alive: 0; route allocated: 1 of 6; total allocated: 1 of 20]
+2019-11-07 12:40:43 DEBUG MainClientExec:234 - Opening connection {}->http://localhost:8080
+2019-11-07 12:40:43 DEBUG DefaultHttpClientConnectionOperator:131 - Connecting to localhost/127.0.0.1:8080
+2019-11-07 12:40:43 DEBUG DefaultHttpClientConnectionOperator:160 - Connect to localhost/127.0.0.1:8080 timed out. Connection will be retried using another IP address
+2019-11-07 12:40:43 DEBUG DefaultHttpClientConnectionOperator:131 - Connecting to localhost/0:0:0:0:0:0:0:1:8080
+2019-11-07 12:40:43 DEBUG DefaultManagedHttpClientConnection:87 - http-outgoing-0: Shutdown connection
+2019-11-07 12:40:43 DEBUG MainClientExec:128 - Connection discarded
+2019-11-07 12:40:43 DEBUG DefaultManagedHttpClientConnection:79 - http-outgoing-0: Close connection
+2019-11-07 12:40:43 DEBUG PoolingHttpClientConnectionManager:320 - Connection released: [id: 0][route: {}->http://localhost:8080][total kept alive: 0; route allocated: 0 of 6; total allocated: 0 of 20]
+2019-11-07 12:42:21 DEBUG WebClient:333 - Get page for window named '', using WebRequest[<url="http://localhost:8080/escalade-webapp/connexion.jsp", GET, EncodingType[name=application/x-www-form-urlencoded], [], {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8, Accept-Encoding=gzip, deflate}, null>]
+2019-11-07 12:42:21 DEBUG WebClient:1267 - Load response for GET http://localhost:8080/escalade-webapp/connexion.jsp
+2019-11-07 12:42:21 DEBUG RequestAddCookies:122 - CookieSpec selected: mine
+2019-11-07 12:42:21 DEBUG RequestAuthCache:76 - Auth cache not set in the context
+2019-11-07 12:42:21 DEBUG PoolingHttpClientConnectionManager:249 - Connection request: [route: {}->http://localhost:8080][total kept alive: 0; route allocated: 0 of 6; total allocated: 0 of 20]
+2019-11-07 12:42:21 DEBUG PoolingHttpClientConnectionManager:282 - Connection leased: [id: 0][route: {}->http://localhost:8080][total kept alive: 0; route allocated: 1 of 6; total allocated: 1 of 20]
+2019-11-07 12:42:21 DEBUG MainClientExec:234 - Opening connection {}->http://localhost:8080
+2019-11-07 12:42:21 DEBUG DefaultHttpClientConnectionOperator:131 - Connecting to localhost/127.0.0.1:8080
+2019-11-07 12:42:21 DEBUG DefaultHttpClientConnectionOperator:160 - Connect to localhost/127.0.0.1:8080 timed out. Connection will be retried using another IP address
+2019-11-07 12:42:21 DEBUG DefaultHttpClientConnectionOperator:131 - Connecting to localhost/0:0:0:0:0:0:0:1:8080
+2019-11-07 12:42:21 DEBUG DefaultManagedHttpClientConnection:87 - http-outgoing-0: Shutdown connection
+2019-11-07 12:42:21 DEBUG MainClientExec:128 - Connection discarded
+2019-11-07 12:42:21 DEBUG DefaultManagedHttpClientConnection:79 - http-outgoing-0: Close connection
+2019-11-07 12:42:21 DEBUG PoolingHttpClientConnectionManager:320 - Connection released: [id: 0][route: {}->http://localhost:8080][total kept alive: 0; route allocated: 0 of 6; total allocated: 0 of 20]
+2019-11-07 12:44:26 DEBUG WebClient:333 - Get page for window named '', using WebRequest[<url="http://localhost:8080/escalade-webapp/connexion.jsp", GET, EncodingType[name=application/x-www-form-urlencoded], [], {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8, Accept-Encoding=gzip, deflate}, null>]
+2019-11-07 12:44:26 DEBUG WebClient:1267 - Load response for GET http://localhost:8080/escalade-webapp/connexion.jsp
+2019-11-07 12:44:27 DEBUG RequestAddCookies:122 - CookieSpec selected: mine
+2019-11-07 12:44:27 DEBUG RequestAuthCache:76 - Auth cache not set in the context
+2019-11-07 12:44:27 DEBUG PoolingHttpClientConnectionManager:249 - Connection request: [route: {}->http://localhost:8080][total kept alive: 0; route allocated: 0 of 6; total allocated: 0 of 20]
+2019-11-07 12:44:27 DEBUG PoolingHttpClientConnectionManager:282 - Connection leased: [id: 0][route: {}->http://localhost:8080][total kept alive: 0; route allocated: 1 of 6; total allocated: 1 of 20]
+2019-11-07 12:44:27 DEBUG MainClientExec:234 - Opening connection {}->http://localhost:8080
+2019-11-07 12:44:27 DEBUG DefaultHttpClientConnectionOperator:131 - Connecting to localhost/127.0.0.1:8080
+2019-11-07 12:44:27 DEBUG DefaultHttpClientConnectionOperator:160 - Connect to localhost/127.0.0.1:8080 timed out. Connection will be retried using another IP address
+2019-11-07 12:44:27 DEBUG DefaultHttpClientConnectionOperator:131 - Connecting to localhost/0:0:0:0:0:0:0:1:8080
+2019-11-07 12:44:27 DEBUG DefaultManagedHttpClientConnection:87 - http-outgoing-0: Shutdown connection
+2019-11-07 12:44:27 DEBUG MainClientExec:128 - Connection discarded
+2019-11-07 12:44:27 DEBUG DefaultManagedHttpClientConnection:79 - http-outgoing-0: Close connection
+2019-11-07 12:44:27 DEBUG PoolingHttpClientConnectionManager:320 - Connection released: [id: 0][route: {}->http://localhost:8080][total kept alive: 0; route allocated: 0 of 6; total allocated: 0 of 20]
+2019-11-07 12:47:08 DEBUG WebClient:333 - Get page for window named '', using WebRequest[<url="http://localhost:8080/escalade-webapp/connexion.jsp", GET, EncodingType[name=application/x-www-form-urlencoded], [], {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8, Accept-Encoding=gzip, deflate}, null>]
+2019-11-07 12:47:08 DEBUG WebClient:1267 - Load response for GET http://localhost:8080/escalade-webapp/connexion.jsp
+2019-11-07 12:47:09 DEBUG RequestAddCookies:122 - CookieSpec selected: mine
+2019-11-07 12:47:09 DEBUG RequestAuthCache:76 - Auth cache not set in the context
+2019-11-07 12:47:09 DEBUG PoolingHttpClientConnectionManager:249 - Connection request: [route: {}->http://localhost:8080][total kept alive: 0; route allocated: 0 of 6; total allocated: 0 of 20]
+2019-11-07 12:47:09 DEBUG PoolingHttpClientConnectionManager:282 - Connection leased: [id: 0][route: {}->http://localhost:8080][total kept alive: 0; route allocated: 1 of 6; total allocated: 1 of 20]
+2019-11-07 12:47:09 DEBUG MainClientExec:234 - Opening connection {}->http://localhost:8080
+2019-11-07 12:47:09 DEBUG DefaultHttpClientConnectionOperator:131 - Connecting to localhost/127.0.0.1:8080
+2019-11-07 12:47:09 DEBUG DefaultHttpClientConnectionOperator:138 - Connection established 127.0.0.1:42246<->127.0.0.1:8080
+2019-11-07 12:47:09 DEBUG MainClientExec:255 - Executing request GET /escalade-webapp/connexion.jsp HTTP/1.1
+2019-11-07 12:47:09 DEBUG MainClientExec:260 - Target auth state: UNCHALLENGED
+2019-11-07 12:47:09 DEBUG MainClientExec:266 - Proxy auth state: UNCHALLENGED
+2019-11-07 12:47:09 DEBUG headers:124 - http-outgoing-0 >> GET /escalade-webapp/connexion.jsp HTTP/1.1
+2019-11-07 12:47:09 DEBUG headers:127 - http-outgoing-0 >> Host: localhost:8080
+2019-11-07 12:47:09 DEBUG headers:127 - http-outgoing-0 >> User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:38.0) Gecko/20100101 Firefox/38.0
+2019-11-07 12:47:09 DEBUG headers:127 - http-outgoing-0 >> Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2019-11-07 12:47:09 DEBUG headers:127 - http-outgoing-0 >> Accept-Language: en-US
+2019-11-07 12:47:09 DEBUG headers:127 - http-outgoing-0 >> Accept-Encoding: gzip, deflate
+2019-11-07 12:47:09 DEBUG headers:127 - http-outgoing-0 >> Connection: Keep-Alive
+2019-11-07 12:47:09 DEBUG wire:72 - http-outgoing-0 >> "GET /escalade-webapp/connexion.jsp HTTP/1.1[\r][\n]"
+2019-11-07 12:47:09 DEBUG wire:72 - http-outgoing-0 >> "Host: localhost:8080[\r][\n]"
+2019-11-07 12:47:09 DEBUG wire:72 - http-outgoing-0 >> "User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:38.0) Gecko/20100101 Firefox/38.0[\r][\n]"
+2019-11-07 12:47:09 DEBUG wire:72 - http-outgoing-0 >> "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8[\r][\n]"
+2019-11-07 12:47:09 DEBUG wire:72 - http-outgoing-0 >> "Accept-Language: en-US[\r][\n]"
+2019-11-07 12:47:09 DEBUG wire:72 - http-outgoing-0 >> "Accept-Encoding: gzip, deflate[\r][\n]"
+2019-11-07 12:47:09 DEBUG wire:72 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2019-11-07 12:47:09 DEBUG wire:72 - http-outgoing-0 >> "[\r][\n]"
+2019-11-07 12:47:09 DEBUG wire:72 - http-outgoing-0 << "HTTP/1.1 404 [\r][\n]"
+2019-11-07 12:47:09 DEBUG wire:72 - http-outgoing-0 << "Content-Type: text/html;charset=utf-8[\r][\n]"
+2019-11-07 12:47:09 DEBUG wire:72 - http-outgoing-0 << "Content-Language: fr[\r][\n]"
+2019-11-07 12:47:09 DEBUG wire:72 - http-outgoing-0 << "Content-Length: 1029[\r][\n]"
+2019-11-07 12:47:09 DEBUG wire:72 - http-outgoing-0 << "Date: Thu, 07 Nov 2019 11:47:09 GMT[\r][\n]"
+2019-11-07 12:47:09 DEBUG wire:72 - http-outgoing-0 << "[\r][\n]"
+2019-11-07 12:47:09 DEBUG wire:86 - http-outgoing-0 << "<!doctype html><html lang="fr"><head><title>[0xc3][0x89]tat HTTP 404 [0xe2][0x80][0x93] Non trouv[0xc3][0xa9]</title><style type="text/css">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>[0xc3][0x89]tat HTTP 404 [0xe2][0x80][0x93] Non trouv[0xc3][0xa9]</h1><hr class="line" /><p><b>Type</b> Rapport d'[0xc3][0xa9]tat</p><p><b>message</b> &#47;escalade-webapp&#47;connexion.jsp</p><p><b>description</b> La ressource demand[0xc3][0xa9]e n'est pas disponible.</p><hr class="line" /><h3>Apache Tomcat/9.0.20</h3></body></html>"
+2019-11-07 12:47:09 DEBUG headers:113 - http-outgoing-0 << HTTP/1.1 404 
+2019-11-07 12:47:09 DEBUG headers:116 - http-outgoing-0 << Content-Type: text/html;charset=utf-8
+2019-11-07 12:47:09 DEBUG headers:116 - http-outgoing-0 << Content-Language: fr
+2019-11-07 12:47:09 DEBUG headers:116 - http-outgoing-0 << Content-Length: 1029
+2019-11-07 12:47:09 DEBUG headers:116 - http-outgoing-0 << Date: Thu, 07 Nov 2019 11:47:09 GMT
+2019-11-07 12:47:09 DEBUG MainClientExec:284 - Connection can be kept alive indefinitely
+2019-11-07 12:47:09 DEBUG PoolingHttpClientConnectionManager:314 - Connection [id: 0][route: {}->http://localhost:8080] can be kept alive indefinitely
+2019-11-07 12:47:09 DEBUG PoolingHttpClientConnectionManager:320 - Connection released: [id: 0][route: {}->http://localhost:8080][total kept alive: 1; route allocated: 1 of 6; total allocated: 1 of 20]
+2019-11-07 12:47:09 INFO  WebClient:516 - statusCode=[404] contentType=[text/html]
+2019-11-07 12:47:09 DEBUG EncodingSniffer:635 - Encoding found in HTTP headers: 'UTF-8'.
+2019-11-07 12:47:09 INFO  WebClient:517 - <!doctype html><html lang="fr"><head><title>État HTTP 404 – Non trouvé</title><style type="text/css">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>État HTTP 404 – Non trouvé</h1><hr class="line" /><p><b>Type</b> Rapport d'état</p><p><b>message</b> &#47;escalade-webapp&#47;connexion.jsp</p><p><b>description</b> La ressource demandée n'est pas disponible.</p><hr class="line" /><h3>Apache Tomcat/9.0.20</h3></body></html>
+2019-11-07 12:47:09 DEBUG WebWindowImpl:126 - setEnclosedPage: HtmlPage(http://localhost:8080/escalade-webapp/connexion.jsp)@838800272
+2019-11-07 12:47:09 DEBUG WebWindowImpl:199 - destroyChildren
+2019-11-07 12:47:09 DEBUG EncodingSniffer:635 - Encoding found in HTTP headers: 'UTF-8'.
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgForeignObject to SVGForeignObjectElement
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeDiffuseLighting to SVGFEDiffuseLightingElement
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to HTMLCollection
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlKeygen to HTMLSpanElement
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlSpan to HTMLSpanElement
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeColorMatrix to SVGFEColorMatrixElement
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlMarquee to HTMLDivElement
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlDivision to HTMLDivElement
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTime to HTMLTimeElement
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeDistantLight to SVGFEDistantLightElement
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlFrameSet to HTMLFrameSetElement
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlOption to HTMLOptionElement
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Selection
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeFlood to SVGFEFloodElement
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlBase to HTMLBaseElement
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlMap to HTMLMapElement
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to MouseEvent
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlSelect to HTMLSelectElement
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgMetadata to SVGMetadataElement
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgUse to SVGUseElement
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHorizontalRule to HTMLHRElement
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgRadialGradient to SVGRadialGradientElement
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeMergeNode to SVGFEMergeNodeElement
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTemplate to HTMLTemplateElement
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlDirectory to HTMLDirectoryElement
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to DataTransfer
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlForm to HTMLFormElement
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlOutput to HTMLOutputElement
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlUnorderedList to HTMLUListElement
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeFuncA to SVGFEFuncAElement
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Storage
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to External
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlVideo to HTMLVideoElement
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlInlineFrame to HTMLIFrameElement
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgTextPath to SVGTextPathElement
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlBreak to HTMLBRElement
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.DomDocumentFragment to DocumentFragment
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to NamedNodeMap
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeConvolveMatrix to SVGFEConvolveMatrixElement
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to OfflineResourceList
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgPolygon to SVGPolygonElement
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlFrame to HTMLFrameElement
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlAnchor to HTMLAnchorElement
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlMenuItem to HTMLMenuItemElement
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgLinearGradient to SVGLinearGradientElement
+2019-11-07 12:47:09 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeComponentTransfer to SVGFEComponentTransferElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTitle to HTMLTitleElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlBackgroundSound to HTMLBGSoundElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgPath to SVGPathElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgEllipse to SVGEllipseElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.DomProcessingInstruction to ProcessingInstruction
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to HTMLOptionsCollection
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to MessageEvent
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeComposite to SVGFECompositeElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlMeta to HTMLMetaElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgMarker to SVGMarkerElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgDefs to SVGDefsElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlDataList to HTMLDataListElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeTile to SVGFETileElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to UIEvent
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to XMLHttpRequestEventTarget
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.DomText to Text
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlDefinitionList to HTMLDListElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFePointLight to SVGFEPointLightElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlOrderedList to HTMLOListElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlOptionGroup to HTMLOptGroupElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlFont to HTMLFontElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlPicture to HTMLPictureElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlLabel to HTMLLabelElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgCircle to SVGCircleElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.DomCDataSection to CDATASection
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlImage to HTMLImageElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to CSSGroupingRule
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgAnimateTransform to SVGAnimateTransformElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeMorphology to SVGFEMorphologyElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to DOMImplementation
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlContent to HTMLContentElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to CSSStyleRule
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFilter to SVGFilterElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTextArea to HTMLTextAreaElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.DomComment to Comment
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgAltGlyph to SVGAltGlyphElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlObject to HTMLObjectElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgPattern to SVGPatternElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlBody to HTMLBodyElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgTSpan to SVGTSpanElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to StaticNodeList
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeMerge to SVGFEMergeElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlBlockQuote to HTMLQuoteElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlInlineQuotation to HTMLQuoteElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlInput to HTMLInputElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Node
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to KeyboardEvent
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeSpecularLighting to SVGFESpecularLightingElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Document
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to History
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.DomAttr to Attr
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableColumnGroup to HTMLTableColElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableColumn to HTMLTableColElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlCaption to HTMLTableCaptionElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlUnknownElement to HTMLUnknownElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to StyleSheetList
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlMenu to HTMLMenuElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlInsertedText to HTMLModElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlDeletedText to HTMLModElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlListItem to HTMLLIElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to CSSConditionRule
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlStyle to HTMLStyleElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlEmbed to HTMLEmbedElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgElement to SVGElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgMask to SVGMaskElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlAudio to HTMLAudioElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgSymbol to SVGSymbolElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHtml to HTMLHtmlElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to SVGGeometryElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Navigator
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Event
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlProgress to HTMLProgressElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to DOMRect
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to SVGGraphicsElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableRow to HTMLTableRowElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Geolocation
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlMeter to HTMLMeterElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlButton to HTMLButtonElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading1 to HTMLHeadingElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading2 to HTMLHeadingElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading3 to HTMLHeadingElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading4 to HTMLHeadingElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading6 to HTMLHeadingElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading5 to HTMLHeadingElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlLegend to HTMLLegendElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeOffset to SVGFEOffsetElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgSvg to SVGSVGElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to CharacterData
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlFieldSet to HTMLFieldSetElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgTitle to SVGTitleElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.DomElement to Element
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgStyle to SVGStyleElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgImage to SVGImageElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Console
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to EventTarget
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.DomDocumentType to DocumentType
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlSource to HTMLSourceElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlParagraph to HTMLParagraphElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlApplet to HTMLAppletElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgSwitch to SVGSwitchElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Location
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeImage to SVGFEImageElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgLine to SVGLineElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeGaussianBlur to SVGFEGaussianBlurElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgSet to SVGSetElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTable to HTMLTableElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlMark to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlBidirectionalOverride to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlCitation to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlPlainText to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlFigure to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlKeyboard to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlAbbreviated to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlElement to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlListing to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlMain to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlAcronym to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlBold to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlFigureCaption to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlVariable to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlArticle to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlCenter to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlAside to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlSample to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlAddress to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlStrike to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlSuperscript to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlBig to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlNoScript to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlBaseFont to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTeletype to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlNoEmbed to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlNoFrames to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeader to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlItalic to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlSmall to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlSection to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlCode to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlNoBreak to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlDefinitionDescription to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlNav to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlS to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlDefinition to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlFooter to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlSubscript to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlUnderlined to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlDefinitionTerm to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlWordBreak to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlEmphasis to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlExample to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlStrong to HTMLElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to NodeList
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTrack to HTMLTrackElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to HTMLDocument
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgText to SVGTextElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgStop to SVGStopElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgView to SVGViewElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to CSSStyleDeclaration
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgScript to SVGScriptElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlScript to HTMLScriptElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgMPath to SVGMPathElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgPolyline to SVGPolylineElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeFuncG to SVGFEFuncGElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to CSSRuleList
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeFuncR to SVGFEFuncRElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlParameter to HTMLParamElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeBlend to SVGFEBlendElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgRect to SVGRectElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableCell to HTMLTableCellElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgDesc to SVGDescElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgGroup to SVGGElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgAnimateMotion to SVGAnimateMotionElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to MutationEvent
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgAnchor to SVGAElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgAnimate to SVGAnimateElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlLink to HTMLLinkElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeTurbulence to SVGFETurbulenceElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHead to HTMLHeadElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeDisplacementMap to SVGFEDisplacementMapElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Screen
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlArea to HTMLAreaElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableBody to HTMLTableSectionElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableHeader to HTMLTableSectionElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableFooter to HTMLTableSectionElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlData to HTMLDataElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgClipPath to SVGClipPathElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeFuncB to SVGFEFuncBElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlPreformattedText to HTMLPreElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeSpotLight to SVGFESpotLightElement
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to CSSStyleSheet
+2019-11-07 12:47:10 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlCanvas to HTMLCanvasElement
+2019-11-07 12:47:10 DEBUG HtmlUnitTestingEngineImpl:938 - Window "" changed : "no_html" became "État HTTP 404 – Non trouvé
+2019-11-07 12:47:10 DEBUG DomElement:1155 - Firing Event DOMContentLoaded (Current Target: HTMLElement for HtmlHtml[<html lang="fr">]);
+2019-11-07 12:47:10 DEBUG DomElement:1155 - Firing Event load (Current Target: HTMLElement for HtmlHtml[<html lang="fr">]);
+2019-11-07 12:48:43 DEBUG WebClient:333 - Get page for window named '', using WebRequest[<url="http://localhost:8080/escalade-webapp/connexion.jsp", GET, EncodingType[name=application/x-www-form-urlencoded], [], {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8, Accept-Encoding=gzip, deflate}, null>]
+2019-11-07 12:48:43 DEBUG WebClient:1267 - Load response for GET http://localhost:8080/escalade-webapp/connexion.jsp
+2019-11-07 12:48:44 DEBUG RequestAddCookies:122 - CookieSpec selected: mine
+2019-11-07 12:48:44 DEBUG RequestAuthCache:76 - Auth cache not set in the context
+2019-11-07 12:48:44 DEBUG PoolingHttpClientConnectionManager:249 - Connection request: [route: {}->http://localhost:8080][total kept alive: 0; route allocated: 0 of 6; total allocated: 0 of 20]
+2019-11-07 12:48:44 DEBUG PoolingHttpClientConnectionManager:282 - Connection leased: [id: 0][route: {}->http://localhost:8080][total kept alive: 0; route allocated: 1 of 6; total allocated: 1 of 20]
+2019-11-07 12:48:44 DEBUG MainClientExec:234 - Opening connection {}->http://localhost:8080
+2019-11-07 12:48:44 DEBUG DefaultHttpClientConnectionOperator:131 - Connecting to localhost/127.0.0.1:8080
+2019-11-07 12:48:44 DEBUG DefaultHttpClientConnectionOperator:138 - Connection established 127.0.0.1:42274<->127.0.0.1:8080
+2019-11-07 12:48:44 DEBUG MainClientExec:255 - Executing request GET /escalade-webapp/connexion.jsp HTTP/1.1
+2019-11-07 12:48:44 DEBUG MainClientExec:260 - Target auth state: UNCHALLENGED
+2019-11-07 12:48:44 DEBUG MainClientExec:266 - Proxy auth state: UNCHALLENGED
+2019-11-07 12:48:44 DEBUG headers:124 - http-outgoing-0 >> GET /escalade-webapp/connexion.jsp HTTP/1.1
+2019-11-07 12:48:44 DEBUG headers:127 - http-outgoing-0 >> Host: localhost:8080
+2019-11-07 12:48:44 DEBUG headers:127 - http-outgoing-0 >> User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:38.0) Gecko/20100101 Firefox/38.0
+2019-11-07 12:48:44 DEBUG headers:127 - http-outgoing-0 >> Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2019-11-07 12:48:44 DEBUG headers:127 - http-outgoing-0 >> Accept-Language: en-US
+2019-11-07 12:48:44 DEBUG headers:127 - http-outgoing-0 >> Accept-Encoding: gzip, deflate
+2019-11-07 12:48:44 DEBUG headers:127 - http-outgoing-0 >> Connection: Keep-Alive
+2019-11-07 12:48:44 DEBUG wire:72 - http-outgoing-0 >> "GET /escalade-webapp/connexion.jsp HTTP/1.1[\r][\n]"
+2019-11-07 12:48:44 DEBUG wire:72 - http-outgoing-0 >> "Host: localhost:8080[\r][\n]"
+2019-11-07 12:48:44 DEBUG wire:72 - http-outgoing-0 >> "User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:38.0) Gecko/20100101 Firefox/38.0[\r][\n]"
+2019-11-07 12:48:44 DEBUG wire:72 - http-outgoing-0 >> "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8[\r][\n]"
+2019-11-07 12:48:44 DEBUG wire:72 - http-outgoing-0 >> "Accept-Language: en-US[\r][\n]"
+2019-11-07 12:48:44 DEBUG wire:72 - http-outgoing-0 >> "Accept-Encoding: gzip, deflate[\r][\n]"
+2019-11-07 12:48:44 DEBUG wire:72 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2019-11-07 12:48:44 DEBUG wire:72 - http-outgoing-0 >> "[\r][\n]"
+2019-11-07 12:48:44 DEBUG wire:72 - http-outgoing-0 << "HTTP/1.1 404 [\r][\n]"
+2019-11-07 12:48:44 DEBUG wire:72 - http-outgoing-0 << "Content-Type: text/html;charset=utf-8[\r][\n]"
+2019-11-07 12:48:44 DEBUG wire:72 - http-outgoing-0 << "Content-Language: fr[\r][\n]"
+2019-11-07 12:48:44 DEBUG wire:72 - http-outgoing-0 << "Content-Length: 1029[\r][\n]"
+2019-11-07 12:48:44 DEBUG wire:72 - http-outgoing-0 << "Date: Thu, 07 Nov 2019 11:48:44 GMT[\r][\n]"
+2019-11-07 12:48:44 DEBUG wire:72 - http-outgoing-0 << "[\r][\n]"
+2019-11-07 12:48:44 DEBUG wire:86 - http-outgoing-0 << "<!doctype html><html lang="fr"><head><title>[0xc3][0x89]tat HTTP 404 [0xe2][0x80][0x93] Non trouv[0xc3][0xa9]</title><style type="text/css">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>[0xc3][0x89]tat HTTP 404 [0xe2][0x80][0x93] Non trouv[0xc3][0xa9]</h1><hr class="line" /><p><b>Type</b> Rapport d'[0xc3][0xa9]tat</p><p><b>message</b> &#47;escalade-webapp&#47;connexion.jsp</p><p><b>description</b> La ressource demand[0xc3][0xa9]e n'est pas disponible.</p><hr class="line" /><h3>Apache Tomcat/9.0.20</h3></body></html>"
+2019-11-07 12:48:44 DEBUG headers:113 - http-outgoing-0 << HTTP/1.1 404 
+2019-11-07 12:48:44 DEBUG headers:116 - http-outgoing-0 << Content-Type: text/html;charset=utf-8
+2019-11-07 12:48:44 DEBUG headers:116 - http-outgoing-0 << Content-Language: fr
+2019-11-07 12:48:44 DEBUG headers:116 - http-outgoing-0 << Content-Length: 1029
+2019-11-07 12:48:44 DEBUG headers:116 - http-outgoing-0 << Date: Thu, 07 Nov 2019 11:48:44 GMT
+2019-11-07 12:48:44 DEBUG MainClientExec:284 - Connection can be kept alive indefinitely
+2019-11-07 12:48:44 DEBUG PoolingHttpClientConnectionManager:314 - Connection [id: 0][route: {}->http://localhost:8080] can be kept alive indefinitely
+2019-11-07 12:48:44 DEBUG PoolingHttpClientConnectionManager:320 - Connection released: [id: 0][route: {}->http://localhost:8080][total kept alive: 1; route allocated: 1 of 6; total allocated: 1 of 20]
+2019-11-07 12:48:44 INFO  WebClient:516 - statusCode=[404] contentType=[text/html]
+2019-11-07 12:48:44 DEBUG EncodingSniffer:635 - Encoding found in HTTP headers: 'UTF-8'.
+2019-11-07 12:48:44 INFO  WebClient:517 - <!doctype html><html lang="fr"><head><title>État HTTP 404 – Non trouvé</title><style type="text/css">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>État HTTP 404 – Non trouvé</h1><hr class="line" /><p><b>Type</b> Rapport d'état</p><p><b>message</b> &#47;escalade-webapp&#47;connexion.jsp</p><p><b>description</b> La ressource demandée n'est pas disponible.</p><hr class="line" /><h3>Apache Tomcat/9.0.20</h3></body></html>
+2019-11-07 12:48:44 DEBUG WebWindowImpl:126 - setEnclosedPage: HtmlPage(http://localhost:8080/escalade-webapp/connexion.jsp)@1396851684
+2019-11-07 12:48:44 DEBUG WebWindowImpl:199 - destroyChildren
+2019-11-07 12:48:44 DEBUG EncodingSniffer:635 - Encoding found in HTTP headers: 'UTF-8'.
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgForeignObject to SVGForeignObjectElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeDiffuseLighting to SVGFEDiffuseLightingElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to HTMLCollection
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlSpan to HTMLSpanElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlKeygen to HTMLSpanElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeColorMatrix to SVGFEColorMatrixElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlDivision to HTMLDivElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlMarquee to HTMLDivElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTime to HTMLTimeElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeDistantLight to SVGFEDistantLightElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlFrameSet to HTMLFrameSetElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlOption to HTMLOptionElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Selection
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeFlood to SVGFEFloodElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlBase to HTMLBaseElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlMap to HTMLMapElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to MouseEvent
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlSelect to HTMLSelectElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgMetadata to SVGMetadataElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgUse to SVGUseElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHorizontalRule to HTMLHRElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgRadialGradient to SVGRadialGradientElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeMergeNode to SVGFEMergeNodeElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTemplate to HTMLTemplateElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlDirectory to HTMLDirectoryElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to DataTransfer
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlForm to HTMLFormElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlOutput to HTMLOutputElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlUnorderedList to HTMLUListElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeFuncA to SVGFEFuncAElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Storage
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to External
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlVideo to HTMLVideoElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlInlineFrame to HTMLIFrameElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgTextPath to SVGTextPathElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlBreak to HTMLBRElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.DomDocumentFragment to DocumentFragment
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to NamedNodeMap
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeConvolveMatrix to SVGFEConvolveMatrixElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to OfflineResourceList
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgPolygon to SVGPolygonElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlFrame to HTMLFrameElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlAnchor to HTMLAnchorElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlMenuItem to HTMLMenuItemElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgLinearGradient to SVGLinearGradientElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeComponentTransfer to SVGFEComponentTransferElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTitle to HTMLTitleElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlBackgroundSound to HTMLBGSoundElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgPath to SVGPathElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgEllipse to SVGEllipseElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.DomProcessingInstruction to ProcessingInstruction
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to HTMLOptionsCollection
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to MessageEvent
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeComposite to SVGFECompositeElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlMeta to HTMLMetaElement
+2019-11-07 12:48:44 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgMarker to SVGMarkerElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgDefs to SVGDefsElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlDataList to HTMLDataListElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeTile to SVGFETileElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to UIEvent
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to XMLHttpRequestEventTarget
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.DomText to Text
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlDefinitionList to HTMLDListElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFePointLight to SVGFEPointLightElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlOrderedList to HTMLOListElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlOptionGroup to HTMLOptGroupElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlFont to HTMLFontElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlPicture to HTMLPictureElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlLabel to HTMLLabelElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgCircle to SVGCircleElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.DomCDataSection to CDATASection
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlImage to HTMLImageElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to CSSGroupingRule
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgAnimateTransform to SVGAnimateTransformElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeMorphology to SVGFEMorphologyElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to DOMImplementation
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlContent to HTMLContentElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to CSSStyleRule
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFilter to SVGFilterElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTextArea to HTMLTextAreaElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.DomComment to Comment
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgAltGlyph to SVGAltGlyphElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlObject to HTMLObjectElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgPattern to SVGPatternElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlBody to HTMLBodyElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgTSpan to SVGTSpanElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to StaticNodeList
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeMerge to SVGFEMergeElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlBlockQuote to HTMLQuoteElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlInlineQuotation to HTMLQuoteElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlInput to HTMLInputElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Node
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to KeyboardEvent
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeSpecularLighting to SVGFESpecularLightingElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Document
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to History
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.DomAttr to Attr
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableColumn to HTMLTableColElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableColumnGroup to HTMLTableColElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlCaption to HTMLTableCaptionElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlUnknownElement to HTMLUnknownElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to StyleSheetList
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlMenu to HTMLMenuElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlDeletedText to HTMLModElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlInsertedText to HTMLModElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlListItem to HTMLLIElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to CSSConditionRule
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlStyle to HTMLStyleElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlEmbed to HTMLEmbedElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgElement to SVGElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgMask to SVGMaskElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlAudio to HTMLAudioElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgSymbol to SVGSymbolElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHtml to HTMLHtmlElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to SVGGeometryElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Navigator
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Event
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlProgress to HTMLProgressElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to DOMRect
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to SVGGraphicsElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableRow to HTMLTableRowElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Geolocation
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlMeter to HTMLMeterElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlButton to HTMLButtonElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading4 to HTMLHeadingElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading6 to HTMLHeadingElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading5 to HTMLHeadingElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading2 to HTMLHeadingElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading1 to HTMLHeadingElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading3 to HTMLHeadingElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlLegend to HTMLLegendElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeOffset to SVGFEOffsetElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgSvg to SVGSVGElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to CharacterData
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlFieldSet to HTMLFieldSetElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgTitle to SVGTitleElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.DomElement to Element
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgStyle to SVGStyleElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgImage to SVGImageElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Console
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to EventTarget
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.DomDocumentType to DocumentType
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlSource to HTMLSourceElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlParagraph to HTMLParagraphElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlApplet to HTMLAppletElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgSwitch to SVGSwitchElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Location
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeImage to SVGFEImageElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgLine to SVGLineElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeGaussianBlur to SVGFEGaussianBlurElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgSet to SVGSetElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTable to HTMLTableElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlEmphasis to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlSuperscript to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlSample to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlFooter to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlExample to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlDefinition to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlBaseFont to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlMark to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlAcronym to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlUnderlined to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlFigureCaption to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlStrong to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlSmall to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlCenter to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlWordBreak to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlFigure to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlNoEmbed to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlStrike to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlMain to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlDefinitionDescription to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlCitation to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlSubscript to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlElement to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlListing to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlBidirectionalOverride to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlBig to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlAbbreviated to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlAddress to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlAside to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlItalic to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlVariable to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlKeyboard to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlNoFrames to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlSection to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlCode to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlS to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlDefinitionTerm to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeader to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTeletype to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlNoScript to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlBold to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlNoBreak to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlNav to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlPlainText to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlArticle to HTMLElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to NodeList
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTrack to HTMLTrackElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to HTMLDocument
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgText to SVGTextElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgStop to SVGStopElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgView to SVGViewElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to CSSStyleDeclaration
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgScript to SVGScriptElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlScript to HTMLScriptElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgMPath to SVGMPathElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgPolyline to SVGPolylineElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeFuncG to SVGFEFuncGElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to CSSRuleList
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeFuncR to SVGFEFuncRElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlParameter to HTMLParamElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeBlend to SVGFEBlendElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgRect to SVGRectElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableCell to HTMLTableCellElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgDesc to SVGDescElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgGroup to SVGGElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgAnimateMotion to SVGAnimateMotionElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to MutationEvent
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgAnchor to SVGAElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgAnimate to SVGAnimateElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlLink to HTMLLinkElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeTurbulence to SVGFETurbulenceElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHead to HTMLHeadElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeDisplacementMap to SVGFEDisplacementMapElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Screen
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlArea to HTMLAreaElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableHeader to HTMLTableSectionElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableFooter to HTMLTableSectionElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableBody to HTMLTableSectionElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlData to HTMLDataElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgClipPath to SVGClipPathElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeFuncB to SVGFEFuncBElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlPreformattedText to HTMLPreElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeSpotLight to SVGFESpotLightElement
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to CSSStyleSheet
+2019-11-07 12:48:45 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlCanvas to HTMLCanvasElement
+2019-11-07 12:48:45 DEBUG HtmlUnitTestingEngineImpl:938 - Window "" changed : "no_html" became "État HTTP 404 – Non trouvé
+2019-11-07 12:48:45 DEBUG DomElement:1155 - Firing Event DOMContentLoaded (Current Target: HTMLElement for HtmlHtml[<html lang="fr">]);
+2019-11-07 12:48:45 DEBUG DomElement:1155 - Firing Event load (Current Target: HTMLElement for HtmlHtml[<html lang="fr">]);
+2019-11-07 12:53:52 DEBUG WebClient:333 - Get page for window named '', using WebRequest[<url="http://localhost:8080/escalade-webapp/connexion.jsp", GET, EncodingType[name=application/x-www-form-urlencoded], [], {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8, Accept-Encoding=gzip, deflate}, null>]
+2019-11-07 12:53:52 DEBUG WebClient:1267 - Load response for GET http://localhost:8080/escalade-webapp/connexion.jsp
+2019-11-07 12:53:53 DEBUG RequestAddCookies:122 - CookieSpec selected: mine
+2019-11-07 12:53:53 DEBUG RequestAuthCache:76 - Auth cache not set in the context
+2019-11-07 12:53:53 DEBUG PoolingHttpClientConnectionManager:249 - Connection request: [route: {}->http://localhost:8080][total kept alive: 0; route allocated: 0 of 6; total allocated: 0 of 20]
+2019-11-07 12:53:53 DEBUG PoolingHttpClientConnectionManager:282 - Connection leased: [id: 0][route: {}->http://localhost:8080][total kept alive: 0; route allocated: 1 of 6; total allocated: 1 of 20]
+2019-11-07 12:53:53 DEBUG MainClientExec:234 - Opening connection {}->http://localhost:8080
+2019-11-07 12:53:53 DEBUG DefaultHttpClientConnectionOperator:131 - Connecting to localhost/127.0.0.1:8080
+2019-11-07 12:53:53 DEBUG DefaultHttpClientConnectionOperator:138 - Connection established 127.0.0.1:42460<->127.0.0.1:8080
+2019-11-07 12:53:53 DEBUG MainClientExec:255 - Executing request GET /escalade-webapp/connexion.jsp HTTP/1.1
+2019-11-07 12:53:53 DEBUG MainClientExec:260 - Target auth state: UNCHALLENGED
+2019-11-07 12:53:53 DEBUG MainClientExec:266 - Proxy auth state: UNCHALLENGED
+2019-11-07 12:53:53 DEBUG headers:124 - http-outgoing-0 >> GET /escalade-webapp/connexion.jsp HTTP/1.1
+2019-11-07 12:53:53 DEBUG headers:127 - http-outgoing-0 >> Host: localhost:8080
+2019-11-07 12:53:53 DEBUG headers:127 - http-outgoing-0 >> User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:38.0) Gecko/20100101 Firefox/38.0
+2019-11-07 12:53:53 DEBUG headers:127 - http-outgoing-0 >> Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2019-11-07 12:53:53 DEBUG headers:127 - http-outgoing-0 >> Accept-Language: en-US
+2019-11-07 12:53:53 DEBUG headers:127 - http-outgoing-0 >> Accept-Encoding: gzip, deflate
+2019-11-07 12:53:53 DEBUG headers:127 - http-outgoing-0 >> Connection: Keep-Alive
+2019-11-07 12:53:53 DEBUG wire:72 - http-outgoing-0 >> "GET /escalade-webapp/connexion.jsp HTTP/1.1[\r][\n]"
+2019-11-07 12:53:53 DEBUG wire:72 - http-outgoing-0 >> "Host: localhost:8080[\r][\n]"
+2019-11-07 12:53:53 DEBUG wire:72 - http-outgoing-0 >> "User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:38.0) Gecko/20100101 Firefox/38.0[\r][\n]"
+2019-11-07 12:53:53 DEBUG wire:72 - http-outgoing-0 >> "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8[\r][\n]"
+2019-11-07 12:53:53 DEBUG wire:72 - http-outgoing-0 >> "Accept-Language: en-US[\r][\n]"
+2019-11-07 12:53:53 DEBUG wire:72 - http-outgoing-0 >> "Accept-Encoding: gzip, deflate[\r][\n]"
+2019-11-07 12:53:53 DEBUG wire:72 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2019-11-07 12:53:53 DEBUG wire:72 - http-outgoing-0 >> "[\r][\n]"
+2019-11-07 12:53:53 DEBUG wire:72 - http-outgoing-0 << "HTTP/1.1 404 [\r][\n]"
+2019-11-07 12:53:53 DEBUG wire:72 - http-outgoing-0 << "Content-Type: text/html;charset=utf-8[\r][\n]"
+2019-11-07 12:53:53 DEBUG wire:72 - http-outgoing-0 << "Content-Language: fr[\r][\n]"
+2019-11-07 12:53:53 DEBUG wire:72 - http-outgoing-0 << "Content-Length: 1029[\r][\n]"
+2019-11-07 12:53:53 DEBUG wire:72 - http-outgoing-0 << "Date: Thu, 07 Nov 2019 11:53:53 GMT[\r][\n]"
+2019-11-07 12:53:53 DEBUG wire:72 - http-outgoing-0 << "[\r][\n]"
+2019-11-07 12:53:53 DEBUG wire:86 - http-outgoing-0 << "<!doctype html><html lang="fr"><head><title>[0xc3][0x89]tat HTTP 404 [0xe2][0x80][0x93] Non trouv[0xc3][0xa9]</title><style type="text/css">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>[0xc3][0x89]tat HTTP 404 [0xe2][0x80][0x93] Non trouv[0xc3][0xa9]</h1><hr class="line" /><p><b>Type</b> Rapport d'[0xc3][0xa9]tat</p><p><b>message</b> &#47;escalade-webapp&#47;connexion.jsp</p><p><b>description</b> La ressource demand[0xc3][0xa9]e n'est pas disponible.</p><hr class="line" /><h3>Apache Tomcat/9.0.20</h3></body></html>"
+2019-11-07 12:53:53 DEBUG headers:113 - http-outgoing-0 << HTTP/1.1 404 
+2019-11-07 12:53:53 DEBUG headers:116 - http-outgoing-0 << Content-Type: text/html;charset=utf-8
+2019-11-07 12:53:53 DEBUG headers:116 - http-outgoing-0 << Content-Language: fr
+2019-11-07 12:53:53 DEBUG headers:116 - http-outgoing-0 << Content-Length: 1029
+2019-11-07 12:53:53 DEBUG headers:116 - http-outgoing-0 << Date: Thu, 07 Nov 2019 11:53:53 GMT
+2019-11-07 12:53:53 DEBUG MainClientExec:284 - Connection can be kept alive indefinitely
+2019-11-07 12:53:53 DEBUG PoolingHttpClientConnectionManager:314 - Connection [id: 0][route: {}->http://localhost:8080] can be kept alive indefinitely
+2019-11-07 12:53:53 DEBUG PoolingHttpClientConnectionManager:320 - Connection released: [id: 0][route: {}->http://localhost:8080][total kept alive: 1; route allocated: 1 of 6; total allocated: 1 of 20]
+2019-11-07 12:53:53 INFO  WebClient:516 - statusCode=[404] contentType=[text/html]
+2019-11-07 12:53:53 DEBUG EncodingSniffer:635 - Encoding found in HTTP headers: 'UTF-8'.
+2019-11-07 12:53:53 INFO  WebClient:517 - <!doctype html><html lang="fr"><head><title>État HTTP 404 – Non trouvé</title><style type="text/css">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>État HTTP 404 – Non trouvé</h1><hr class="line" /><p><b>Type</b> Rapport d'état</p><p><b>message</b> &#47;escalade-webapp&#47;connexion.jsp</p><p><b>description</b> La ressource demandée n'est pas disponible.</p><hr class="line" /><h3>Apache Tomcat/9.0.20</h3></body></html>
+2019-11-07 12:53:53 DEBUG WebWindowImpl:126 - setEnclosedPage: HtmlPage(http://localhost:8080/escalade-webapp/connexion.jsp)@1709700394
+2019-11-07 12:53:53 DEBUG WebWindowImpl:199 - destroyChildren
+2019-11-07 12:53:53 DEBUG EncodingSniffer:635 - Encoding found in HTTP headers: 'UTF-8'.
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgForeignObject to SVGForeignObjectElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeDiffuseLighting to SVGFEDiffuseLightingElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to HTMLCollection
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlSpan to HTMLSpanElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlKeygen to HTMLSpanElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeColorMatrix to SVGFEColorMatrixElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlMarquee to HTMLDivElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlDivision to HTMLDivElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTime to HTMLTimeElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeDistantLight to SVGFEDistantLightElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlFrameSet to HTMLFrameSetElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlOption to HTMLOptionElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Selection
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeFlood to SVGFEFloodElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlBase to HTMLBaseElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlMap to HTMLMapElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to MouseEvent
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlSelect to HTMLSelectElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgMetadata to SVGMetadataElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgUse to SVGUseElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHorizontalRule to HTMLHRElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgRadialGradient to SVGRadialGradientElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeMergeNode to SVGFEMergeNodeElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTemplate to HTMLTemplateElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlDirectory to HTMLDirectoryElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to DataTransfer
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlForm to HTMLFormElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlOutput to HTMLOutputElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlUnorderedList to HTMLUListElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeFuncA to SVGFEFuncAElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Storage
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to External
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlVideo to HTMLVideoElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlInlineFrame to HTMLIFrameElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgTextPath to SVGTextPathElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlBreak to HTMLBRElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.DomDocumentFragment to DocumentFragment
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to NamedNodeMap
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeConvolveMatrix to SVGFEConvolveMatrixElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to OfflineResourceList
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgPolygon to SVGPolygonElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlFrame to HTMLFrameElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlAnchor to HTMLAnchorElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlMenuItem to HTMLMenuItemElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgLinearGradient to SVGLinearGradientElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeComponentTransfer to SVGFEComponentTransferElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTitle to HTMLTitleElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlBackgroundSound to HTMLBGSoundElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgPath to SVGPathElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgEllipse to SVGEllipseElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.DomProcessingInstruction to ProcessingInstruction
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to HTMLOptionsCollection
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to MessageEvent
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeComposite to SVGFECompositeElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlMeta to HTMLMetaElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgMarker to SVGMarkerElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgDefs to SVGDefsElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlDataList to HTMLDataListElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeTile to SVGFETileElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to UIEvent
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to XMLHttpRequestEventTarget
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.DomText to Text
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlDefinitionList to HTMLDListElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFePointLight to SVGFEPointLightElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlOrderedList to HTMLOListElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlOptionGroup to HTMLOptGroupElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlFont to HTMLFontElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlPicture to HTMLPictureElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlLabel to HTMLLabelElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgCircle to SVGCircleElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.DomCDataSection to CDATASection
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlImage to HTMLImageElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to CSSGroupingRule
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgAnimateTransform to SVGAnimateTransformElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeMorphology to SVGFEMorphologyElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to DOMImplementation
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlContent to HTMLContentElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to CSSStyleRule
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFilter to SVGFilterElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTextArea to HTMLTextAreaElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.DomComment to Comment
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgAltGlyph to SVGAltGlyphElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlObject to HTMLObjectElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgPattern to SVGPatternElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlBody to HTMLBodyElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgTSpan to SVGTSpanElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to StaticNodeList
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeMerge to SVGFEMergeElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlInlineQuotation to HTMLQuoteElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlBlockQuote to HTMLQuoteElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlInput to HTMLInputElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Node
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to KeyboardEvent
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeSpecularLighting to SVGFESpecularLightingElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Document
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to History
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.DomAttr to Attr
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableColumn to HTMLTableColElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableColumnGroup to HTMLTableColElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlCaption to HTMLTableCaptionElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlUnknownElement to HTMLUnknownElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to StyleSheetList
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlMenu to HTMLMenuElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlInsertedText to HTMLModElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlDeletedText to HTMLModElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlListItem to HTMLLIElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to CSSConditionRule
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlStyle to HTMLStyleElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlEmbed to HTMLEmbedElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgElement to SVGElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgMask to SVGMaskElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlAudio to HTMLAudioElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgSymbol to SVGSymbolElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHtml to HTMLHtmlElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to SVGGeometryElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Navigator
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Event
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlProgress to HTMLProgressElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to DOMRect
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to SVGGraphicsElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableRow to HTMLTableRowElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Geolocation
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlMeter to HTMLMeterElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlButton to HTMLButtonElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading5 to HTMLHeadingElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading2 to HTMLHeadingElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading3 to HTMLHeadingElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading4 to HTMLHeadingElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading1 to HTMLHeadingElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading6 to HTMLHeadingElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlLegend to HTMLLegendElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeOffset to SVGFEOffsetElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgSvg to SVGSVGElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to CharacterData
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlFieldSet to HTMLFieldSetElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgTitle to SVGTitleElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.DomElement to Element
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgStyle to SVGStyleElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgImage to SVGImageElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Console
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to EventTarget
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.DomDocumentType to DocumentType
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlSource to HTMLSourceElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlParagraph to HTMLParagraphElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlApplet to HTMLAppletElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgSwitch to SVGSwitchElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Location
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeImage to SVGFEImageElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgLine to SVGLineElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeGaussianBlur to SVGFEGaussianBlurElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgSet to SVGSetElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTable to HTMLTableElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlSubscript to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlDefinition to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlCenter to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlS to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlArticle to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlDefinitionTerm to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlCitation to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlAcronym to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlBig to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlListing to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlItalic to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlFooter to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlNoScript to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlBold to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlWordBreak to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlExample to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlAside to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlAddress to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlMark to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlUnderlined to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlSection to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlSmall to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlDefinitionDescription to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlElement to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlMain to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlKeyboard to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlSuperscript to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlSample to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlNav to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlPlainText to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlAbbreviated to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlBaseFont to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTeletype to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlNoBreak to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlEmphasis to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeader to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlVariable to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlCode to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlNoFrames to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlNoEmbed to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlStrike to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlBidirectionalOverride to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlFigure to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlFigureCaption to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlStrong to HTMLElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to NodeList
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTrack to HTMLTrackElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to HTMLDocument
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgText to SVGTextElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgStop to SVGStopElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgView to SVGViewElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to CSSStyleDeclaration
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgScript to SVGScriptElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlScript to HTMLScriptElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgMPath to SVGMPathElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgPolyline to SVGPolylineElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeFuncG to SVGFEFuncGElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to CSSRuleList
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeFuncR to SVGFEFuncRElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlParameter to HTMLParamElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeBlend to SVGFEBlendElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgRect to SVGRectElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableCell to HTMLTableCellElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgDesc to SVGDescElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgGroup to SVGGElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgAnimateMotion to SVGAnimateMotionElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to MutationEvent
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgAnchor to SVGAElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgAnimate to SVGAnimateElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlLink to HTMLLinkElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeTurbulence to SVGFETurbulenceElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHead to HTMLHeadElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeDisplacementMap to SVGFEDisplacementMapElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Screen
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlArea to HTMLAreaElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableBody to HTMLTableSectionElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableFooter to HTMLTableSectionElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableHeader to HTMLTableSectionElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlData to HTMLDataElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgClipPath to SVGClipPathElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeFuncB to SVGFEFuncBElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlPreformattedText to HTMLPreElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeSpotLight to SVGFESpotLightElement
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to CSSStyleSheet
+2019-11-07 12:53:54 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlCanvas to HTMLCanvasElement
+2019-11-07 12:53:54 DEBUG HtmlUnitTestingEngineImpl:938 - Window "" changed : "no_html" became "État HTTP 404 – Non trouvé
+2019-11-07 12:53:54 DEBUG DomElement:1155 - Firing Event DOMContentLoaded (Current Target: HTMLElement for HtmlHtml[<html lang="fr">]);
+2019-11-07 12:53:54 DEBUG DomElement:1155 - Firing Event load (Current Target: HTMLElement for HtmlHtml[<html lang="fr">]);
+2019-11-07 12:55:00 DEBUG WebClient:333 - Get page for window named '', using WebRequest[<url="http://localhost:8080/escalade-webapp/connexion", GET, EncodingType[name=application/x-www-form-urlencoded], [], {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8, Accept-Encoding=gzip, deflate}, null>]
+2019-11-07 12:55:00 DEBUG WebClient:1267 - Load response for GET http://localhost:8080/escalade-webapp/connexion
+2019-11-07 12:55:00 DEBUG RequestAddCookies:122 - CookieSpec selected: mine
+2019-11-07 12:55:00 DEBUG RequestAuthCache:76 - Auth cache not set in the context
+2019-11-07 12:55:00 DEBUG PoolingHttpClientConnectionManager:249 - Connection request: [route: {}->http://localhost:8080][total kept alive: 0; route allocated: 0 of 6; total allocated: 0 of 20]
+2019-11-07 12:55:00 DEBUG PoolingHttpClientConnectionManager:282 - Connection leased: [id: 0][route: {}->http://localhost:8080][total kept alive: 0; route allocated: 1 of 6; total allocated: 1 of 20]
+2019-11-07 12:55:00 DEBUG MainClientExec:234 - Opening connection {}->http://localhost:8080
+2019-11-07 12:55:00 DEBUG DefaultHttpClientConnectionOperator:131 - Connecting to localhost/127.0.0.1:8080
+2019-11-07 12:55:00 DEBUG DefaultHttpClientConnectionOperator:138 - Connection established 127.0.0.1:42480<->127.0.0.1:8080
+2019-11-07 12:55:00 DEBUG MainClientExec:255 - Executing request GET /escalade-webapp/connexion HTTP/1.1
+2019-11-07 12:55:00 DEBUG MainClientExec:260 - Target auth state: UNCHALLENGED
+2019-11-07 12:55:00 DEBUG MainClientExec:266 - Proxy auth state: UNCHALLENGED
+2019-11-07 12:55:00 DEBUG headers:124 - http-outgoing-0 >> GET /escalade-webapp/connexion HTTP/1.1
+2019-11-07 12:55:00 DEBUG headers:127 - http-outgoing-0 >> Host: localhost:8080
+2019-11-07 12:55:00 DEBUG headers:127 - http-outgoing-0 >> User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:38.0) Gecko/20100101 Firefox/38.0
+2019-11-07 12:55:00 DEBUG headers:127 - http-outgoing-0 >> Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2019-11-07 12:55:00 DEBUG headers:127 - http-outgoing-0 >> Accept-Language: en-US
+2019-11-07 12:55:00 DEBUG headers:127 - http-outgoing-0 >> Accept-Encoding: gzip, deflate
+2019-11-07 12:55:00 DEBUG headers:127 - http-outgoing-0 >> Connection: Keep-Alive
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 >> "GET /escalade-webapp/connexion HTTP/1.1[\r][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 >> "Host: localhost:8080[\r][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 >> "User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:38.0) Gecko/20100101 Firefox/38.0[\r][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 >> "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8[\r][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 >> "Accept-Language: en-US[\r][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 >> "Accept-Encoding: gzip, deflate[\r][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 >> "[\r][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "HTTP/1.1 200 [\r][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "Set-Cookie: JSESSIONID=BA07A884EFDA47F2838ACD7DDEB50346; Path=/escalade-webapp; HttpOnly[\r][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "Content-Type: text/html;charset=UTF-8[\r][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "Content-Language: en-US[\r][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "Content-Length: 2430[\r][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "Date: Thu, 07 Nov 2019 11:55:00 GMT[\r][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[\r][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "<!DOCTYPE html>[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "<html>[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9]<head>[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9]<meta charset="UTF-8">[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9]<meta name="viewport" content="width=device-width, initial-scale=1.0"/>[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9]<title>Amis Escalade: Connexion</title>[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9][0x9]<link href="/escalade-webapp/assets/css/connexion.css;jsessionid=BA07A884EFDA47F2838ACD7DDEB50346" rel="stylesheet">[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9][0x9][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9][0x9][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9]</head>[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9]<body>[0x9][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "    <div id="menu">[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "    [0x9]<div><a href="/escalade-webapp"><img src="/escalade-webapp/assets/img/logo.png;jsessionid=BA07A884EFDA47F2838ACD7DDEB50346" id="logoAcc" alt="logo"/></a></div>[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "    [0x9]<div><a href="site">Les Sites</a></div>   [0x9][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "    [0x9][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "    [0x9][0x9][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "    [0x9][0x9][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "    [0x9][0x9][0x9]<div><a href="connexion">Connexion/Inscription</a></div>[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "    [0x9][0x9][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "    [0x9][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "    </div>[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "    [\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "    <div id="menuMobile">[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "    [0x9][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "    [0x9]<img src="/escalade-webapp/assets/img/logo.png;jsessionid=BA07A884EFDA47F2838ACD7DDEB50346" id="logo" alt="logo"/>[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "    [0x9]<img src="/escalade-webapp/assets/img/menu.png;jsessionid=BA07A884EFDA47F2838ACD7DDEB50346" id="menuBut" alt="menu"/>[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "    </div>[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "    [\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "    <div id="menuMob">[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "    [0x9]<div><a href="/escalade-webapp">Accueil</a></div>[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "    [0x9]<div><a href="site">Les Sites</a></div>   [0x9][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "    [0x9][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "    [0x9][0x9][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "    [0x9][0x9][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "    [0x9][0x9][0x9]<div><a href="connexion">Connexion/Inscription</a></div>[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "    [0x9][0x9][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "    [0x9][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "    </div>[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9]<div id="containerCon">[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9]<h1>Connexion</h1>[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9]<form id="userForm" action="connexion" method="post">[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9]<div><input id="id" name="id" type="hidden" value="0"/></div>[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9]<div>[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9][0x9]<label for="login">Entrez votre email</label>[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9]        [0x9]<input id="login" name="login" type="text" value=""/>[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9]        [0x9]<span class="error"></span>[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9]</div>[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9]<div>[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9][0x9]<label for="pswd">Entrez votre mot de passe</label>[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9]        [0x9]<input id="pswd" name="pswd" type="password" value=""/>[0x9][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9]        [0x9]<span class="error"></span>[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9]</div>[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9]        <div>[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9]        [0x9]<input id="checkSubmit" type="submit" value="Connexion" />[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9]        </div>      [\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9]</form>[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9]<section id="DIVerror">[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9]<span class="error"></span>[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9]</section>[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9]<section id="inscription">[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9]<a id="inscriptionlink" href="inscription">Pas encore inscrit?</a>[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9]</section>[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9]</div>[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9]<footer>[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9]<p>Copyright les amis de l'escalade</p>[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "</footer>[0x9][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9]<script type="module" src="/escalade-webapp/assets/js/menumobile.js;jsessionid=BA07A884EFDA47F2838ACD7DDEB50346"></script>[\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][\n]"
+2019-11-07 12:55:00 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9]<script type="module" src="/escalade-webapp/assets/js/connexion.js;jsessionid=BA07A884EFDA47F2838ACD7DDEB50346"></script>[\n]"
+2019-11-07 12:55:01 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][\n]"
+2019-11-07 12:55:01 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][\n]"
+2019-11-07 12:55:01 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][\n]"
+2019-11-07 12:55:01 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][\n]"
+2019-11-07 12:55:01 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][\n]"
+2019-11-07 12:55:01 DEBUG wire:72 - http-outgoing-0 << "[0x9][\n]"
+2019-11-07 12:55:01 DEBUG wire:72 - http-outgoing-0 << "[0x9][\n]"
+2019-11-07 12:55:01 DEBUG wire:72 - http-outgoing-0 << "</body>[\n]"
+2019-11-07 12:55:01 DEBUG wire:86 - http-outgoing-0 << "</html>[0x9]"
+2019-11-07 12:55:01 DEBUG headers:113 - http-outgoing-0 << HTTP/1.1 200 
+2019-11-07 12:55:01 DEBUG headers:116 - http-outgoing-0 << Set-Cookie: JSESSIONID=BA07A884EFDA47F2838ACD7DDEB50346; Path=/escalade-webapp; HttpOnly
+2019-11-07 12:55:01 DEBUG headers:116 - http-outgoing-0 << Content-Type: text/html;charset=UTF-8
+2019-11-07 12:55:01 DEBUG headers:116 - http-outgoing-0 << Content-Language: en-US
+2019-11-07 12:55:01 DEBUG headers:116 - http-outgoing-0 << Content-Length: 2430
+2019-11-07 12:55:01 DEBUG headers:116 - http-outgoing-0 << Date: Thu, 07 Nov 2019 11:55:00 GMT
+2019-11-07 12:55:01 DEBUG MainClientExec:284 - Connection can be kept alive indefinitely
+2019-11-07 12:55:01 DEBUG ResponseProcessCookies:118 - Cookie accepted [JSESSIONID="BA07A884EFDA47F2838ACD7DDEB50346", version:0, domain:localhost, path:/escalade-webapp, expiry:null]
+2019-11-07 12:55:01 DEBUG PoolingHttpClientConnectionManager:314 - Connection [id: 0][route: {}->http://localhost:8080] can be kept alive indefinitely
+2019-11-07 12:55:01 DEBUG PoolingHttpClientConnectionManager:320 - Connection released: [id: 0][route: {}->http://localhost:8080][total kept alive: 1; route allocated: 1 of 6; total allocated: 1 of 20]
+2019-11-07 12:55:01 DEBUG WebWindowImpl:126 - setEnclosedPage: HtmlPage(http://localhost:8080/escalade-webapp/connexion)@296234255
+2019-11-07 12:55:01 DEBUG WebWindowImpl:199 - destroyChildren
+2019-11-07 12:55:01 DEBUG EncodingSniffer:635 - Encoding found in HTTP headers: 'UTF-8'.
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgForeignObject to SVGForeignObjectElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeDiffuseLighting to SVGFEDiffuseLightingElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to HTMLCollection
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlKeygen to HTMLSpanElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlSpan to HTMLSpanElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeColorMatrix to SVGFEColorMatrixElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlDivision to HTMLDivElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlMarquee to HTMLDivElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTime to HTMLTimeElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeDistantLight to SVGFEDistantLightElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlFrameSet to HTMLFrameSetElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlOption to HTMLOptionElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Selection
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeFlood to SVGFEFloodElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlBase to HTMLBaseElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlMap to HTMLMapElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to MouseEvent
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlSelect to HTMLSelectElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgMetadata to SVGMetadataElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgUse to SVGUseElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHorizontalRule to HTMLHRElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgRadialGradient to SVGRadialGradientElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeMergeNode to SVGFEMergeNodeElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTemplate to HTMLTemplateElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlDirectory to HTMLDirectoryElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to DataTransfer
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlForm to HTMLFormElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlOutput to HTMLOutputElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlUnorderedList to HTMLUListElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeFuncA to SVGFEFuncAElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Storage
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to External
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlVideo to HTMLVideoElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlInlineFrame to HTMLIFrameElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgTextPath to SVGTextPathElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlBreak to HTMLBRElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.DomDocumentFragment to DocumentFragment
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to NamedNodeMap
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeConvolveMatrix to SVGFEConvolveMatrixElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to OfflineResourceList
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgPolygon to SVGPolygonElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlFrame to HTMLFrameElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlAnchor to HTMLAnchorElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlMenuItem to HTMLMenuItemElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgLinearGradient to SVGLinearGradientElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeComponentTransfer to SVGFEComponentTransferElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTitle to HTMLTitleElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlBackgroundSound to HTMLBGSoundElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgPath to SVGPathElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgEllipse to SVGEllipseElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.DomProcessingInstruction to ProcessingInstruction
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to HTMLOptionsCollection
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to MessageEvent
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeComposite to SVGFECompositeElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlMeta to HTMLMetaElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgMarker to SVGMarkerElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgDefs to SVGDefsElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlDataList to HTMLDataListElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeTile to SVGFETileElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to UIEvent
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to XMLHttpRequestEventTarget
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.DomText to Text
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlDefinitionList to HTMLDListElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFePointLight to SVGFEPointLightElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlOrderedList to HTMLOListElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlOptionGroup to HTMLOptGroupElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlFont to HTMLFontElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlPicture to HTMLPictureElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlLabel to HTMLLabelElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgCircle to SVGCircleElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.DomCDataSection to CDATASection
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlImage to HTMLImageElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to CSSGroupingRule
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgAnimateTransform to SVGAnimateTransformElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeMorphology to SVGFEMorphologyElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to DOMImplementation
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlContent to HTMLContentElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to CSSStyleRule
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFilter to SVGFilterElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTextArea to HTMLTextAreaElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.DomComment to Comment
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgAltGlyph to SVGAltGlyphElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlObject to HTMLObjectElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgPattern to SVGPatternElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlBody to HTMLBodyElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgTSpan to SVGTSpanElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to StaticNodeList
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeMerge to SVGFEMergeElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlInlineQuotation to HTMLQuoteElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlBlockQuote to HTMLQuoteElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlInput to HTMLInputElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Node
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to KeyboardEvent
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeSpecularLighting to SVGFESpecularLightingElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Document
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to History
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.DomAttr to Attr
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableColumnGroup to HTMLTableColElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableColumn to HTMLTableColElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlCaption to HTMLTableCaptionElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlUnknownElement to HTMLUnknownElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to StyleSheetList
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlMenu to HTMLMenuElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlDeletedText to HTMLModElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlInsertedText to HTMLModElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlListItem to HTMLLIElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to CSSConditionRule
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlStyle to HTMLStyleElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlEmbed to HTMLEmbedElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgElement to SVGElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgMask to SVGMaskElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlAudio to HTMLAudioElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgSymbol to SVGSymbolElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHtml to HTMLHtmlElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to SVGGeometryElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Navigator
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Event
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlProgress to HTMLProgressElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to DOMRect
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to SVGGraphicsElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableRow to HTMLTableRowElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Geolocation
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlMeter to HTMLMeterElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlButton to HTMLButtonElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading4 to HTMLHeadingElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading2 to HTMLHeadingElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading5 to HTMLHeadingElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading6 to HTMLHeadingElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading1 to HTMLHeadingElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading3 to HTMLHeadingElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlLegend to HTMLLegendElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeOffset to SVGFEOffsetElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgSvg to SVGSVGElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to CharacterData
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlFieldSet to HTMLFieldSetElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgTitle to SVGTitleElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.DomElement to Element
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgStyle to SVGStyleElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgImage to SVGImageElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Console
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to EventTarget
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.DomDocumentType to DocumentType
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlSource to HTMLSourceElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlParagraph to HTMLParagraphElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlApplet to HTMLAppletElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgSwitch to SVGSwitchElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Location
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeImage to SVGFEImageElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgLine to SVGLineElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeGaussianBlur to SVGFEGaussianBlurElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgSet to SVGSetElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTable to HTMLTableElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlAbbreviated to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlMark to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlNoEmbed to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlElement to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlSuperscript to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlSubscript to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlExample to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlFooter to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlSmall to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlMain to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlDefinition to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlNav to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlBidirectionalOverride to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlAddress to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlCenter to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlDefinitionTerm to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlBaseFont to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlListing to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlAcronym to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlBold to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlNoFrames to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlSample to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlS to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTeletype to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlNoBreak to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlVariable to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlStrike to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlDefinitionDescription to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlCode to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlEmphasis to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlFigure to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlBig to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlSection to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlNoScript to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeader to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlArticle to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlFigureCaption to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlPlainText to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlStrong to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlItalic to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlKeyboard to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlUnderlined to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlAside to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlWordBreak to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlCitation to HTMLElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to NodeList
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTrack to HTMLTrackElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to HTMLDocument
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgText to SVGTextElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgStop to SVGStopElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgView to SVGViewElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to CSSStyleDeclaration
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgScript to SVGScriptElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlScript to HTMLScriptElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgMPath to SVGMPathElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgPolyline to SVGPolylineElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeFuncG to SVGFEFuncGElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to CSSRuleList
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeFuncR to SVGFEFuncRElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlParameter to HTMLParamElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeBlend to SVGFEBlendElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgRect to SVGRectElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableCell to HTMLTableCellElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgDesc to SVGDescElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgGroup to SVGGElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgAnimateMotion to SVGAnimateMotionElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to MutationEvent
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgAnchor to SVGAElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgAnimate to SVGAnimateElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlLink to HTMLLinkElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeTurbulence to SVGFETurbulenceElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlHead to HTMLHeadElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeDisplacementMap to SVGFEDisplacementMapElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to Screen
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlArea to HTMLAreaElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableBody to HTMLTableSectionElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableFooter to HTMLTableSectionElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableHeader to HTMLTableSectionElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlData to HTMLDataElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgClipPath to SVGClipPathElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeFuncB to SVGFEFuncBElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlPreformattedText to HTMLPreElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeSpotLight to SVGFESpotLightElement
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping java.lang.Object to CSSStyleSheet
+2019-11-07 12:55:01 DEBUG AbstractJavaScriptConfiguration:324 - Mapping com.gargoylesoftware.htmlunit.html.HtmlCanvas to HTMLCanvasElement
+2019-11-07 12:55:01 DEBUG EncodingSniffer:635 - Encoding found in HTTP headers: 'UTF-8'.
+2019-11-07 12:55:01 DEBUG HtmlScript:250 - Script node added: <script type="module" src="/escalade-webapp/assets/js/menumobile.js;jsessionid=BA07A884EFDA47F2838ACD7DDEB50346">
+</script>
+
+2019-11-07 12:55:01 WARN  HtmlScript:468 - Script is not JavaScript (type: module, language: ). Skipping execution.
+2019-11-07 12:55:01 DEBUG HtmlScript:250 - Script node added: <script type="module" src="/escalade-webapp/assets/js/connexion.js;jsessionid=BA07A884EFDA47F2838ACD7DDEB50346">
+</script>
+
+2019-11-07 12:55:01 WARN  HtmlScript:468 - Script is not JavaScript (type: module, language: ). Skipping execution.
+2019-11-07 12:55:01 DEBUG HtmlUnitTestingEngineImpl:938 - Window "" changed : "no_html" became "Amis Escalade: Connexion
+2019-11-07 12:55:01 DEBUG DomElement:1155 - Firing Event DOMContentLoaded (Current Target: HTMLElement for HtmlHtml[<html>]);
+2019-11-07 12:55:01 DEBUG DomElement:1155 - Firing Event load (Current Target: HTMLElement for HtmlHtml[<html>]);
+2019-11-07 12:55:01 DEBUG DomElement:1155 - Firing Event mousedown (Current Target: HTMLElement for HtmlAnchor[<a id="inscriptionlink" href="inscription">]);
+2019-11-07 12:55:01 DEBUG DomElement:1155 - Firing Event focusin (Current Target: HTMLElement for HtmlAnchor[<a id="inscriptionlink" href="inscription">]);
+2019-11-07 12:55:01 DEBUG DomElement:1155 - Firing Event focus (Current Target: HTMLElement for HtmlAnchor[<a id="inscriptionlink" href="inscription">]);
+2019-11-07 12:55:01 DEBUG DomElement:1155 - Firing Event mouseup (Current Target: HTMLElement for HtmlAnchor[<a id="inscriptionlink" href="inscription">]);
+2019-11-07 12:55:01 DEBUG DomElement:1155 - Firing Event click (Current Target: HTMLElement for HtmlAnchor[<a id="inscriptionlink" href="inscription">]);
+2019-11-07 12:55:01 DEBUG HtmlAnchor:78 - do click action in window '', using href 'inscription'
+2019-11-07 12:55:02 DEBUG HtmlAnchor:119 - Getting page for http://localhost:8080/escalade-webapp/inscription, derived from href 'inscription', using the originating URL http://localhost:8080/escalade-webapp/connexion
+2019-11-07 12:55:02 DEBUG DomElement:1155 - Firing Event beforeunload (Current Target: HTMLElement for HtmlHtml[<html>]);
+2019-11-07 12:55:02 DEBUG WebClient:1267 - Load response for GET http://localhost:8080/escalade-webapp/inscription
+2019-11-07 12:55:02 DEBUG RequestAddCookies:122 - CookieSpec selected: mine
+2019-11-07 12:55:02 DEBUG RequestAddCookies:167 - Cookie [version: 0][name: JSESSIONID][value: BA07A884EFDA47F2838ACD7DDEB50346][domain: localhost][path: /escalade-webapp][expiry: null] match [localhost:8080/escalade-webapp/inscription]
+2019-11-07 12:55:02 DEBUG RequestAuthCache:76 - Auth cache not set in the context
+2019-11-07 12:55:02 DEBUG PoolingHttpClientConnectionManager:249 - Connection request: [route: {}->http://localhost:8080][total kept alive: 1; route allocated: 1 of 6; total allocated: 1 of 20]
+2019-11-07 12:55:02 DEBUG PoolingHttpClientConnectionManager:282 - Connection leased: [id: 0][route: {}->http://localhost:8080][total kept alive: 0; route allocated: 1 of 6; total allocated: 1 of 20]
+2019-11-07 12:55:02 DEBUG MainClientExec:255 - Executing request GET /escalade-webapp/inscription HTTP/1.1
+2019-11-07 12:55:02 DEBUG MainClientExec:260 - Target auth state: UNCHALLENGED
+2019-11-07 12:55:02 DEBUG MainClientExec:266 - Proxy auth state: UNCHALLENGED
+2019-11-07 12:55:02 DEBUG headers:124 - http-outgoing-0 >> GET /escalade-webapp/inscription HTTP/1.1
+2019-11-07 12:55:02 DEBUG headers:127 - http-outgoing-0 >> Host: localhost:8080
+2019-11-07 12:55:02 DEBUG headers:127 - http-outgoing-0 >> User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:38.0) Gecko/20100101 Firefox/38.0
+2019-11-07 12:55:02 DEBUG headers:127 - http-outgoing-0 >> Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2019-11-07 12:55:02 DEBUG headers:127 - http-outgoing-0 >> Accept-Language: en-US
+2019-11-07 12:55:02 DEBUG headers:127 - http-outgoing-0 >> Accept-Encoding: gzip, deflate
+2019-11-07 12:55:02 DEBUG headers:127 - http-outgoing-0 >> Referer: http://localhost:8080/escalade-webapp/connexion
+2019-11-07 12:55:02 DEBUG headers:127 - http-outgoing-0 >> Cookie: JSESSIONID=BA07A884EFDA47F2838ACD7DDEB50346
+2019-11-07 12:55:02 DEBUG headers:127 - http-outgoing-0 >> Connection: Keep-Alive
+2019-11-07 12:55:02 DEBUG wire:72 - http-outgoing-0 >> "GET /escalade-webapp/inscription HTTP/1.1[\r][\n]"
+2019-11-07 12:55:02 DEBUG wire:72 - http-outgoing-0 >> "Host: localhost:8080[\r][\n]"
+2019-11-07 12:55:02 DEBUG wire:72 - http-outgoing-0 >> "User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:38.0) Gecko/20100101 Firefox/38.0[\r][\n]"
+2019-11-07 12:55:02 DEBUG wire:72 - http-outgoing-0 >> "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8[\r][\n]"
+2019-11-07 12:55:02 DEBUG wire:72 - http-outgoing-0 >> "Accept-Language: en-US[\r][\n]"
+2019-11-07 12:55:02 DEBUG wire:72 - http-outgoing-0 >> "Accept-Encoding: gzip, deflate[\r][\n]"
+2019-11-07 12:55:02 DEBUG wire:72 - http-outgoing-0 >> "Referer: http://localhost:8080/escalade-webapp/connexion[\r][\n]"
+2019-11-07 12:55:02 DEBUG wire:72 - http-outgoing-0 >> "Cookie: JSESSIONID=BA07A884EFDA47F2838ACD7DDEB50346[\r][\n]"
+2019-11-07 12:55:02 DEBUG wire:72 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2019-11-07 12:55:02 DEBUG wire:72 - http-outgoing-0 >> "[\r][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "HTTP/1.1 200 [\r][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "Content-Type: text/html;charset=UTF-8[\r][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "Content-Language: en-US[\r][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "Content-Length: 2159[\r][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "Date: Thu, 07 Nov 2019 11:55:03 GMT[\r][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[\r][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "<!DOCTYPE html>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "<html>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9]<head>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9]<meta charset="UTF-8">[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9]<meta name="viewport" content="width=device-width, initial-scale=1.0"/>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9]<title>Amis Escalade: Inscription</title>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9][0x9]<link href="/escalade-webapp/assets/css/inscription.css" rel="stylesheet">[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9][0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9][0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9]</head>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9]<body>[0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "    <div id="menu">[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "    [0x9]<div><a href="/escalade-webapp"><img src="/escalade-webapp/assets/img/logo.png" id="logoAcc" alt="logo"/></a></div>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "    [0x9]<div><a href="site">Les Sites</a></div>   [0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "    [0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "    [0x9][0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "    [0x9][0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "    [0x9][0x9][0x9]<div><a href="connexion">Connexion/Inscription</a></div>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "    [0x9][0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "    [0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "    </div>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "    [\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "    <div id="menuMobile">[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "    [0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "    [0x9]<img src="/escalade-webapp/assets/img/logo.png" id="logo" alt="logo"/>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "    [0x9]<img src="/escalade-webapp/assets/img/menu.png" id="menuBut" alt="menu"/>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "    </div>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "    [\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "    <div id="menuMob">[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "    [0x9]<div><a href="/escalade-webapp">Accueil</a></div>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "    [0x9]<div><a href="site">Les Sites</a></div>   [0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "    [0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "    [0x9][0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "    [0x9][0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "    [0x9][0x9][0x9]<div><a href="connexion">Connexion/Inscription</a></div>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "    [0x9][0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "    [0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "    </div>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9]<div id="container">[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9]<h1>Inscription</h1>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9]<form id="userForm" action="inscription" method="post">[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9]<div><input id="id" name="id" type="hidden" value="0"/></div>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9]<div>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9][0x9]<label for="pseudo">Entrez votre pseudo</label>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9][0x9]<input id="pseudo" name="pseudo" type="text" value=""/>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9][0x9]<span class="error"></span>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9]</div>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9]<div>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9][0x9]<label for="login">Entrez votre mail</label>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9]        [0x9]<input id="login" name="login" type="text" value=""/>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9]        [0x9]<span class="error"> </span>     [0x9]      [0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9]</div>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9]<div>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9][0x9]<label for="pswd">Entrez votre mot de passe</label>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9]        [0x9]<input id="pswd" name="pswd" type="password" value=""/>[0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9]        [0x9]<span class="error"></span>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9]</div>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9]        <div>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9]        [0x9]<input id="checkSubmit" type="submit" value="Inscription" />[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9]        </div>      [\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9]</form>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9]</div>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9]<footer>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9]<p>Copyright les amis de l'escalade</p>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "</footer>[0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9]<script type="module" src="/escalade-webapp/assets/js/menumobile.js"></script>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][0x9]<script type="module" src="/escalade-webapp/assets/js/inscription.js"></script>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "[0x9][\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "</body>[\n]"
+2019-11-07 12:55:03 DEBUG wire:72 - http-outgoing-0 << "</html>[0x9][\n]"
+2019-11-07 12:55:03 DEBUG headers:113 - http-outgoing-0 << HTTP/1.1 200 
+2019-11-07 12:55:03 DEBUG headers:116 - http-outgoing-0 << Content-Type: text/html;charset=UTF-8
+2019-11-07 12:55:03 DEBUG headers:116 - http-outgoing-0 << Content-Language: en-US
+2019-11-07 12:55:03 DEBUG headers:116 - http-outgoing-0 << Content-Length: 2159
+2019-11-07 12:55:03 DEBUG headers:116 - http-outgoing-0 << Date: Thu, 07 Nov 2019 11:55:03 GMT
+2019-11-07 12:55:03 DEBUG MainClientExec:284 - Connection can be kept alive indefinitely
+2019-11-07 12:55:03 DEBUG PoolingHttpClientConnectionManager:314 - Connection [id: 0][route: {}->http://localhost:8080] can be kept alive indefinitely
+2019-11-07 12:55:03 DEBUG PoolingHttpClientConnectionManager:320 - Connection released: [id: 0][route: {}->http://localhost:8080][total kept alive: 1; route allocated: 1 of 6; total allocated: 1 of 20]
+2019-11-07 12:55:03 DEBUG DomElement:1155 - Firing Event unload (Current Target: HTMLElement for HtmlHtml[<html>]);
+2019-11-07 12:55:03 DEBUG WebWindowImpl:126 - setEnclosedPage: HtmlPage(http://localhost:8080/escalade-webapp/inscription)@691854979
+2019-11-07 12:55:03 DEBUG WebWindowImpl:199 - destroyChildren
+2019-11-07 12:55:03 DEBUG EncodingSniffer:635 - Encoding found in HTTP headers: 'UTF-8'.
+2019-11-07 12:55:03 DEBUG EncodingSniffer:635 - Encoding found in HTTP headers: 'UTF-8'.
+2019-11-07 12:55:03 DEBUG HtmlScript:250 - Script node added: <script type="module" src="/escalade-webapp/assets/js/menumobile.js">
+</script>
+
+2019-11-07 12:55:03 WARN  HtmlScript:468 - Script is not JavaScript (type: module, language: ). Skipping execution.
+2019-11-07 12:55:03 DEBUG HtmlScript:250 - Script node added: <script type="module" src="/escalade-webapp/assets/js/inscription.js">
+</script>
+
+2019-11-07 12:55:03 WARN  HtmlScript:468 - Script is not JavaScript (type: module, language: ). Skipping execution.
+2019-11-07 12:55:03 DEBUG HtmlUnitTestingEngineImpl:938 - Window "" changed : "Amis Escalade: Connexion" became "Amis Escalade: Inscription
+2019-11-07 12:55:03 DEBUG DomElement:1155 - Firing Event DOMContentLoaded (Current Target: HTMLElement for HtmlHtml[<html>]);
+2019-11-07 12:55:03 DEBUG DomElement:1155 - Firing Event load (Current Target: HTMLElement for HtmlHtml[<html>]);

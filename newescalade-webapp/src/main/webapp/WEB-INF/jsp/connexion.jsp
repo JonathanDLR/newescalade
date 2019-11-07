@@ -32,7 +32,7 @@
 		</section>
 		
 		<section id="inscription">
-			<a href="inscription">Pas encore inscrit?</a>
+			<a id="inscriptionlink" href="inscription">Pas encore inscrit?</a>
 		</section>
 	</div>
 		
