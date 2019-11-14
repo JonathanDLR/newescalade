@@ -36,7 +36,7 @@ public class Site {
 	@JoinColumn(name = "cotation")
 	private Cotation cotation;
 	
-	@Min(value = 1, message = "Veuillez renseigner un nombre supérieur à 0" )
+	@Min(value = 1, message = "Veuillez renseigner un nombre supérieur à 0")
 	@Column(name = "nbre_secteur")
 	private int nbreSecteur;
 	

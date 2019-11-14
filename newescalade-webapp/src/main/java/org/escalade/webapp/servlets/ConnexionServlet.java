@@ -3,7 +3,6 @@ package org.escalade.webapp.servlets;
 
 
 import javax.servlet.http.HttpSession;
-import javax.validation.Valid;
 
 import org.apache.commons.validator.routines.EmailValidator;
 import org.escalade.model.beans.User;
@@ -48,17 +47,19 @@ public class ConnexionServlet extends AbstractResource {
      * @return
      */
     @RequestMapping(method = RequestMethod.POST)
-    public String connect(@Valid @ModelAttribute("userForm") User pUser, BindingResult br, 
-    		HttpSession session, Model model) {
+    public String connect(@ModelAttribute("userForm") User pUser, BindingResult br, HttpSession session, Model model) {
     	User user = getManagerFactory().getUserManager().getUserByLogin(pUser.getLogin());
     	String error = "Identifiant ou mot de passe incorect";
     	
+
     	// CHECK INFO BEFORE CREATING SESSION
-    	if (pUser.getLogin() == null) {
+    	if (pUser.getLogin() == "") {
     		br.rejectValue("login", "error.mailEmpty", "Veuillez renseigner votre mail.");
+    		System.out.print(model.toString());
     		return "connexion";
     	} else if (!EmailValidator.getInstance().isValid(pUser.getLogin())) {
     		br.rejectValue("login", "error.mailNotValid", "Veuillez renseigner un mail valide.");
+    		
     		return "connexion";
     	} else if (pUser.getPswd() == null) {
     		br.rejectValue("pswd", "error.pswdEmpty", "Veuillez renseigner votre mot de passe.");

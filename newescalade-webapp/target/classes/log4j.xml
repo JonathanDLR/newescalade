@@ -17,7 +17,8 @@
   </appender>
  
   <root>
-    <priority value ="debug"></priority>
+    <priority value ="error"></priority>
+    <appender-ref ref="console"></appender-ref>
     <appender-ref ref="fileAppender"></appender-ref>
   </root>
  

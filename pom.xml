@@ -204,6 +204,20 @@
 		    <artifactId>slf4j-log4j12</artifactId>
 		    <version>1.7.28</version>
 		    <scope>test</scope>
+		</dependency>	
+		
+		<!--  TESTS -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-test</artifactId>
+		    <version>${spring.version}</version>
+		    <scope>test</scope>
+		</dependency>
+		<dependency>
+		    <groupId>org.hamcrest</groupId>
+		    <artifactId>hamcrest</artifactId>
+		    <version>2.2</version>
+		    <scope>test</scope>
 		</dependency>		
   	</dependencies>
   </dependencyManagement>
@@ -214,6 +228,12 @@
       <artifactId>junit</artifactId>
       <version>4.12</version>
       <scope>test</scope>
+      <exclusions>
+        <exclusion>
+        	<groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-core</artifactId>      
+        </exclusion>
+    </exclusions>
     </dependency>
     <dependency>
 	    <groupId>net.sourceforge.jwebunit</groupId>
