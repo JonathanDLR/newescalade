@@ -1,0 +1,5 @@
+org/escalade/business/impl/manager/ReservationManagerTest.class
+org/escalade/business/impl/manager/CotationManagerTest.class
+org/escalade/business/impl/manager/CommentaireManagerTest.class
+org/escalade/business/impl/manager/LieuManagerTest.class
+org/escalade/business/impl/manager/RoleManagerTest.class

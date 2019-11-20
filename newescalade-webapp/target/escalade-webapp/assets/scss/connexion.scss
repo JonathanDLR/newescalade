@@ -1,0 +1,31 @@
+@import 'template';
+@import 'error';
+@import 'userform';
+
+/* CONNEXION STYLING */
+#containerCon {
+	height: 71.8vh;
+	
+	@media screen and (min-width: 813px) {
+		height: 69.6vh;
+	}
+}
+
+form {
+	@include form-const(4);
+	height: 50.2vh !important;
+	
+	@media screen and (max-height: 420px) {
+			height: 42vh !important;
+		}
+}
+
+#inscription, #DIVerror {
+	display: flex;
+	justify-content: center;
+	height: 5vh;
+}
+
+#inscription a {
+	text-decoration: underline !important;
+}

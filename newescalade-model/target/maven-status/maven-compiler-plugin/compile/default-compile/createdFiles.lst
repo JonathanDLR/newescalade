@@ -1,4 +1,5 @@
 org/escalade/model/validators/PseudoValidator.class
+org/escalade/model/exception/NotFoundException.class
 org/escalade/model/beans/Site.class
 org/escalade/model/beans/Reservation.class
 org/escalade/model/beans/Cotation.class

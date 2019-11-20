@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="1" name="org.escalade.webapp.servlets.ConnexionServletTest" time="2.002" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="org.escalade.webapp.servlets.ConnexionServletTest" time="2.176" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.2+9-LTS"/>
@@ -25,7 +25,7 @@
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Linux"/>
-    <property name="classworlds.conf" value="/home/jdlr/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf8861944115398679379.tmp"/>
+    <property name="classworlds.conf" value="/home/jdlr/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf11104052829550235575.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
     <property name="jdk.debug" value="release"/>
@@ -61,55 +61,9 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="org.escalade.webapp.servlets.ConnexionServletTest" name="testLoginInvalid" time="0.854"/>
-  <testcase classname="org.escalade.webapp.servlets.ConnexionServletTest" name="testLoginNotNull" time="0.112"/>
-  <testcase classname="org.escalade.webapp.servlets.ConnexionServletTest" name="testPswdNotNull" time="0.254"/>
-  <testcase classname="org.escalade.webapp.servlets.ConnexionServletTest" name="testUserValid" time="0.561"/>
-  <testcase classname="org.escalade.webapp.servlets.ConnexionServletTest" name="testUserNotNull" time="0.095">
-    <failure message="Model attribute &apos;error&apos; does not exist" type="java.lang.AssertionError">java.lang.AssertionError: Model attribute &apos;error&apos; does not exist
-	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:35)
-	at org.springframework.test.util.AssertionErrors.assertTrue(AssertionErrors.java:65)
-	at org.springframework.test.web.servlet.result.ModelResultMatchers$3.match(ModelResultMatchers.java:86)
-	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
-	at org.escalade.webapp.servlets.ConnexionServletTest.testUserNotNull(ConnexionServletTest.java:61)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
-	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
-	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</failure>
-  </testcase>
-  <testcase classname="org.escalade.webapp.servlets.ConnexionServletTest" name="testPswdNotValid" time="0.126"/>
+  <testcase classname="org.escalade.webapp.servlets.ConnexionServletTest" name="testUserPswdNotNull" time="1.345"/>
+  <testcase classname="org.escalade.webapp.servlets.ConnexionServletTest" name="testUserPswdNotValid" time="0.129"/>
+  <testcase classname="org.escalade.webapp.servlets.ConnexionServletTest" name="testUserLoginInvalid" time="0.081"/>
+  <testcase classname="org.escalade.webapp.servlets.ConnexionServletTest" name="testUserLoginNotNull" time="0.095"/>
+  <testcase classname="org.escalade.webapp.servlets.ConnexionServletTest" name="testUserValid" time="0.526"/>
 </testsuite>

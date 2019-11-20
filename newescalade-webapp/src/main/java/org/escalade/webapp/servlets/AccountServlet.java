@@ -10,6 +10,7 @@ import org.escalade.model.beans.Lieu;
 import org.escalade.model.beans.Reservation;
 import org.escalade.model.beans.Topo;
 import org.escalade.model.beans.User;
+import org.escalade.model.exception.NotFoundException;
 import org.escalade.webapp.resources.AbstractResource;
 import org.owasp.html.HtmlPolicyBuilder;
 import org.owasp.html.PolicyFactory;
@@ -144,11 +145,12 @@ public class AccountServlet extends AbstractResource {
      * @param procTopo name of the topo
      * @param session
      * @return
+     * @throws NotFoundException 
      */
     @ResponseBody
     @RequestMapping(value = "/procresa", method = RequestMethod.POST)
     public String procResa(@RequestParam("procResa") int procResa, @RequestParam("procTopo") String procTopo,
-    		HttpSession session) {
+    		HttpSession session) throws NotFoundException {
     	//PROC THE RESA
     	Reservation resa = getManagerFactory().getReservationManager().getReservationById(procResa);
     	getManagerFactory().getReservationManager().setProcessed(resa);

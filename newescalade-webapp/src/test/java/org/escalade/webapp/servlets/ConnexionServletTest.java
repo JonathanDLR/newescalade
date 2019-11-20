@@ -55,7 +55,7 @@ public class ConnexionServletTest extends TestCase {
 	}
 	
 	@Test
-	public void testLoginNotNull() throws Exception {
+	public void testUserLoginNotNull() throws Exception {
 		user.setLogin("");
 		mockMvc.perform(post("/connexion").flashAttr("userForm", user))
 			   .andExpect(view().name("connexion"))
@@ -64,7 +64,7 @@ public class ConnexionServletTest extends TestCase {
 	}
 	
 	@Test
-	public void testLoginInvalid() throws Exception {
+	public void testUserLoginInvalid() throws Exception {
 		user.setLogin("test");
 		mockMvc.perform(post("/connexion").flashAttr("userForm", user))
 			   .andExpect(view().name("connexion"))
@@ -73,7 +73,7 @@ public class ConnexionServletTest extends TestCase {
 	}
 	
 	@Test
-	public void testPswdNotNull() throws Exception {
+	public void testUserPswdNotNull() throws Exception {
 		user.setLogin("test@test.fr");
 		mockMvc.perform(post("/connexion").flashAttr("userForm", user))
 			   .andExpect(view().name("connexion"))
@@ -82,7 +82,7 @@ public class ConnexionServletTest extends TestCase {
 	}
 	
 	@Test
-	public void testPswdNotValid() throws Exception {
+	public void testUserPswdNotValid() throws Exception {
 		user.setLogin("test@test.fr");
 		user.setPswd("test");
 		mockMvc.perform(post("/connexion").flashAttr("userForm", user))

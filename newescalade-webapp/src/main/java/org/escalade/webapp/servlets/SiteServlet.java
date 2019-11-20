@@ -9,6 +9,7 @@ import org.escalade.model.beans.Cotation;
 import org.escalade.model.beans.Lieu;
 import org.escalade.model.beans.Site;
 import org.escalade.model.beans.User;
+import org.escalade.model.exception.NotFoundException;
 import org.escalade.webapp.resources.AbstractResource;
 import org.owasp.html.HtmlPolicyBuilder;
 import org.owasp.html.PolicyFactory;
@@ -121,10 +122,12 @@ public class SiteServlet extends AbstractResource {
 	 * Updating com
 	 * @param comToUpdate the com to update
 	 * @param newCom the new com
+	 * @throws NotFoundException 
+	 * @throws NumberFormatException 
 	 */
 	@ResponseBody
 	@RequestMapping(value="/updcom", method = RequestMethod.POST)
-	public void updateCom(@RequestParam("comToUpdate") String comToUpdate, @RequestParam("newCom") String newCom) {
+	public void updateCom(@RequestParam("comToUpdate") String comToUpdate, @RequestParam("newCom") String newCom) throws NumberFormatException, NotFoundException {
 		Commentaire pCommentaire = getManagerFactory().getCommentaireManager().getCommentaireById(Integer.parseInt(comToUpdate));
 		
 		// Sanitize value

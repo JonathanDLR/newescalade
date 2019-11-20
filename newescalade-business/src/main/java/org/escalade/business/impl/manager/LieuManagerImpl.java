@@ -4,13 +4,16 @@ import java.util.List;
 
 import org.escalade.business.contract.manager.LieuManager;
 import org.escalade.model.beans.Lieu;
+import org.escalade.model.exception.NotFoundException;
 
 public class LieuManagerImpl extends AbstractManager implements LieuManager {
 	@Override
-	public Lieu getLieuById(int pId) {
-		Lieu lieu = getDaoFactory().getLieuDao().getLieuById(pId);
-		
-		return lieu;
+	public Lieu getLieuById(int pId) throws NotFoundException {
+		if (pId < 1L) {
+			throw new NotFoundException("Lieu non trouvé : numero = " + pId);
+		} else {
+			return getDaoFactory().getLieuDao().getLieuById(pId);
+		}	
 	}
 	
 	@Override

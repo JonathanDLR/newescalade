@@ -6,6 +6,7 @@ import org.escalade.business.contract.manager.ReservationManager;
 import org.escalade.model.beans.Reservation;
 import org.escalade.model.beans.Topo;
 import org.escalade.model.beans.User;
+import org.escalade.model.exception.NotFoundException;
 
 public class ReservationManagerImpl extends AbstractManager implements ReservationManager {
 	@Override
@@ -23,8 +24,12 @@ public class ReservationManagerImpl extends AbstractManager implements Reservati
 	}
 	
 	@Override
-	public Reservation getReservationById(int pId) {
-		return getDaoFactory().getReservationDao().getResaById(pId);
+	public Reservation getReservationById(int pId) throws NotFoundException {
+		if (pId < 1L) {
+			throw new NotFoundException("Réservation non trouvée : numero = " + pId);
+		} else {
+			return getDaoFactory().getReservationDao().getResaById(pId);
+		}	
 	}
 	
 	@Override

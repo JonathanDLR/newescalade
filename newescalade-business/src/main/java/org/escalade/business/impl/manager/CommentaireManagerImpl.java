@@ -4,6 +4,7 @@ import org.escalade.business.contract.manager.CommentaireManager;
 import org.escalade.model.beans.Commentaire;
 import org.escalade.model.beans.Site;
 import org.escalade.model.beans.User;
+import org.escalade.model.exception.NotFoundException;
 
 public class CommentaireManagerImpl extends AbstractManager implements CommentaireManager {
 	public int createCom(Commentaire pCommentaire, String pCom, Site pSite, User pUser) {
@@ -22,7 +23,11 @@ public class CommentaireManagerImpl extends AbstractManager implements Commentai
 		getDaoFactory().getCommentaireDao().deleteCom(pId);
 	}
 	
-	public Commentaire getCommentaireById(int pId) {
-		return getDaoFactory().getCommentaireDao().getCommentaireById(pId);
+	public Commentaire getCommentaireById(int pId) throws NotFoundException {
+		if (pId < 1L) {
+			throw new NotFoundException("Commentaire non trouvé : numero = " + pId);
+		} else {
+			return getDaoFactory().getCommentaireDao().getCommentaireById(pId);
+		}
 	}
 }

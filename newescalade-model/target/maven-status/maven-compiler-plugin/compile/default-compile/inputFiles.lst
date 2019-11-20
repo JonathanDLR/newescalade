@@ -4,6 +4,7 @@
 /home/jdlr/eclipse-workspace/newescalade/newescalade-model/src/main/java/org/escalade/model/beans/Role.java
 /home/jdlr/eclipse-workspace/newescalade/newescalade-model/src/main/java/org/escalade/model/beans/User.java
 /home/jdlr/eclipse-workspace/newescalade/newescalade-model/src/main/java/org/escalade/model/beans/Topo.java
+/home/jdlr/eclipse-workspace/newescalade/newescalade-model/src/main/java/org/escalade/model/exception/NotFoundException.java
 /home/jdlr/eclipse-workspace/newescalade/newescalade-model/src/main/java/org/escalade/model/validators/PseudoValidator.java
 /home/jdlr/eclipse-workspace/newescalade/newescalade-model/src/main/java/org/escalade/model/beans/Lieu.java
 /home/jdlr/eclipse-workspace/newescalade/newescalade-model/src/main/java/org/escalade/model/beans/Commentaire.java

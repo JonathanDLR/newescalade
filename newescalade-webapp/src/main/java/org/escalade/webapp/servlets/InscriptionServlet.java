@@ -7,6 +7,7 @@ import javax.validation.Valid;
 import org.apache.commons.validator.routines.EmailValidator;
 import org.escalade.model.beans.Role;
 import org.escalade.model.beans.User;
+import org.escalade.model.exception.NotFoundException;
 import org.escalade.webapp.resources.AbstractResource;
 import org.owasp.html.HtmlPolicyBuilder;
 import org.owasp.html.PolicyFactory;
@@ -44,9 +45,10 @@ public class InscriptionServlet extends AbstractResource {
      * @param pUser user created by form
      * @param br
      * @return
+     * @throws NotFoundException 
      */
     @RequestMapping(method = RequestMethod.POST)
-    public String createUserFromForm(@Valid @ModelAttribute("userForm") User pUser, BindingResult br) {  
+    public String createUserFromForm(@Valid @ModelAttribute("userForm") User pUser, BindingResult br) throws NotFoundException {  
     	User user = getManagerFactory().getUserManager().getUserByLogin(pUser.getLogin());
     	
     	// CHECK INFO BEFORE INJECTING IN DB

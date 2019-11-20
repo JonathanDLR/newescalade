@@ -1,0 +1,10 @@
+@import 'template';
+@import 'error';
+@import 'userform';
+
+/* INSCRIPTION STYLE */
+	
+form {
+	@include form-const(5);
+	height: 58vh !important;
+}
