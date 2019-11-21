@@ -29,9 +29,7 @@ public class ConnexionServletTest extends TestCase {
 	protected static Logger logger = Logger.getLogger(ConnexionServletTest.class);
 	private User user;
 	private ConnexionServlet connexionServlet;
-	
-	@Autowired
-	private WebApplicationContext context;	
+		
 	private MockMvc mockMvc;
 	
 	@Before

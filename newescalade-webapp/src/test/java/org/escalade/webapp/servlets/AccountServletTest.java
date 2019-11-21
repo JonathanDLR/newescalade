@@ -1,5 +1,6 @@
 //package org.escalade.webapp.servlets;
 //
+//import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 //import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 //import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 //import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.model;
@@ -14,6 +15,8 @@
 //import org.junit.Before;
 //import org.junit.Test;
 //import org.junit.runner.RunWith;
+//import org.mockito.InjectMocks;
+//import org.mockito.MockitoAnnotations;
 //import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.test.context.ContextConfiguration;
 //import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
@@ -25,22 +28,25 @@
 //import junit.framework.TestCase;
 //
 //@RunWith(SpringJUnit4ClassRunner.class)
-//@ContextConfiguration(locations = { "**/WEB-INF/spring-servlet.xml", "classpath:/bootstrapContext.xml" })
 //@WebAppConfiguration
+//@ContextConfiguration(locations = {"**/WEB-INF/spring-servlet.xml" })
 //public class AccountServletTest extends TestCase {
 //	@Autowired
 //	private WebApplicationContext context;	
 //	
 //	private Topo topo;
-//	private AccountServlet accountServlet;
+//	
 //	private MockMvc mockMvc;
 //	private Map<String, Object> session;
 //	private User user;
 //	
+//	@InjectMocks
+//	private AccountServlet accountServlet;
 //	@Before
 //	public void setUp() throws Exception {
 //		super.setUp();
-//		this.mockMvc = MockMvcBuilders.webAppContextSetup(this.context).build();
+//		MockitoAnnotations.initMocks(this);
+//		this.mockMvc = MockMvcBuilders.webAppContextSetup(this.context).dispatchOptions(true).build();
 //		session = new HashMap<>();
 //		user = new User();
 //		session.put("user", user);
@@ -54,8 +60,13 @@
 //	}
 //	
 //	@Test
+//	public void getAccountPage() throws Exception {
+//		mockMvc.perform(get("/account").sessionAttrs(session)).andDo(print());
+//	}
+//	
+//	@Test
 //	public void testTopoNameNotNull() throws Exception {
-//		mockMvc.perform(post("/account").sessionAttrs(session)
+//		mockMvc.perform(post("/toto").sessionAttrs(session)
 //		   .flashAttr("topoForm", topo))
 //		   .andDo(print())
 //		   .andExpect(view().name("account"))
