@@ -4,4 +4,6 @@ import org.escalade.model.beans.Role;
 
 public interface RoleDao {
 	Role getRoleById(int pId);
+
+	int createRole(Role pRole);
 }

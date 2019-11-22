@@ -85,14 +85,16 @@ public class LieuDaoImpl extends AbstractDaoImpl implements LieuDao {
 	}
 	
 	@Override
-	public void createLieu(Lieu pLieu) {
+	public int createLieu(Lieu pLieu) {
 		Session session = null;
 		Transaction tx = null;
+		int newId = 0;
 		
 		try {
 			session = getSessionFactory().openSession();
 			tx = session.beginTransaction();
 			session.save(pLieu);
+			newId = pLieu.getId();
 			tx.commit();
 		} catch (Exception e) {
 			if (tx != null) {
@@ -102,6 +104,8 @@ public class LieuDaoImpl extends AbstractDaoImpl implements LieuDao {
 			if (session != null) {
 				session.close();
 			}			
-		}	
+		}
+		
+		return newId;
 	}
 }

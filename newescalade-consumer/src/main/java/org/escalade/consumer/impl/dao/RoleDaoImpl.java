@@ -29,4 +29,29 @@ public class RoleDaoImpl extends AbstractDaoImpl implements RoleDao {
 		
 		return role;
 	}
+	
+	@Override
+	public int createRole(Role pRole) {
+		Session session = null;
+		Transaction tx = null;
+		int newId = 0;
+		
+		try {
+			session = getSessionFactory().openSession();
+			tx = session.beginTransaction();
+			session.save(pRole);
+			newId = pRole.getId();
+			tx.commit();
+		} catch (Exception e) {
+			if (tx != null) {
+				tx.rollback();
+			}		
+		} finally {
+			if (session != null) {
+				session.close();
+			}			
+		}
+		
+		return newId;
+	}
 }

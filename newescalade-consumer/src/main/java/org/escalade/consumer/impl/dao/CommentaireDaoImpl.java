@@ -86,7 +86,6 @@ public class CommentaireDaoImpl extends AbstractDaoImpl implements CommentaireDa
 			commentaire = session.get(Commentaire.class, pId);
 			tx.commit();
 		} catch (Exception e) {
-			e.printStackTrace();
 			if (tx != null) {
 				tx.rollback();
 			}

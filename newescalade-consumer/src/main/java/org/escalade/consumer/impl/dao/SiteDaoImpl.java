@@ -28,6 +28,7 @@ public class SiteDaoImpl extends AbstractDaoImpl implements SiteDao {
 								 .uniqueResult();
 			tx.commit();
 		} catch (Exception e) {
+			e.printStackTrace();
 			if (tx != null) {
 				tx.rollback();
 			}
@@ -85,14 +86,16 @@ public class SiteDaoImpl extends AbstractDaoImpl implements SiteDao {
 	}
 	
 	@Override
-	public void createSite(Site pSite) {
+	public int createSite(Site pSite) {
 		Session session = null;
 		Transaction tx = null;
+		int newId = 0;
 		
 		try {
 			session = getSessionFactory().openSession();
 			tx = session.beginTransaction();
 			session.save(pSite);
+			newId = pSite.getId();
 			tx.commit();
 		} catch (Exception e) {
 			if (tx != null) {
@@ -103,6 +106,8 @@ public class SiteDaoImpl extends AbstractDaoImpl implements SiteDao {
 				session.close();
 			}			
 		}	
+		
+		return newId;
 	}
 	
 	@Override

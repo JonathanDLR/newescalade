@@ -12,14 +12,15 @@ import org.hibernate.Transaction;
 
 public class ReservationDaoImpl extends AbstractDaoImpl implements ReservationDao {
 	@Override
-	public void createResa(Reservation pResa) {
+	public int createResa(Reservation pResa) {
 		Session session = null;
 		Transaction tx = null;
-		
+		int newId = 0;
 		try {
 			session = getSessionFactory().openSession();
 			tx = session.beginTransaction();
 			session.save(pResa);
+			newId = pResa.getId();
 			tx.commit();
 		} catch (Exception e) {
 			if (tx != null) {
@@ -30,6 +31,8 @@ public class ReservationDaoImpl extends AbstractDaoImpl implements ReservationDa
 				session.close();
 			}			
 		}	
+		
+		return newId;
 	}
 	
 	@Override
