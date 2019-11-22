@@ -37,4 +37,22 @@ public class CommentaireDaoTest extends TestCase {
 		assertNotNull(newCom);
 		assertEquals(id, newCom.getId());
 	}
+	
+	@Test
+	public void testUpdateCom() {
+		int id = commentaireDao.createCom(commentaire);
+		Commentaire newCom = commentaireDao.getCommentaireById(id);
+		newCom.setComm("update");
+		commentaireDao.updateCom(newCom);
+		Commentaire newNewCom = commentaireDao.getCommentaireById(id);
+		assertEquals(newNewCom.getComm(), "update");
+	}
+	
+	@Test
+	public void testDeleteCom() {
+		int id = commentaireDao.createCom(commentaire);
+		commentaireDao.deleteCom(id);
+		Commentaire newCom = commentaireDao.getCommentaireById(id);
+		assertNull(newCom);
+	}
 }

@@ -8,4 +8,5 @@ public interface CotationDao {
 	Cotation getCotationById(int pId);
 	Cotation getCotationByCot(String pCot);
 	List<Cotation> getAllCot();
+	int createCotation(Cotation pCot);
 }

@@ -1,1 +1,2 @@
-org/escalade/consumer/AppTest.class
+org/escalade/consumer/CotationDaoTest.class
+org/escalade/consumer/CommentaireDaoTest.class

@@ -83,4 +83,29 @@ public class CotationDaoImpl extends AbstractDaoImpl implements CotationDao {
 		
 		return cotations;
 	}
+	
+	@Override
+	public int createCotation(Cotation pCot) {
+		Session session = null;
+		Transaction tx = null;
+		int newId = 0;
+		
+		try {
+			session = getSessionFactory().openSession();
+			tx = session.beginTransaction();
+			session.save(pCot);
+			newId = pCot.getId();
+			tx.commit();
+		} catch (Exception e) {
+			if (tx != null) {
+				tx.rollback();
+			}		
+		} finally {
+			if (session != null) {
+				session.close();
+			}			
+		}	
+		
+		return newId;
+	}
 }
