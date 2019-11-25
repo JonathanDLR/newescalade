@@ -37,10 +37,10 @@
 	<bean id="dataSource"
           class="org.apache.commons.dbcp2.BasicDataSource"
           destroy-method="close">
-        <property name="url" value="${jdbc.url}" />
-	    <property name="driverClassName" value="${jdbc.driverClassName}" />	    
-	    <property name="username" value="${jdbc.user}" />
-	    <property name="password" value="${jdbc.pass}" />
+        <property name="url" value="jdbc:mysql://localhost:3306/escalade?useUnicode=true&amp;characterEncoding=UTF-8&amp;characterSetResults=utf8&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC" />
+	    <property name="driverClassName" value="com.mysql.jdbc.Driver" />	    
+	    <property name="username" value="root" />
+	    <property name="password" value="marie89" />
 	</bean>
  
 	<bean id="sessionFactory"
@@ -50,8 +50,8 @@
 	    <property name="hibernateProperties">
 	        <props>
 	        	<prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
-	            <prop key="hibernate.hbm2ddl.auto">${hibernate.hbm2ddl.auto}</prop>
-	            <prop key="hibernate.dialect">${hibernate.dialect}</prop>
+	            <prop key="hibernate.hbm2ddl.auto">validate</prop>
+	            <prop key="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</prop>
 	            <prop key="hibernate.hbm2ddl.charset_name">${hibernate.hbm2ddl.charset_name}</prop>
 	            <prop key="hibernate.connection.CharSet">${hibernate.connection.CharSet}</prop>
 				<prop key="hibernate.connection.characterEncoding">${hibernate.connection.characterEncoding}</prop>

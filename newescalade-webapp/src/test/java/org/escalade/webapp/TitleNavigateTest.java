@@ -12,7 +12,7 @@ import org.junit.Test;
 
 import net.sourceforge.jwebunit.util.TestingEngineRegistry;
 
-public class TitleTest {
+public class TitleNavigateTest {
 	@Before
 	public void prepare() {
 		setTestingEngineKey(TestingEngineRegistry.TESTING_ENGINE_HTMLUNIT);

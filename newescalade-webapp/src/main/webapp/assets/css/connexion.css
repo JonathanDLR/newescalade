@@ -194,6 +194,9 @@ form {
   @media screen and (min-width: 813px) {
     #containerCon {
       height: 69.6vh; } }
+  @media screen and (max-height: 420px) {
+    #containerCon {
+      height: 90vh !important; } }
 
 form {
   display: grid;
@@ -207,7 +210,7 @@ form {
   margin-left: 4vw;
   margin-right: 4vw;
   margin-bottom: 4vh;
-  height: 50.2vh !important; }
+  height: 40.2vh !important; }
   form button:hover, form input[type='submit']:hover {
     cursor: pointer; }
   form div:not(:nth-child(1)):not(:nth-child(4)) {

@@ -29,6 +29,11 @@ form {
 
 #subnewlieu {
 	margin-right: 2vh !important;
+	width: 35% !important;
+	
+	@media screen and (min-width: 813px) {
+		width: inherit !important;
+	}
 }
 
 #DIVrep {

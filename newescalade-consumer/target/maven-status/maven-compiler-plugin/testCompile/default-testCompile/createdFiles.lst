@@ -1,2 +1,8 @@
-org/escalade/consumer/CotationDaoTest.class
+org/escalade/consumer/ReservationDaoTest.class
+org/escalade/consumer/TopoDaoTest.class
 org/escalade/consumer/CommentaireDaoTest.class
+org/escalade/consumer/SiteDaoTest.class
+org/escalade/consumer/UserDaoTest.class
+org/escalade/consumer/CotationDaoTest.class
+org/escalade/consumer/LieuDaoTest.class
+org/escalade/consumer/RoleDaoTest.class
