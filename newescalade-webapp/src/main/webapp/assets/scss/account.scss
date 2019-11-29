@@ -70,4 +70,8 @@ form {
 	button {
 		@extend %button-style;
 	}
+
+	button:hover {
+		cursor: pointer;
+	}
 }

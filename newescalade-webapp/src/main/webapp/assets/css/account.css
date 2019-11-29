@@ -312,5 +312,7 @@ form {
     border-bottom: 0.2vh dashed; }
   #SECresa .resaUser {
     font-weight: bold; }
+  #SECresa button:hover {
+    cursor: pointer; }
 
 /*# sourceMappingURL=../../../../../target/account.css.map */
